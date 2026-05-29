@@ -1,0 +1,50 @@
+{
+  "adjacency_list": {
+    "graph_id": "random-small-n8-s0-ea5b77f8",
+    "format": "adjacency_list",
+    "content": "# directed adjacency list (8 nodes, 28 edges)\nN0 -> N3 (w=3.33), N4 (w=4.64), N6 (w=5.29), N7 (w=9.17)\nN1 -> N0 (w=3.54), N4 (w=9.19)\nN2 -> N0 (w=7.57), N4 (w=1.91), N5 (w=6.5)\nN3 -> N0 (w=8.79), N1 (w=8.25), N2 (w=1.13), N5 (w=8.42), N7 (w=5.44)\nN4 -> N1 (w=3.93), N3 (w=6.11), N5 (w=9.71), N7 (w=1.72)\nN5 -> N0 (w=5.57), N2 (w=5.96), N4 (w=8.33), N6 (w=9.67)\nN6 -> N0 (w=5.0), N1 (w=4.46), N2 (w=3.61), N3 (w=2.68), N7 (w=1.81)\nN7 -> N6 (w=4.52)",
+    "token_count": 288,
+    "tokens_per_node": 36.0,
+    "tokens_per_edge": 10.2857
+  },
+  "edge_list": {
+    "graph_id": "random-small-n8-s0-ea5b77f8",
+    "format": "edge_list",
+    "content": "# directed edge list (8 nodes, 28 edges)\nN0 -> N3 [weight=3.33]\nN0 -> N4 [weight=4.64]\nN0 -> N6 [weight=5.29]\nN0 -> N7 [weight=9.17]\nN1 -> N0 [weight=3.54]\nN1 -> N4 [weight=9.19]\nN2 -> N0 [weight=7.57]\nN2 -> N4 [weight=1.91]\nN2 -> N5 [weight=6.5]\nN3 -> N0 [weight=8.79]\nN3 -> N1 [weight=8.25]\nN3 -> N2 [weight=1.13]\nN3 -> N5 [weight=8.42]\nN3 -> N7 [weight=5.44]\nN4 -> N1 [weight=3.93]\nN4 -> N3 [weight=6.11]\nN4 -> N5 [weight=9.71]\nN4 -> N7 [weight=1.72]\nN5 -> N0 [weight=5.57]\nN5 -> N2 [weight=5.96]\nN5 -> N4 [weight=8.33]\nN5 -> N6 [weight=9.67]\nN6 -> N0 [weight=5.0]\nN6 -> N1 [weight=4.46]\nN6 -> N2 [weight=3.61]\nN6 -> N3 [weight=2.68]\nN6 -> N7 [weight=1.81]\nN7 -> N6 [weight=4.52]",
+    "token_count": 348,
+    "tokens_per_node": 43.5,
+    "tokens_per_edge": 12.4286
+  },
+  "matrix": {
+    "graph_id": "random-small-n8-s0-ea5b77f8",
+    "format": "matrix",
+    "content": "# directed adjacency matrix, weighted=True\n   N0   N1   N2   N3   N4   N5   N6   N7\nN0 .    .    .    3.33 4.64 .    5.29 9.17\nN1 3.54 .    .    .    9.19 .    .    .\nN2 7.57 .    .    .    1.91 6.5  .    .\nN3 8.79 8.25 1.13 .    .    8.42 .    5.44\nN4 .    3.93 .    6.11 .    9.71 .    1.72\nN5 5.57 .    5.96 .    8.33 .    9.67 .\nN6 5.0  4.46 3.61 2.68 .    .    .    1.81\nN7 .    .    .    .    .    .    4.52 .",
+    "token_count": 235,
+    "tokens_per_node": 29.375,
+    "tokens_per_edge": 8.3929
+  },
+  "mermaid": {
+    "graph_id": "random-small-n8-s0-ea5b77f8",
+    "format": "mermaid",
+    "content": "flowchart LR\n    N0[\"N0\"]\n    N1[\"N1\"]\n    N2[\"N2\"]\n    N3[\"N3\"]\n    N4[\"N4\"]\n    N5[\"N5\"]\n    N6[\"N6\"]\n    N7[\"N7\"]\n    N0 -->|w=3.33| N3\n    N0 -->|w=4.64| N4\n    N0 -->|w=5.29| N6\n    N0 -->|w=9.17| N7\n    N1 -->|w=3.54| N0\n    N1 -->|w=9.19| N4\n    N2 -->|w=7.57| N0\n    N2 -->|w=1.91| N4\n    N2 -->|w=6.5| N5\n    N3 -->|w=8.79| N0\n    N3 -->|w=8.25| N1\n    N3 -->|w=1.13| N2\n    N3 -->|w=8.42| N5\n    N3 -->|w=5.44| N7\n    N4 -->|w=3.93| N1\n    N4 -->|w=6.11| N3\n    N4 -->|w=9.71| N5\n    N4 -->|w=1.72| N7\n    N5 -->|w=5.57| N0\n    N5 -->|w=5.96| N2\n    N5 -->|w=8.33| N4\n    N5 -->|w=9.67| N6\n    N6 -->|w=5.0| N0\n    N6 -->|w=4.46| N1\n    N6 -->|w=3.61| N2\n    N6 -->|w=2.68| N3\n    N6 -->|w=1.81| N7\n    N7 -->|w=4.52| N6",
+    "token_count": 451,
+    "tokens_per_node": 56.375,
+    "tokens_per_edge": 16.1071
+  },
+  "natural_language": {
+    "graph_id": "random-small-n8-s0-ea5b77f8",
+    "format": "natural_language",
+    "content": "This is a directed, weighted graph named random-small-n8-s0-ea5b77f8 with 8 nodes and 28 edges.\nThe nodes are: N0, N1, N2, N3, N4, N5, N6, N7.\nThe edges are described below:\nNode N0 points to node N3 with weight 3.33.\nNode N0 points to node N4 with weight 4.64.\nNode N0 points to node N6 with weight 5.29.\nNode N0 points to node N7 with weight 9.17.\nNode N1 points to node N0 with weight 3.54.\nNode N1 points to node N4 with weight 9.19.\nNode N2 points to node N0 with weight 7.57.\nNode N2 points to node N4 with weight 1.91.\nNode N2 points to node N5 with weight 6.5.\nNode N3 points to node N0 with weight 8.79.\nNode N3 points to node N1 with weight 8.25.\nNode N3 points to node N2 with weight 1.13.\nNode N3 points to node N5 with weight 8.42.\nNode N3 points to node N7 with weight 5.44.\nNode N4 points to node N1 with weight 3.93.\nNode N4 points to node N3 with weight 6.11.\nNode N4 points to node N5 with weight 9.71.\nNode N4 points to node N7 with weight 1.72.\nNode N5 points to node N0 with weight 5.57.\nNode N5 points to node N2 with weight 5.96.\nNode N5 points to node N4 with weight 8.33.\nNode N5 points to node N6 with weight 9.67.\nNode N6 points to node N0 with weight 5.0.\nNode N6 points to node N1 with weight 4.46.\nNode N6 points to node N2 with weight 3.61.\nNode N6 points to node N3 with weight 2.68.\nNode N6 points to node N7 with weight 1.81.\nNode N7 points to node N6 with weight 4.52.",
+    "token_count": 484,
+    "tokens_per_node": 60.5,
+    "tokens_per_edge": 17.2857
+  },
+  "dot": {
+    "graph_id": "random-small-n8-s0-ea5b77f8",
+    "format": "dot",
+    "content": "digraph G {\n    \"N0\";\n    \"N1\";\n    \"N2\";\n    \"N3\";\n    \"N4\";\n    \"N5\";\n    \"N6\";\n    \"N7\";\n    \"N0\" -> \"N3\" [weight=3.33];\n    \"N0\" -> \"N4\" [weight=4.64];\n    \"N0\" -> \"N6\" [weight=5.29];\n    \"N0\" -> \"N7\" [weight=9.17];\n    \"N1\" -> \"N0\" [weight=3.54];\n    \"N1\" -> \"N4\" [weight=9.19];\n    \"N2\" -> \"N0\" [weight=7.57];\n    \"N2\" -> \"N4\" [weight=1.91];\n    \"N2\" -> \"N5\" [weight=6.5];\n    \"N3\" -> \"N0\" [weight=8.79];\n    \"N3\" -> \"N1\" [weight=8.25];\n    \"N3\" -> \"N2\" [weight=1.13];\n    \"N3\" -> \"N5\" [weight=8.42];\n    \"N3\" -> \"N7\" [weight=5.44];\n    \"N4\" -> \"N1\" [weight=3.93];\n    \"N4\" -> \"N3\" [weight=6.11];\n    \"N4\" -> \"N5\" [weight=9.71];\n    \"N4\" -> \"N7\" [weight=1.72];\n    \"N5\" -> \"N0\" [weight=5.57];\n    \"N5\" -> \"N2\" [weight=5.96];\n    \"N5\" -> \"N4\" [weight=8.33];\n    \"N5\" -> \"N6\" [weight=9.67];\n    \"N6\" -> \"N0\" [weight=5.0];\n    \"N6\" -> \"N1\" [weight=4.46];\n    \"N6\" -> \"N2\" [weight=3.61];\n    \"N6\" -> \"N3\" [weight=2.68];\n    \"N6\" -> \"N7\" [weight=1.81];\n    \"N7\" -> \"N6\" [weight=4.52];\n}",
+    "token_count": 521,
+    "tokens_per_node": 65.125,
+    "tokens_per_edge": 18.6071
+  }
+}

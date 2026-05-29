@@ -1,0 +1,246 @@
+{
+  "id": "random-small-n8-s1-25c6e2ed",
+  "nodes": [
+    "N0",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7"
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N1",
+      "type": null,
+      "weight": 8.63
+    },
+    {
+      "source": "N0",
+      "target": "N3",
+      "type": null,
+      "weight": 5.46
+    },
+    {
+      "source": "N0",
+      "target": "N4",
+      "type": null,
+      "weight": 6.86
+    },
+    {
+      "source": "N0",
+      "target": "N6",
+      "type": null,
+      "weight": 1.26
+    },
+    {
+      "source": "N1",
+      "target": "N0",
+      "type": null,
+      "weight": 7.86
+    },
+    {
+      "source": "N1",
+      "target": "N2",
+      "type": null,
+      "weight": 5.01
+    },
+    {
+      "source": "N1",
+      "target": "N4",
+      "type": null,
+      "weight": 9.51
+    },
+    {
+      "source": "N1",
+      "target": "N6",
+      "type": null,
+      "weight": 1.23
+    },
+    {
+      "source": "N1",
+      "target": "N7",
+      "type": null,
+      "weight": 9.45
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "type": null,
+      "weight": 2.95
+    },
+    {
+      "source": "N2",
+      "target": "N1",
+      "type": null,
+      "weight": 1.26
+    },
+    {
+      "source": "N2",
+      "target": "N3",
+      "type": null,
+      "weight": 4.94
+    },
+    {
+      "source": "N2",
+      "target": "N4",
+      "type": null,
+      "weight": 3.1
+    },
+    {
+      "source": "N2",
+      "target": "N5",
+      "type": null,
+      "weight": 2.97
+    },
+    {
+      "source": "N2",
+      "target": "N6",
+      "type": null,
+      "weight": 3.61
+    },
+    {
+      "source": "N2",
+      "target": "N7",
+      "type": null,
+      "weight": 8.54
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "type": null,
+      "weight": 6.78
+    },
+    {
+      "source": "N3",
+      "target": "N1",
+      "type": null,
+      "weight": 9.93
+    },
+    {
+      "source": "N3",
+      "target": "N4",
+      "type": null,
+      "weight": 3.99
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "type": null,
+      "weight": 8.47
+    },
+    {
+      "source": "N4",
+      "target": "N2",
+      "type": null,
+      "weight": 6.29
+    },
+    {
+      "source": "N4",
+      "target": "N6",
+      "type": null,
+      "weight": 6.3
+    },
+    {
+      "source": "N4",
+      "target": "N7",
+      "type": null,
+      "weight": 3.18
+    },
+    {
+      "source": "N5",
+      "target": "N1",
+      "type": null,
+      "weight": 2.56
+    },
+    {
+      "source": "N5",
+      "target": "N2",
+      "type": null,
+      "weight": 7.33
+    },
+    {
+      "source": "N5",
+      "target": "N4",
+      "type": null,
+      "weight": 4.95
+    },
+    {
+      "source": "N5",
+      "target": "N6",
+      "type": null,
+      "weight": 8.01
+    },
+    {
+      "source": "N5",
+      "target": "N7",
+      "type": null,
+      "weight": 4.54
+    },
+    {
+      "source": "N6",
+      "target": "N0",
+      "type": null,
+      "weight": 1.27
+    },
+    {
+      "source": "N6",
+      "target": "N1",
+      "type": null,
+      "weight": 7.33
+    },
+    {
+      "source": "N6",
+      "target": "N3",
+      "type": null,
+      "weight": 4.54
+    },
+    {
+      "source": "N6",
+      "target": "N4",
+      "type": null,
+      "weight": 5.52
+    },
+    {
+      "source": "N7",
+      "target": "N0",
+      "type": null,
+      "weight": 8.74
+    },
+    {
+      "source": "N7",
+      "target": "N1",
+      "type": null,
+      "weight": 5.62
+    },
+    {
+      "source": "N7",
+      "target": "N3",
+      "type": null,
+      "weight": 5.13
+    },
+    {
+      "source": "N7",
+      "target": "N4",
+      "type": null,
+      "weight": 5.93
+    },
+    {
+      "source": "N7",
+      "target": "N6",
+      "type": null,
+      "weight": 8.05
+    }
+  ],
+  "metadata": {
+    "directed": true,
+    "weighted": true,
+    "multi_edge": false,
+    "hierarchy_depth": 0,
+    "seed": 1,
+    "tier": "small",
+    "num_nodes": 8
+  }
+}

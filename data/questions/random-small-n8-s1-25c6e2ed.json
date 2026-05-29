@@ -1,0 +1,169 @@
+[
+  {
+    "id": "random-small-n8-s1-25c6e2ed__in_degree__9558867f",
+    "graph_id": "random-small-n8-s1-25c6e2ed",
+    "text": "What is the in-degree of node 'N5'?",
+    "category": "in_degree",
+    "difficulty": "trivial",
+    "answer_type": "int",
+    "ground_truth": 1,
+    "computation": "G.in_degree('N5')"
+  },
+  {
+    "id": "random-small-n8-s1-25c6e2ed__out_degree__81332876",
+    "graph_id": "random-small-n8-s1-25c6e2ed",
+    "text": "What is the out-degree of node 'N3'?",
+    "category": "out_degree",
+    "difficulty": "trivial",
+    "answer_type": "int",
+    "ground_truth": 3,
+    "computation": "G.out_degree('N3')"
+  },
+  {
+    "id": "random-small-n8-s1-25c6e2ed__list_nodes__23a7711a",
+    "graph_id": "random-small-n8-s1-25c6e2ed",
+    "text": "List all node labels in the graph.",
+    "category": "list_nodes",
+    "difficulty": "trivial",
+    "answer_type": "list",
+    "ground_truth": [
+      "N0",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "N6",
+      "N7"
+    ],
+    "computation": "sorted(G.nodes())"
+  },
+  {
+    "id": "random-small-n8-s1-25c6e2ed__edge_exists__9e4d6e3c",
+    "graph_id": "random-small-n8-s1-25c6e2ed",
+    "text": "Is there an edge N1 -> N4?",
+    "category": "edge_exists",
+    "difficulty": "trivial",
+    "answer_type": "bool",
+    "ground_truth": true,
+    "computation": "G.has_edge('N1', 'N4')"
+  },
+  {
+    "id": "random-small-n8-s1-25c6e2ed__edge_count__cca5a5a1",
+    "graph_id": "random-small-n8-s1-25c6e2ed",
+    "text": "How many edges does the graph have?",
+    "category": "edge_count",
+    "difficulty": "trivial",
+    "answer_type": "int",
+    "ground_truth": 37,
+    "computation": "G.number_of_edges()"
+  },
+  {
+    "id": "random-small-n8-s1-25c6e2ed__list_children__fcbd04c3",
+    "graph_id": "random-small-n8-s1-25c6e2ed",
+    "text": "List the direct children (successors) of node 'N4'.",
+    "category": "list_children",
+    "difficulty": "trivial",
+    "answer_type": "list",
+    "ground_truth": [
+      "N0",
+      "N2",
+      "N6",
+      "N7"
+    ],
+    "computation": "sorted(set(G.successors('N4')))"
+  },
+  {
+    "id": "random-small-n8-s1-25c6e2ed__node_exists__4f65d4d9",
+    "graph_id": "random-small-n8-s1-25c6e2ed",
+    "text": "Is there a node labelled 'X3407' in the graph?",
+    "category": "node_exists",
+    "difficulty": "trivial",
+    "answer_type": "bool",
+    "ground_truth": false,
+    "computation": "G.has_node('X3407')"
+  },
+  {
+    "id": "random-small-n8-s1-25c6e2ed__node_count__19488dec",
+    "graph_id": "random-small-n8-s1-25c6e2ed",
+    "text": "How many nodes does the graph have?",
+    "category": "node_count",
+    "difficulty": "trivial",
+    "answer_type": "int",
+    "ground_truth": 8,
+    "computation": "G.number_of_nodes()"
+  },
+  {
+    "id": "random-small-n8-s1-25c6e2ed__shortest_path__85776e9a",
+    "graph_id": "random-small-n8-s1-25c6e2ed",
+    "text": "What is a shortest path (by hop count) from 'N7' to 'N6'? Give the node sequence.",
+    "category": "shortest_path",
+    "difficulty": "nontrivial",
+    "answer_type": "list",
+    "ground_truth": [
+      "N7",
+      "N6"
+    ],
+    "computation": "nx.shortest_path(G, 'N7', 'N6')"
+  },
+  {
+    "id": "random-small-n8-s1-25c6e2ed__is_cyclic__42af9fc3",
+    "graph_id": "random-small-n8-s1-25c6e2ed",
+    "text": "Does the graph contain a cycle?",
+    "category": "is_cyclic",
+    "difficulty": "nontrivial",
+    "answer_type": "bool",
+    "ground_truth": true,
+    "computation": "not nx.is_directed_acyclic_graph(G)"
+  },
+  {
+    "id": "random-small-n8-s1-25c6e2ed__can_reach__eb2083e6",
+    "graph_id": "random-small-n8-s1-25c6e2ed",
+    "text": "Can node 'N6' be reached from node 'N0'?",
+    "category": "can_reach",
+    "difficulty": "nontrivial",
+    "answer_type": "bool",
+    "ground_truth": true,
+    "computation": "nx.has_path(G, 'N0', 'N6')"
+  },
+  {
+    "id": "random-small-n8-s1-25c6e2ed__num_components__8c778ea6",
+    "graph_id": "random-small-n8-s1-25c6e2ed",
+    "text": "How many weakly connected components does the graph have?",
+    "category": "num_components",
+    "difficulty": "nontrivial",
+    "answer_type": "int",
+    "ground_truth": 1,
+    "computation": "nx.number_weakly_connected_components(G)"
+  },
+  {
+    "id": "random-small-n8-s1-25c6e2ed__leaf_nodes__ea7e9d49",
+    "graph_id": "random-small-n8-s1-25c6e2ed",
+    "text": "List all leaf nodes (out-degree 0).",
+    "category": "leaf_nodes",
+    "difficulty": "nontrivial",
+    "answer_type": "list",
+    "ground_truth": [],
+    "computation": "sorted(n for n in G if G.out_degree(n) == 0)"
+  },
+  {
+    "id": "random-small-n8-s1-25c6e2ed__reachable_count__17e0aa3c",
+    "graph_id": "random-small-n8-s1-25c6e2ed",
+    "text": "How many other nodes are reachable from 'N0'?",
+    "category": "reachable_count",
+    "difficulty": "nontrivial",
+    "answer_type": "int",
+    "ground_truth": 7,
+    "computation": "len(nx.descendants(G, 'N0'))"
+  },
+  {
+    "id": "random-small-n8-s1-25c6e2ed__num_paths__d3290a4c",
+    "graph_id": "random-small-n8-s1-25c6e2ed",
+    "text": "How many distinct simple paths of length <= 6 hops connect 'N6' to 'N5'?",
+    "category": "num_paths",
+    "difficulty": "nontrivial",
+    "answer_type": "int",
+    "ground_truth": 31,
+    "computation": "len(list(nx.all_simple_paths(G, 'N6', 'N5', cutoff=6)))"
+  }
+]

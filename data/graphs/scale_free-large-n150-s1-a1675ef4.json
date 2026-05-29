@@ -1,0 +1,6604 @@
+{
+  "id": "scale_free-large-n150-s1-a1675ef4",
+  "nodes": [
+    "N0",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "N9",
+    "N10",
+    "N11",
+    "N12",
+    "N13",
+    "N14",
+    "N15",
+    "N16",
+    "N17",
+    "N18",
+    "N19",
+    "N20",
+    "N21",
+    "N22",
+    "N23",
+    "N24",
+    "N25",
+    "N26",
+    "N27",
+    "N28",
+    "N29",
+    "N30",
+    "N31",
+    "N32",
+    "N33",
+    "N34",
+    "N35",
+    "N36",
+    "N37",
+    "N38",
+    "N39",
+    "N40",
+    "N41",
+    "N42",
+    "N43",
+    "N44",
+    "N45",
+    "N46",
+    "N47",
+    "N48",
+    "N49",
+    "N50",
+    "N51",
+    "N52",
+    "N53",
+    "N54",
+    "N55",
+    "N56",
+    "N57",
+    "N58",
+    "N59",
+    "N60",
+    "N61",
+    "N62",
+    "N63",
+    "N64",
+    "N65",
+    "N66",
+    "N67",
+    "N68",
+    "N69",
+    "N70",
+    "N71",
+    "N72",
+    "N73",
+    "N74",
+    "N75",
+    "N76",
+    "N77",
+    "N78",
+    "N79",
+    "N80",
+    "N81",
+    "N82",
+    "N83",
+    "N84",
+    "N85",
+    "N86",
+    "N87",
+    "N88",
+    "N89",
+    "N90",
+    "N91",
+    "N92",
+    "N93",
+    "N94",
+    "N95",
+    "N96",
+    "N97",
+    "N98",
+    "N99",
+    "N100",
+    "N101",
+    "N102",
+    "N103",
+    "N104",
+    "N105",
+    "N106",
+    "N107",
+    "N108",
+    "N109",
+    "N110",
+    "N111",
+    "N112",
+    "N113",
+    "N114",
+    "N115",
+    "N116",
+    "N117",
+    "N118",
+    "N119",
+    "N120",
+    "N121",
+    "N122",
+    "N123",
+    "N124",
+    "N125",
+    "N126",
+    "N127",
+    "N128",
+    "N129",
+    "N130",
+    "N131",
+    "N132",
+    "N133",
+    "N134",
+    "N135",
+    "N136",
+    "N137",
+    "N138",
+    "N139",
+    "N140",
+    "N141",
+    "N142",
+    "N143",
+    "N144",
+    "N145",
+    "N146",
+    "N147",
+    "N148",
+    "N149"
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N1",
+      "type": "calls",
+      "weight": 2.21
+    },
+    {
+      "source": "N1",
+      "target": "N2",
+      "type": "uses",
+      "weight": 3.3
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "type": "calls",
+      "weight": 9.04
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "type": "imports",
+      "weight": 4.51
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "type": "extends",
+      "weight": 6.47
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "type": "uses",
+      "weight": 7.9
+    },
+    {
+      "source": "N3",
+      "target": "N1",
+      "type": "extends",
+      "weight": 7.49
+    },
+    {
+      "source": "N3",
+      "target": "N2",
+      "type": "calls",
+      "weight": 9.51
+    },
+    {
+      "source": "N3",
+      "target": "N2",
+      "type": "imports",
+      "weight": 9.11
+    },
+    {
+      "source": "N3",
+      "target": "N2",
+      "type": "extends",
+      "weight": 1.28
+    },
+    {
+      "source": "N3",
+      "target": "N2",
+      "type": "uses",
+      "weight": 1.23
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "type": "calls",
+      "weight": 5.75
+    },
+    {
+      "source": "N4",
+      "target": "N2",
+      "type": "uses",
+      "weight": 5.98
+    },
+    {
+      "source": "N4",
+      "target": "N3",
+      "type": "calls",
+      "weight": 7.09
+    },
+    {
+      "source": "N4",
+      "target": "N3",
+      "type": "imports",
+      "weight": 7.85
+    },
+    {
+      "source": "N4",
+      "target": "N3",
+      "type": "extends",
+      "weight": 9.57
+    },
+    {
+      "source": "N4",
+      "target": "N3",
+      "type": "uses",
+      "weight": 9.34
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "type": "uses",
+      "weight": 5.57
+    },
+    {
+      "source": "N5",
+      "target": "N2",
+      "type": "imports",
+      "weight": 3.73
+    },
+    {
+      "source": "N5",
+      "target": "N4",
+      "type": "uses",
+      "weight": 8.62
+    },
+    {
+      "source": "N6",
+      "target": "N1",
+      "type": "calls",
+      "weight": 7.69
+    },
+    {
+      "source": "N6",
+      "target": "N1",
+      "type": "imports",
+      "weight": 4.64
+    },
+    {
+      "source": "N6",
+      "target": "N1",
+      "type": "extends",
+      "weight": 6.98
+    },
+    {
+      "source": "N6",
+      "target": "N1",
+      "type": "uses",
+      "weight": 4.3
+    },
+    {
+      "source": "N6",
+      "target": "N4",
+      "type": "extends",
+      "weight": 1.78
+    },
+    {
+      "source": "N6",
+      "target": "N5",
+      "type": "calls",
+      "weight": 8.01
+    },
+    {
+      "source": "N7",
+      "target": "N4",
+      "type": "calls",
+      "weight": 7.59
+    },
+    {
+      "source": "N7",
+      "target": "N4",
+      "type": "imports",
+      "weight": 5.22
+    },
+    {
+      "source": "N7",
+      "target": "N4",
+      "type": "extends",
+      "weight": 3.78
+    },
+    {
+      "source": "N7",
+      "target": "N4",
+      "type": "uses",
+      "weight": 8.63
+    },
+    {
+      "source": "N7",
+      "target": "N5",
+      "type": "uses",
+      "weight": 6.82
+    },
+    {
+      "source": "N7",
+      "target": "N6",
+      "type": "calls",
+      "weight": 3.04
+    },
+    {
+      "source": "N7",
+      "target": "N6",
+      "type": "imports",
+      "weight": 1.11
+    },
+    {
+      "source": "N7",
+      "target": "N6",
+      "type": "extends",
+      "weight": 2.8
+    },
+    {
+      "source": "N7",
+      "target": "N6",
+      "type": "uses",
+      "weight": 9.28
+    },
+    {
+      "source": "N8",
+      "target": "N4",
+      "type": "extends",
+      "weight": 5.13
+    },
+    {
+      "source": "N8",
+      "target": "N6",
+      "type": "calls",
+      "weight": 5.93
+    },
+    {
+      "source": "N8",
+      "target": "N6",
+      "type": "imports",
+      "weight": 9.61
+    },
+    {
+      "source": "N8",
+      "target": "N6",
+      "type": "extends",
+      "weight": 1.05
+    },
+    {
+      "source": "N8",
+      "target": "N6",
+      "type": "uses",
+      "weight": 8.05
+    },
+    {
+      "source": "N8",
+      "target": "N7",
+      "type": "imports",
+      "weight": 5.67
+    },
+    {
+      "source": "N9",
+      "target": "N2",
+      "type": "uses",
+      "weight": 8.83
+    },
+    {
+      "source": "N9",
+      "target": "N4",
+      "type": "imports",
+      "weight": 9.47
+    },
+    {
+      "source": "N9",
+      "target": "N5",
+      "type": "calls",
+      "weight": 8.32
+    },
+    {
+      "source": "N9",
+      "target": "N5",
+      "type": "imports",
+      "weight": 4.73
+    },
+    {
+      "source": "N9",
+      "target": "N5",
+      "type": "extends",
+      "weight": 1.01
+    },
+    {
+      "source": "N9",
+      "target": "N5",
+      "type": "uses",
+      "weight": 5.86
+    },
+    {
+      "source": "N10",
+      "target": "N4",
+      "type": "calls",
+      "weight": 3.07
+    },
+    {
+      "source": "N10",
+      "target": "N4",
+      "type": "imports",
+      "weight": 2.59
+    },
+    {
+      "source": "N10",
+      "target": "N4",
+      "type": "extends",
+      "weight": 6.26
+    },
+    {
+      "source": "N10",
+      "target": "N4",
+      "type": "uses",
+      "weight": 8.75
+    },
+    {
+      "source": "N10",
+      "target": "N7",
+      "type": "extends",
+      "weight": 1.29
+    },
+    {
+      "source": "N10",
+      "target": "N8",
+      "type": "calls",
+      "weight": 1.75
+    },
+    {
+      "source": "N11",
+      "target": "N0",
+      "type": "extends",
+      "weight": 3.25
+    },
+    {
+      "source": "N11",
+      "target": "N1",
+      "type": "calls",
+      "weight": 6.62
+    },
+    {
+      "source": "N11",
+      "target": "N1",
+      "type": "imports",
+      "weight": 4.1
+    },
+    {
+      "source": "N11",
+      "target": "N1",
+      "type": "extends",
+      "weight": 1.63
+    },
+    {
+      "source": "N11",
+      "target": "N1",
+      "type": "uses",
+      "weight": 2.44
+    },
+    {
+      "source": "N11",
+      "target": "N7",
+      "type": "imports",
+      "weight": 6.91
+    },
+    {
+      "source": "N12",
+      "target": "N2",
+      "type": "uses",
+      "weight": 5.26
+    },
+    {
+      "source": "N12",
+      "target": "N4",
+      "type": "calls",
+      "weight": 4.48
+    },
+    {
+      "source": "N12",
+      "target": "N4",
+      "type": "imports",
+      "weight": 4.79
+    },
+    {
+      "source": "N12",
+      "target": "N4",
+      "type": "extends",
+      "weight": 2.69
+    },
+    {
+      "source": "N12",
+      "target": "N4",
+      "type": "uses",
+      "weight": 1.98
+    },
+    {
+      "source": "N12",
+      "target": "N5",
+      "type": "imports",
+      "weight": 9.69
+    },
+    {
+      "source": "N13",
+      "target": "N1",
+      "type": "calls",
+      "weight": 7.47
+    },
+    {
+      "source": "N13",
+      "target": "N1",
+      "type": "imports",
+      "weight": 2.44
+    },
+    {
+      "source": "N13",
+      "target": "N1",
+      "type": "extends",
+      "weight": 7.34
+    },
+    {
+      "source": "N13",
+      "target": "N1",
+      "type": "uses",
+      "weight": 7.1
+    },
+    {
+      "source": "N13",
+      "target": "N7",
+      "type": "imports",
+      "weight": 9.79
+    },
+    {
+      "source": "N13",
+      "target": "N10",
+      "type": "uses",
+      "weight": 3.01
+    },
+    {
+      "source": "N14",
+      "target": "N2",
+      "type": "calls",
+      "weight": 3.69
+    },
+    {
+      "source": "N14",
+      "target": "N2",
+      "type": "imports",
+      "weight": 9.71
+    },
+    {
+      "source": "N14",
+      "target": "N2",
+      "type": "extends",
+      "weight": 8.88
+    },
+    {
+      "source": "N14",
+      "target": "N2",
+      "type": "uses",
+      "weight": 3.76
+    },
+    {
+      "source": "N14",
+      "target": "N10",
+      "type": "extends",
+      "weight": 9.25
+    },
+    {
+      "source": "N14",
+      "target": "N11",
+      "type": "calls",
+      "weight": 2.42
+    },
+    {
+      "source": "N14",
+      "target": "N11",
+      "type": "imports",
+      "weight": 6.08
+    },
+    {
+      "source": "N14",
+      "target": "N11",
+      "type": "extends",
+      "weight": 2.17
+    },
+    {
+      "source": "N14",
+      "target": "N11",
+      "type": "uses",
+      "weight": 6.05
+    },
+    {
+      "source": "N15",
+      "target": "N3",
+      "type": "uses",
+      "weight": 2.54
+    },
+    {
+      "source": "N15",
+      "target": "N5",
+      "type": "calls",
+      "weight": 4.4
+    },
+    {
+      "source": "N15",
+      "target": "N11",
+      "type": "calls",
+      "weight": 2.85
+    },
+    {
+      "source": "N15",
+      "target": "N11",
+      "type": "imports",
+      "weight": 7.07
+    },
+    {
+      "source": "N15",
+      "target": "N11",
+      "type": "extends",
+      "weight": 4.9
+    },
+    {
+      "source": "N15",
+      "target": "N11",
+      "type": "uses",
+      "weight": 2.75
+    },
+    {
+      "source": "N16",
+      "target": "N2",
+      "type": "calls",
+      "weight": 3.93
+    },
+    {
+      "source": "N16",
+      "target": "N6",
+      "type": "extends",
+      "weight": 1.16
+    },
+    {
+      "source": "N16",
+      "target": "N7",
+      "type": "calls",
+      "weight": 3.95
+    },
+    {
+      "source": "N16",
+      "target": "N7",
+      "type": "imports",
+      "weight": 9.88
+    },
+    {
+      "source": "N16",
+      "target": "N7",
+      "type": "extends",
+      "weight": 8.04
+    },
+    {
+      "source": "N16",
+      "target": "N7",
+      "type": "uses",
+      "weight": 4.05
+    },
+    {
+      "source": "N17",
+      "target": "N5",
+      "type": "calls",
+      "weight": 4.41
+    },
+    {
+      "source": "N17",
+      "target": "N5",
+      "type": "imports",
+      "weight": 5.93
+    },
+    {
+      "source": "N17",
+      "target": "N5",
+      "type": "extends",
+      "weight": 9.23
+    },
+    {
+      "source": "N17",
+      "target": "N5",
+      "type": "uses",
+      "weight": 8.54
+    },
+    {
+      "source": "N17",
+      "target": "N8",
+      "type": "imports",
+      "weight": 1.59
+    },
+    {
+      "source": "N17",
+      "target": "N16",
+      "type": "calls",
+      "weight": 2.2
+    },
+    {
+      "source": "N17",
+      "target": "N16",
+      "type": "imports",
+      "weight": 2.5
+    },
+    {
+      "source": "N17",
+      "target": "N16",
+      "type": "extends",
+      "weight": 5.84
+    },
+    {
+      "source": "N17",
+      "target": "N16",
+      "type": "uses",
+      "weight": 3.41
+    },
+    {
+      "source": "N18",
+      "target": "N9",
+      "type": "extends",
+      "weight": 4.05
+    },
+    {
+      "source": "N18",
+      "target": "N13",
+      "type": "calls",
+      "weight": 3.12
+    },
+    {
+      "source": "N18",
+      "target": "N13",
+      "type": "imports",
+      "weight": 9.5
+    },
+    {
+      "source": "N18",
+      "target": "N13",
+      "type": "extends",
+      "weight": 8.02
+    },
+    {
+      "source": "N18",
+      "target": "N13",
+      "type": "uses",
+      "weight": 7.44
+    },
+    {
+      "source": "N18",
+      "target": "N15",
+      "type": "calls",
+      "weight": 6.22
+    },
+    {
+      "source": "N18",
+      "target": "N15",
+      "type": "imports",
+      "weight": 7.93
+    },
+    {
+      "source": "N18",
+      "target": "N15",
+      "type": "extends",
+      "weight": 3.89
+    },
+    {
+      "source": "N18",
+      "target": "N15",
+      "type": "uses",
+      "weight": 4.66
+    },
+    {
+      "source": "N19",
+      "target": "N4",
+      "type": "calls",
+      "weight": 6.29
+    },
+    {
+      "source": "N19",
+      "target": "N4",
+      "type": "imports",
+      "weight": 9.34
+    },
+    {
+      "source": "N19",
+      "target": "N4",
+      "type": "extends",
+      "weight": 1.69
+    },
+    {
+      "source": "N19",
+      "target": "N4",
+      "type": "uses",
+      "weight": 5.95
+    },
+    {
+      "source": "N19",
+      "target": "N5",
+      "type": "extends",
+      "weight": 4.28
+    },
+    {
+      "source": "N19",
+      "target": "N10",
+      "type": "calls",
+      "weight": 5.81
+    },
+    {
+      "source": "N19",
+      "target": "N10",
+      "type": "imports",
+      "weight": 2.03
+    },
+    {
+      "source": "N19",
+      "target": "N10",
+      "type": "extends",
+      "weight": 9.07
+    },
+    {
+      "source": "N19",
+      "target": "N10",
+      "type": "uses",
+      "weight": 1.97
+    },
+    {
+      "source": "N20",
+      "target": "N0",
+      "type": "calls",
+      "weight": 7.03
+    },
+    {
+      "source": "N20",
+      "target": "N0",
+      "type": "imports",
+      "weight": 1.83
+    },
+    {
+      "source": "N20",
+      "target": "N0",
+      "type": "extends",
+      "weight": 2.04
+    },
+    {
+      "source": "N20",
+      "target": "N0",
+      "type": "uses",
+      "weight": 8.97
+    },
+    {
+      "source": "N20",
+      "target": "N6",
+      "type": "calls",
+      "weight": 3.16
+    },
+    {
+      "source": "N20",
+      "target": "N6",
+      "type": "imports",
+      "weight": 9.89
+    },
+    {
+      "source": "N20",
+      "target": "N6",
+      "type": "extends",
+      "weight": 4.79
+    },
+    {
+      "source": "N20",
+      "target": "N6",
+      "type": "uses",
+      "weight": 2.04
+    },
+    {
+      "source": "N20",
+      "target": "N10",
+      "type": "calls",
+      "weight": 3.17
+    },
+    {
+      "source": "N20",
+      "target": "N10",
+      "type": "imports",
+      "weight": 7.7
+    },
+    {
+      "source": "N20",
+      "target": "N10",
+      "type": "extends",
+      "weight": 1.93
+    },
+    {
+      "source": "N20",
+      "target": "N10",
+      "type": "uses",
+      "weight": 9.2
+    },
+    {
+      "source": "N21",
+      "target": "N5",
+      "type": "calls",
+      "weight": 3.28
+    },
+    {
+      "source": "N21",
+      "target": "N5",
+      "type": "imports",
+      "weight": 5.29
+    },
+    {
+      "source": "N21",
+      "target": "N5",
+      "type": "extends",
+      "weight": 1.9
+    },
+    {
+      "source": "N21",
+      "target": "N5",
+      "type": "uses",
+      "weight": 6.87
+    },
+    {
+      "source": "N21",
+      "target": "N10",
+      "type": "calls",
+      "weight": 1.09
+    },
+    {
+      "source": "N21",
+      "target": "N10",
+      "type": "imports",
+      "weight": 9.84
+    },
+    {
+      "source": "N21",
+      "target": "N10",
+      "type": "extends",
+      "weight": 3.66
+    },
+    {
+      "source": "N21",
+      "target": "N10",
+      "type": "uses",
+      "weight": 6.37
+    },
+    {
+      "source": "N21",
+      "target": "N19",
+      "type": "calls",
+      "weight": 3.82
+    },
+    {
+      "source": "N21",
+      "target": "N19",
+      "type": "imports",
+      "weight": 1.57
+    },
+    {
+      "source": "N21",
+      "target": "N19",
+      "type": "extends",
+      "weight": 9.22
+    },
+    {
+      "source": "N21",
+      "target": "N19",
+      "type": "uses",
+      "weight": 9.73
+    },
+    {
+      "source": "N22",
+      "target": "N4",
+      "type": "calls",
+      "weight": 6.56
+    },
+    {
+      "source": "N22",
+      "target": "N4",
+      "type": "imports",
+      "weight": 9.82
+    },
+    {
+      "source": "N22",
+      "target": "N4",
+      "type": "extends",
+      "weight": 5.89
+    },
+    {
+      "source": "N22",
+      "target": "N4",
+      "type": "uses",
+      "weight": 7.19
+    },
+    {
+      "source": "N22",
+      "target": "N7",
+      "type": "extends",
+      "weight": 2.65
+    },
+    {
+      "source": "N22",
+      "target": "N12",
+      "type": "calls",
+      "weight": 2.79
+    },
+    {
+      "source": "N22",
+      "target": "N12",
+      "type": "imports",
+      "weight": 4.24
+    },
+    {
+      "source": "N22",
+      "target": "N12",
+      "type": "extends",
+      "weight": 8.38
+    },
+    {
+      "source": "N22",
+      "target": "N12",
+      "type": "uses",
+      "weight": 1.8
+    },
+    {
+      "source": "N23",
+      "target": "N0",
+      "type": "extends",
+      "weight": 9.47
+    },
+    {
+      "source": "N23",
+      "target": "N7",
+      "type": "calls",
+      "weight": 3.76
+    },
+    {
+      "source": "N23",
+      "target": "N7",
+      "type": "imports",
+      "weight": 3.95
+    },
+    {
+      "source": "N23",
+      "target": "N7",
+      "type": "extends",
+      "weight": 3.85
+    },
+    {
+      "source": "N23",
+      "target": "N7",
+      "type": "uses",
+      "weight": 8.62
+    },
+    {
+      "source": "N23",
+      "target": "N18",
+      "type": "extends",
+      "weight": 3.21
+    },
+    {
+      "source": "N24",
+      "target": "N1",
+      "type": "calls",
+      "weight": 8.27
+    },
+    {
+      "source": "N24",
+      "target": "N1",
+      "type": "imports",
+      "weight": 4.62
+    },
+    {
+      "source": "N24",
+      "target": "N1",
+      "type": "extends",
+      "weight": 3.41
+    },
+    {
+      "source": "N24",
+      "target": "N1",
+      "type": "uses",
+      "weight": 8.81
+    },
+    {
+      "source": "N24",
+      "target": "N4",
+      "type": "calls",
+      "weight": 6.72
+    },
+    {
+      "source": "N24",
+      "target": "N12",
+      "type": "calls",
+      "weight": 8.13
+    },
+    {
+      "source": "N24",
+      "target": "N12",
+      "type": "imports",
+      "weight": 5.44
+    },
+    {
+      "source": "N24",
+      "target": "N12",
+      "type": "extends",
+      "weight": 8.76
+    },
+    {
+      "source": "N24",
+      "target": "N12",
+      "type": "uses",
+      "weight": 2.39
+    },
+    {
+      "source": "N25",
+      "target": "N2",
+      "type": "imports",
+      "weight": 2.62
+    },
+    {
+      "source": "N25",
+      "target": "N23",
+      "type": "calls",
+      "weight": 2.27
+    },
+    {
+      "source": "N25",
+      "target": "N23",
+      "type": "imports",
+      "weight": 8.79
+    },
+    {
+      "source": "N25",
+      "target": "N23",
+      "type": "extends",
+      "weight": 3.75
+    },
+    {
+      "source": "N25",
+      "target": "N23",
+      "type": "uses",
+      "weight": 7.38
+    },
+    {
+      "source": "N25",
+      "target": "N24",
+      "type": "extends",
+      "weight": 2.14
+    },
+    {
+      "source": "N26",
+      "target": "N8",
+      "type": "calls",
+      "weight": 8.02
+    },
+    {
+      "source": "N26",
+      "target": "N11",
+      "type": "imports",
+      "weight": 2.6
+    },
+    {
+      "source": "N26",
+      "target": "N23",
+      "type": "calls",
+      "weight": 2.42
+    },
+    {
+      "source": "N26",
+      "target": "N23",
+      "type": "imports",
+      "weight": 7.43
+    },
+    {
+      "source": "N26",
+      "target": "N23",
+      "type": "extends",
+      "weight": 7.01
+    },
+    {
+      "source": "N26",
+      "target": "N23",
+      "type": "uses",
+      "weight": 3.27
+    },
+    {
+      "source": "N27",
+      "target": "N5",
+      "type": "uses",
+      "weight": 8.66
+    },
+    {
+      "source": "N27",
+      "target": "N20",
+      "type": "calls",
+      "weight": 4.56
+    },
+    {
+      "source": "N27",
+      "target": "N20",
+      "type": "imports",
+      "weight": 4.05
+    },
+    {
+      "source": "N27",
+      "target": "N20",
+      "type": "extends",
+      "weight": 3.32
+    },
+    {
+      "source": "N27",
+      "target": "N20",
+      "type": "uses",
+      "weight": 1.22
+    },
+    {
+      "source": "N27",
+      "target": "N21",
+      "type": "uses",
+      "weight": 9.79
+    },
+    {
+      "source": "N28",
+      "target": "N3",
+      "type": "calls",
+      "weight": 2.13
+    },
+    {
+      "source": "N28",
+      "target": "N3",
+      "type": "imports",
+      "weight": 3.33
+    },
+    {
+      "source": "N28",
+      "target": "N3",
+      "type": "extends",
+      "weight": 8.46
+    },
+    {
+      "source": "N28",
+      "target": "N3",
+      "type": "uses",
+      "weight": 4.58
+    },
+    {
+      "source": "N28",
+      "target": "N17",
+      "type": "calls",
+      "weight": 6.51
+    },
+    {
+      "source": "N28",
+      "target": "N17",
+      "type": "imports",
+      "weight": 3.1
+    },
+    {
+      "source": "N28",
+      "target": "N17",
+      "type": "extends",
+      "weight": 1.07
+    },
+    {
+      "source": "N28",
+      "target": "N17",
+      "type": "uses",
+      "weight": 5.76
+    },
+    {
+      "source": "N28",
+      "target": "N27",
+      "type": "uses",
+      "weight": 9.37
+    },
+    {
+      "source": "N29",
+      "target": "N4",
+      "type": "calls",
+      "weight": 5.31
+    },
+    {
+      "source": "N29",
+      "target": "N4",
+      "type": "imports",
+      "weight": 3.03
+    },
+    {
+      "source": "N29",
+      "target": "N4",
+      "type": "extends",
+      "weight": 4.71
+    },
+    {
+      "source": "N29",
+      "target": "N4",
+      "type": "uses",
+      "weight": 6.04
+    },
+    {
+      "source": "N29",
+      "target": "N7",
+      "type": "extends",
+      "weight": 9.75
+    },
+    {
+      "source": "N29",
+      "target": "N15",
+      "type": "calls",
+      "weight": 9.29
+    },
+    {
+      "source": "N29",
+      "target": "N15",
+      "type": "imports",
+      "weight": 7.87
+    },
+    {
+      "source": "N29",
+      "target": "N15",
+      "type": "extends",
+      "weight": 6.81
+    },
+    {
+      "source": "N29",
+      "target": "N15",
+      "type": "uses",
+      "weight": 4.32
+    },
+    {
+      "source": "N30",
+      "target": "N5",
+      "type": "calls",
+      "weight": 3.7
+    },
+    {
+      "source": "N30",
+      "target": "N5",
+      "type": "imports",
+      "weight": 5.97
+    },
+    {
+      "source": "N30",
+      "target": "N5",
+      "type": "extends",
+      "weight": 2.49
+    },
+    {
+      "source": "N30",
+      "target": "N5",
+      "type": "uses",
+      "weight": 7.31
+    },
+    {
+      "source": "N30",
+      "target": "N11",
+      "type": "calls",
+      "weight": 1.76
+    },
+    {
+      "source": "N30",
+      "target": "N11",
+      "type": "imports",
+      "weight": 2.11
+    },
+    {
+      "source": "N30",
+      "target": "N11",
+      "type": "extends",
+      "weight": 6.45
+    },
+    {
+      "source": "N30",
+      "target": "N11",
+      "type": "uses",
+      "weight": 5.63
+    },
+    {
+      "source": "N30",
+      "target": "N24",
+      "type": "calls",
+      "weight": 2.4
+    },
+    {
+      "source": "N30",
+      "target": "N24",
+      "type": "imports",
+      "weight": 4.84
+    },
+    {
+      "source": "N30",
+      "target": "N24",
+      "type": "extends",
+      "weight": 9.48
+    },
+    {
+      "source": "N30",
+      "target": "N24",
+      "type": "uses",
+      "weight": 7.48
+    },
+    {
+      "source": "N31",
+      "target": "N2",
+      "type": "extends",
+      "weight": 4.46
+    },
+    {
+      "source": "N31",
+      "target": "N19",
+      "type": "calls",
+      "weight": 5.72
+    },
+    {
+      "source": "N31",
+      "target": "N23",
+      "type": "calls",
+      "weight": 3.3
+    },
+    {
+      "source": "N31",
+      "target": "N23",
+      "type": "imports",
+      "weight": 1.91
+    },
+    {
+      "source": "N31",
+      "target": "N23",
+      "type": "extends",
+      "weight": 7.63
+    },
+    {
+      "source": "N31",
+      "target": "N23",
+      "type": "uses",
+      "weight": 1.75
+    },
+    {
+      "source": "N32",
+      "target": "N4",
+      "type": "calls",
+      "weight": 5.01
+    },
+    {
+      "source": "N32",
+      "target": "N17",
+      "type": "uses",
+      "weight": 9.46
+    },
+    {
+      "source": "N32",
+      "target": "N30",
+      "type": "uses",
+      "weight": 2.48
+    },
+    {
+      "source": "N33",
+      "target": "N2",
+      "type": "uses",
+      "weight": 9.63
+    },
+    {
+      "source": "N33",
+      "target": "N7",
+      "type": "calls",
+      "weight": 6.41
+    },
+    {
+      "source": "N33",
+      "target": "N7",
+      "type": "imports",
+      "weight": 4.67
+    },
+    {
+      "source": "N33",
+      "target": "N7",
+      "type": "extends",
+      "weight": 2.06
+    },
+    {
+      "source": "N33",
+      "target": "N7",
+      "type": "uses",
+      "weight": 3.66
+    },
+    {
+      "source": "N33",
+      "target": "N21",
+      "type": "calls",
+      "weight": 7.75
+    },
+    {
+      "source": "N33",
+      "target": "N21",
+      "type": "imports",
+      "weight": 1.04
+    },
+    {
+      "source": "N33",
+      "target": "N21",
+      "type": "extends",
+      "weight": 2.71
+    },
+    {
+      "source": "N33",
+      "target": "N21",
+      "type": "uses",
+      "weight": 4.95
+    },
+    {
+      "source": "N34",
+      "target": "N0",
+      "type": "imports",
+      "weight": 8.52
+    },
+    {
+      "source": "N34",
+      "target": "N1",
+      "type": "calls",
+      "weight": 3.56
+    },
+    {
+      "source": "N34",
+      "target": "N1",
+      "type": "imports",
+      "weight": 5.88
+    },
+    {
+      "source": "N34",
+      "target": "N1",
+      "type": "extends",
+      "weight": 3.46
+    },
+    {
+      "source": "N34",
+      "target": "N1",
+      "type": "uses",
+      "weight": 6.27
+    },
+    {
+      "source": "N34",
+      "target": "N29",
+      "type": "calls",
+      "weight": 7.15
+    },
+    {
+      "source": "N34",
+      "target": "N29",
+      "type": "imports",
+      "weight": 8.12
+    },
+    {
+      "source": "N34",
+      "target": "N29",
+      "type": "extends",
+      "weight": 8.28
+    },
+    {
+      "source": "N34",
+      "target": "N29",
+      "type": "uses",
+      "weight": 9.76
+    },
+    {
+      "source": "N35",
+      "target": "N0",
+      "type": "calls",
+      "weight": 2.1
+    },
+    {
+      "source": "N35",
+      "target": "N0",
+      "type": "imports",
+      "weight": 2.88
+    },
+    {
+      "source": "N35",
+      "target": "N0",
+      "type": "extends",
+      "weight": 8.91
+    },
+    {
+      "source": "N35",
+      "target": "N0",
+      "type": "uses",
+      "weight": 2.84
+    },
+    {
+      "source": "N35",
+      "target": "N8",
+      "type": "calls",
+      "weight": 2.06
+    },
+    {
+      "source": "N35",
+      "target": "N23",
+      "type": "extends",
+      "weight": 9.68
+    },
+    {
+      "source": "N36",
+      "target": "N2",
+      "type": "calls",
+      "weight": 5.5
+    },
+    {
+      "source": "N36",
+      "target": "N2",
+      "type": "imports",
+      "weight": 6.15
+    },
+    {
+      "source": "N36",
+      "target": "N2",
+      "type": "extends",
+      "weight": 3.8
+    },
+    {
+      "source": "N36",
+      "target": "N2",
+      "type": "uses",
+      "weight": 5.53
+    },
+    {
+      "source": "N36",
+      "target": "N30",
+      "type": "calls",
+      "weight": 5.76
+    },
+    {
+      "source": "N36",
+      "target": "N30",
+      "type": "imports",
+      "weight": 1.01
+    },
+    {
+      "source": "N36",
+      "target": "N30",
+      "type": "extends",
+      "weight": 4.98
+    },
+    {
+      "source": "N36",
+      "target": "N30",
+      "type": "uses",
+      "weight": 5.05
+    },
+    {
+      "source": "N36",
+      "target": "N34",
+      "type": "calls",
+      "weight": 4.59
+    },
+    {
+      "source": "N36",
+      "target": "N34",
+      "type": "imports",
+      "weight": 8.05
+    },
+    {
+      "source": "N36",
+      "target": "N34",
+      "type": "extends",
+      "weight": 7.15
+    },
+    {
+      "source": "N36",
+      "target": "N34",
+      "type": "uses",
+      "weight": 5.43
+    },
+    {
+      "source": "N37",
+      "target": "N13",
+      "type": "calls",
+      "weight": 1.03
+    },
+    {
+      "source": "N37",
+      "target": "N13",
+      "type": "imports",
+      "weight": 3.5
+    },
+    {
+      "source": "N37",
+      "target": "N13",
+      "type": "extends",
+      "weight": 6.38
+    },
+    {
+      "source": "N37",
+      "target": "N13",
+      "type": "uses",
+      "weight": 8.93
+    },
+    {
+      "source": "N37",
+      "target": "N15",
+      "type": "imports",
+      "weight": 9.88
+    },
+    {
+      "source": "N37",
+      "target": "N18",
+      "type": "calls",
+      "weight": 8.51
+    },
+    {
+      "source": "N37",
+      "target": "N18",
+      "type": "imports",
+      "weight": 4.68
+    },
+    {
+      "source": "N37",
+      "target": "N18",
+      "type": "extends",
+      "weight": 7.7
+    },
+    {
+      "source": "N37",
+      "target": "N18",
+      "type": "uses",
+      "weight": 9.89
+    },
+    {
+      "source": "N38",
+      "target": "N4",
+      "type": "imports",
+      "weight": 4.23
+    },
+    {
+      "source": "N38",
+      "target": "N10",
+      "type": "calls",
+      "weight": 4.5
+    },
+    {
+      "source": "N38",
+      "target": "N10",
+      "type": "imports",
+      "weight": 4.83
+    },
+    {
+      "source": "N38",
+      "target": "N10",
+      "type": "extends",
+      "weight": 4.65
+    },
+    {
+      "source": "N38",
+      "target": "N10",
+      "type": "uses",
+      "weight": 8.75
+    },
+    {
+      "source": "N38",
+      "target": "N15",
+      "type": "calls",
+      "weight": 5.43
+    },
+    {
+      "source": "N39",
+      "target": "N5",
+      "type": "extends",
+      "weight": 6.67
+    },
+    {
+      "source": "N39",
+      "target": "N7",
+      "type": "calls",
+      "weight": 6.66
+    },
+    {
+      "source": "N39",
+      "target": "N7",
+      "type": "imports",
+      "weight": 6.7
+    },
+    {
+      "source": "N39",
+      "target": "N7",
+      "type": "extends",
+      "weight": 9.43
+    },
+    {
+      "source": "N39",
+      "target": "N7",
+      "type": "uses",
+      "weight": 8.04
+    },
+    {
+      "source": "N39",
+      "target": "N34",
+      "type": "calls",
+      "weight": 8.34
+    },
+    {
+      "source": "N40",
+      "target": "N1",
+      "type": "uses",
+      "weight": 8.87
+    },
+    {
+      "source": "N40",
+      "target": "N5",
+      "type": "imports",
+      "weight": 5.16
+    },
+    {
+      "source": "N40",
+      "target": "N28",
+      "type": "calls",
+      "weight": 2.53
+    },
+    {
+      "source": "N40",
+      "target": "N28",
+      "type": "imports",
+      "weight": 5.59
+    },
+    {
+      "source": "N40",
+      "target": "N28",
+      "type": "extends",
+      "weight": 3.44
+    },
+    {
+      "source": "N40",
+      "target": "N28",
+      "type": "uses",
+      "weight": 1.89
+    },
+    {
+      "source": "N41",
+      "target": "N0",
+      "type": "calls",
+      "weight": 4.98
+    },
+    {
+      "source": "N41",
+      "target": "N0",
+      "type": "imports",
+      "weight": 2.48
+    },
+    {
+      "source": "N41",
+      "target": "N0",
+      "type": "extends",
+      "weight": 7.39
+    },
+    {
+      "source": "N41",
+      "target": "N0",
+      "type": "uses",
+      "weight": 2.45
+    },
+    {
+      "source": "N41",
+      "target": "N17",
+      "type": "calls",
+      "weight": 6.72
+    },
+    {
+      "source": "N41",
+      "target": "N17",
+      "type": "imports",
+      "weight": 3.48
+    },
+    {
+      "source": "N41",
+      "target": "N17",
+      "type": "extends",
+      "weight": 3.74
+    },
+    {
+      "source": "N41",
+      "target": "N17",
+      "type": "uses",
+      "weight": 5.75
+    },
+    {
+      "source": "N41",
+      "target": "N20",
+      "type": "calls",
+      "weight": 4.01
+    },
+    {
+      "source": "N41",
+      "target": "N20",
+      "type": "imports",
+      "weight": 1.62
+    },
+    {
+      "source": "N41",
+      "target": "N20",
+      "type": "extends",
+      "weight": 7.29
+    },
+    {
+      "source": "N41",
+      "target": "N20",
+      "type": "uses",
+      "weight": 9.19
+    },
+    {
+      "source": "N42",
+      "target": "N4",
+      "type": "calls",
+      "weight": 2.52
+    },
+    {
+      "source": "N42",
+      "target": "N18",
+      "type": "extends",
+      "weight": 4.2
+    },
+    {
+      "source": "N42",
+      "target": "N30",
+      "type": "uses",
+      "weight": 6.05
+    },
+    {
+      "source": "N43",
+      "target": "N9",
+      "type": "calls",
+      "weight": 6.49
+    },
+    {
+      "source": "N43",
+      "target": "N9",
+      "type": "imports",
+      "weight": 7.44
+    },
+    {
+      "source": "N43",
+      "target": "N9",
+      "type": "extends",
+      "weight": 3.33
+    },
+    {
+      "source": "N43",
+      "target": "N9",
+      "type": "uses",
+      "weight": 6.49
+    },
+    {
+      "source": "N43",
+      "target": "N12",
+      "type": "calls",
+      "weight": 6.95
+    },
+    {
+      "source": "N43",
+      "target": "N12",
+      "type": "imports",
+      "weight": 8.67
+    },
+    {
+      "source": "N43",
+      "target": "N12",
+      "type": "extends",
+      "weight": 8.82
+    },
+    {
+      "source": "N43",
+      "target": "N12",
+      "type": "uses",
+      "weight": 4.62
+    },
+    {
+      "source": "N43",
+      "target": "N36",
+      "type": "imports",
+      "weight": 8.07
+    },
+    {
+      "source": "N44",
+      "target": "N5",
+      "type": "uses",
+      "weight": 6.23
+    },
+    {
+      "source": "N44",
+      "target": "N10",
+      "type": "imports",
+      "weight": 6.46
+    },
+    {
+      "source": "N44",
+      "target": "N29",
+      "type": "calls",
+      "weight": 5.74
+    },
+    {
+      "source": "N44",
+      "target": "N29",
+      "type": "imports",
+      "weight": 2.25
+    },
+    {
+      "source": "N44",
+      "target": "N29",
+      "type": "extends",
+      "weight": 2.24
+    },
+    {
+      "source": "N44",
+      "target": "N29",
+      "type": "uses",
+      "weight": 7.44
+    },
+    {
+      "source": "N45",
+      "target": "N28",
+      "type": "calls",
+      "weight": 7.46
+    },
+    {
+      "source": "N45",
+      "target": "N28",
+      "type": "imports",
+      "weight": 7.47
+    },
+    {
+      "source": "N45",
+      "target": "N28",
+      "type": "extends",
+      "weight": 3.75
+    },
+    {
+      "source": "N45",
+      "target": "N28",
+      "type": "uses",
+      "weight": 1.96
+    },
+    {
+      "source": "N45",
+      "target": "N30",
+      "type": "calls",
+      "weight": 5.43
+    },
+    {
+      "source": "N45",
+      "target": "N30",
+      "type": "imports",
+      "weight": 1.9
+    },
+    {
+      "source": "N45",
+      "target": "N30",
+      "type": "extends",
+      "weight": 2.68
+    },
+    {
+      "source": "N45",
+      "target": "N30",
+      "type": "uses",
+      "weight": 1.5
+    },
+    {
+      "source": "N45",
+      "target": "N33",
+      "type": "imports",
+      "weight": 7.15
+    },
+    {
+      "source": "N46",
+      "target": "N10",
+      "type": "extends",
+      "weight": 2.06
+    },
+    {
+      "source": "N46",
+      "target": "N19",
+      "type": "calls",
+      "weight": 3.0
+    },
+    {
+      "source": "N46",
+      "target": "N40",
+      "type": "calls",
+      "weight": 5.05
+    },
+    {
+      "source": "N46",
+      "target": "N40",
+      "type": "imports",
+      "weight": 7.76
+    },
+    {
+      "source": "N46",
+      "target": "N40",
+      "type": "extends",
+      "weight": 9.76
+    },
+    {
+      "source": "N46",
+      "target": "N40",
+      "type": "uses",
+      "weight": 3.12
+    },
+    {
+      "source": "N47",
+      "target": "N8",
+      "type": "calls",
+      "weight": 7.43
+    },
+    {
+      "source": "N47",
+      "target": "N8",
+      "type": "imports",
+      "weight": 3.97
+    },
+    {
+      "source": "N47",
+      "target": "N8",
+      "type": "extends",
+      "weight": 6.34
+    },
+    {
+      "source": "N47",
+      "target": "N8",
+      "type": "uses",
+      "weight": 9.19
+    },
+    {
+      "source": "N47",
+      "target": "N11",
+      "type": "calls",
+      "weight": 1.14
+    },
+    {
+      "source": "N47",
+      "target": "N41",
+      "type": "calls",
+      "weight": 5.32
+    },
+    {
+      "source": "N47",
+      "target": "N41",
+      "type": "imports",
+      "weight": 9.0
+    },
+    {
+      "source": "N47",
+      "target": "N41",
+      "type": "extends",
+      "weight": 8.63
+    },
+    {
+      "source": "N47",
+      "target": "N41",
+      "type": "uses",
+      "weight": 3.58
+    },
+    {
+      "source": "N48",
+      "target": "N11",
+      "type": "imports",
+      "weight": 8.14
+    },
+    {
+      "source": "N48",
+      "target": "N19",
+      "type": "calls",
+      "weight": 4.49
+    },
+    {
+      "source": "N48",
+      "target": "N19",
+      "type": "imports",
+      "weight": 8.89
+    },
+    {
+      "source": "N48",
+      "target": "N19",
+      "type": "extends",
+      "weight": 5.88
+    },
+    {
+      "source": "N48",
+      "target": "N19",
+      "type": "uses",
+      "weight": 6.08
+    },
+    {
+      "source": "N48",
+      "target": "N36",
+      "type": "calls",
+      "weight": 1.72
+    },
+    {
+      "source": "N48",
+      "target": "N36",
+      "type": "imports",
+      "weight": 6.87
+    },
+    {
+      "source": "N48",
+      "target": "N36",
+      "type": "extends",
+      "weight": 3.73
+    },
+    {
+      "source": "N48",
+      "target": "N36",
+      "type": "uses",
+      "weight": 1.13
+    },
+    {
+      "source": "N49",
+      "target": "N5",
+      "type": "calls",
+      "weight": 9.4
+    },
+    {
+      "source": "N49",
+      "target": "N47",
+      "type": "uses",
+      "weight": 1.82
+    },
+    {
+      "source": "N49",
+      "target": "N48",
+      "type": "calls",
+      "weight": 6.74
+    },
+    {
+      "source": "N49",
+      "target": "N48",
+      "type": "imports",
+      "weight": 7.7
+    },
+    {
+      "source": "N49",
+      "target": "N48",
+      "type": "extends",
+      "weight": 7.18
+    },
+    {
+      "source": "N49",
+      "target": "N48",
+      "type": "uses",
+      "weight": 8.61
+    },
+    {
+      "source": "N50",
+      "target": "N5",
+      "type": "extends",
+      "weight": 6.77
+    },
+    {
+      "source": "N50",
+      "target": "N8",
+      "type": "calls",
+      "weight": 1.54
+    },
+    {
+      "source": "N50",
+      "target": "N8",
+      "type": "imports",
+      "weight": 9.42
+    },
+    {
+      "source": "N50",
+      "target": "N8",
+      "type": "extends",
+      "weight": 6.31
+    },
+    {
+      "source": "N50",
+      "target": "N8",
+      "type": "uses",
+      "weight": 4.15
+    },
+    {
+      "source": "N50",
+      "target": "N30",
+      "type": "calls",
+      "weight": 9.15
+    },
+    {
+      "source": "N51",
+      "target": "N11",
+      "type": "calls",
+      "weight": 8.92
+    },
+    {
+      "source": "N51",
+      "target": "N11",
+      "type": "imports",
+      "weight": 4.82
+    },
+    {
+      "source": "N51",
+      "target": "N11",
+      "type": "extends",
+      "weight": 6.96
+    },
+    {
+      "source": "N51",
+      "target": "N11",
+      "type": "uses",
+      "weight": 7.42
+    },
+    {
+      "source": "N51",
+      "target": "N15",
+      "type": "calls",
+      "weight": 3.26
+    },
+    {
+      "source": "N51",
+      "target": "N49",
+      "type": "imports",
+      "weight": 1.53
+    },
+    {
+      "source": "N52",
+      "target": "N6",
+      "type": "calls",
+      "weight": 1.82
+    },
+    {
+      "source": "N52",
+      "target": "N6",
+      "type": "imports",
+      "weight": 8.32
+    },
+    {
+      "source": "N52",
+      "target": "N6",
+      "type": "extends",
+      "weight": 5.22
+    },
+    {
+      "source": "N52",
+      "target": "N6",
+      "type": "uses",
+      "weight": 4.33
+    },
+    {
+      "source": "N52",
+      "target": "N15",
+      "type": "calls",
+      "weight": 2.14
+    },
+    {
+      "source": "N52",
+      "target": "N19",
+      "type": "calls",
+      "weight": 6.98
+    },
+    {
+      "source": "N52",
+      "target": "N19",
+      "type": "imports",
+      "weight": 9.06
+    },
+    {
+      "source": "N52",
+      "target": "N19",
+      "type": "extends",
+      "weight": 7.87
+    },
+    {
+      "source": "N52",
+      "target": "N19",
+      "type": "uses",
+      "weight": 9.09
+    },
+    {
+      "source": "N53",
+      "target": "N4",
+      "type": "calls",
+      "weight": 3.25
+    },
+    {
+      "source": "N53",
+      "target": "N4",
+      "type": "imports",
+      "weight": 3.93
+    },
+    {
+      "source": "N53",
+      "target": "N4",
+      "type": "extends",
+      "weight": 3.72
+    },
+    {
+      "source": "N53",
+      "target": "N4",
+      "type": "uses",
+      "weight": 8.74
+    },
+    {
+      "source": "N53",
+      "target": "N40",
+      "type": "calls",
+      "weight": 3.35
+    },
+    {
+      "source": "N53",
+      "target": "N40",
+      "type": "imports",
+      "weight": 7.62
+    },
+    {
+      "source": "N53",
+      "target": "N40",
+      "type": "extends",
+      "weight": 3.34
+    },
+    {
+      "source": "N53",
+      "target": "N40",
+      "type": "uses",
+      "weight": 4.42
+    },
+    {
+      "source": "N53",
+      "target": "N47",
+      "type": "calls",
+      "weight": 7.1
+    },
+    {
+      "source": "N53",
+      "target": "N47",
+      "type": "imports",
+      "weight": 1.85
+    },
+    {
+      "source": "N53",
+      "target": "N47",
+      "type": "extends",
+      "weight": 8.57
+    },
+    {
+      "source": "N53",
+      "target": "N47",
+      "type": "uses",
+      "weight": 5.52
+    },
+    {
+      "source": "N54",
+      "target": "N2",
+      "type": "uses",
+      "weight": 9.61
+    },
+    {
+      "source": "N54",
+      "target": "N10",
+      "type": "calls",
+      "weight": 2.17
+    },
+    {
+      "source": "N54",
+      "target": "N11",
+      "type": "calls",
+      "weight": 9.07
+    },
+    {
+      "source": "N55",
+      "target": "N5",
+      "type": "calls",
+      "weight": 5.69
+    },
+    {
+      "source": "N55",
+      "target": "N5",
+      "type": "imports",
+      "weight": 1.88
+    },
+    {
+      "source": "N55",
+      "target": "N5",
+      "type": "extends",
+      "weight": 4.11
+    },
+    {
+      "source": "N55",
+      "target": "N5",
+      "type": "uses",
+      "weight": 6.17
+    },
+    {
+      "source": "N55",
+      "target": "N15",
+      "type": "calls",
+      "weight": 8.33
+    },
+    {
+      "source": "N55",
+      "target": "N15",
+      "type": "imports",
+      "weight": 6.86
+    },
+    {
+      "source": "N55",
+      "target": "N15",
+      "type": "extends",
+      "weight": 3.82
+    },
+    {
+      "source": "N55",
+      "target": "N15",
+      "type": "uses",
+      "weight": 3.68
+    },
+    {
+      "source": "N55",
+      "target": "N19",
+      "type": "calls",
+      "weight": 3.93
+    },
+    {
+      "source": "N55",
+      "target": "N19",
+      "type": "imports",
+      "weight": 7.74
+    },
+    {
+      "source": "N55",
+      "target": "N19",
+      "type": "extends",
+      "weight": 5.51
+    },
+    {
+      "source": "N55",
+      "target": "N19",
+      "type": "uses",
+      "weight": 5.74
+    },
+    {
+      "source": "N56",
+      "target": "N15",
+      "type": "calls",
+      "weight": 5.07
+    },
+    {
+      "source": "N56",
+      "target": "N29",
+      "type": "calls",
+      "weight": 5.09
+    },
+    {
+      "source": "N56",
+      "target": "N29",
+      "type": "imports",
+      "weight": 4.28
+    },
+    {
+      "source": "N56",
+      "target": "N29",
+      "type": "extends",
+      "weight": 7.67
+    },
+    {
+      "source": "N56",
+      "target": "N29",
+      "type": "uses",
+      "weight": 4.42
+    },
+    {
+      "source": "N56",
+      "target": "N30",
+      "type": "calls",
+      "weight": 9.3
+    },
+    {
+      "source": "N57",
+      "target": "N6",
+      "type": "extends",
+      "weight": 8.06
+    },
+    {
+      "source": "N57",
+      "target": "N7",
+      "type": "extends",
+      "weight": 4.25
+    },
+    {
+      "source": "N57",
+      "target": "N13",
+      "type": "extends",
+      "weight": 4.62
+    },
+    {
+      "source": "N58",
+      "target": "N20",
+      "type": "imports",
+      "weight": 1.26
+    },
+    {
+      "source": "N58",
+      "target": "N31",
+      "type": "calls",
+      "weight": 2.99
+    },
+    {
+      "source": "N58",
+      "target": "N31",
+      "type": "imports",
+      "weight": 2.2
+    },
+    {
+      "source": "N58",
+      "target": "N31",
+      "type": "extends",
+      "weight": 2.01
+    },
+    {
+      "source": "N58",
+      "target": "N31",
+      "type": "uses",
+      "weight": 7.9
+    },
+    {
+      "source": "N58",
+      "target": "N53",
+      "type": "calls",
+      "weight": 8.31
+    },
+    {
+      "source": "N59",
+      "target": "N11",
+      "type": "calls",
+      "weight": 1.6
+    },
+    {
+      "source": "N59",
+      "target": "N11",
+      "type": "imports",
+      "weight": 6.14
+    },
+    {
+      "source": "N59",
+      "target": "N11",
+      "type": "extends",
+      "weight": 6.77
+    },
+    {
+      "source": "N59",
+      "target": "N11",
+      "type": "uses",
+      "weight": 8.7
+    },
+    {
+      "source": "N59",
+      "target": "N25",
+      "type": "imports",
+      "weight": 6.79
+    },
+    {
+      "source": "N59",
+      "target": "N36",
+      "type": "calls",
+      "weight": 8.76
+    },
+    {
+      "source": "N59",
+      "target": "N36",
+      "type": "imports",
+      "weight": 1.2
+    },
+    {
+      "source": "N59",
+      "target": "N36",
+      "type": "extends",
+      "weight": 4.31
+    },
+    {
+      "source": "N59",
+      "target": "N36",
+      "type": "uses",
+      "weight": 8.63
+    },
+    {
+      "source": "N60",
+      "target": "N11",
+      "type": "imports",
+      "weight": 4.83
+    },
+    {
+      "source": "N60",
+      "target": "N19",
+      "type": "imports",
+      "weight": 8.18
+    },
+    {
+      "source": "N60",
+      "target": "N21",
+      "type": "extends",
+      "weight": 4.67
+    },
+    {
+      "source": "N61",
+      "target": "N3",
+      "type": "uses",
+      "weight": 1.69
+    },
+    {
+      "source": "N61",
+      "target": "N34",
+      "type": "uses",
+      "weight": 1.36
+    },
+    {
+      "source": "N61",
+      "target": "N47",
+      "type": "uses",
+      "weight": 1.06
+    },
+    {
+      "source": "N62",
+      "target": "N3",
+      "type": "calls",
+      "weight": 8.4
+    },
+    {
+      "source": "N62",
+      "target": "N21",
+      "type": "extends",
+      "weight": 9.74
+    },
+    {
+      "source": "N62",
+      "target": "N61",
+      "type": "extends",
+      "weight": 5.73
+    },
+    {
+      "source": "N63",
+      "target": "N13",
+      "type": "extends",
+      "weight": 5.07
+    },
+    {
+      "source": "N63",
+      "target": "N19",
+      "type": "calls",
+      "weight": 5.0
+    },
+    {
+      "source": "N63",
+      "target": "N19",
+      "type": "imports",
+      "weight": 2.26
+    },
+    {
+      "source": "N63",
+      "target": "N19",
+      "type": "extends",
+      "weight": 7.95
+    },
+    {
+      "source": "N63",
+      "target": "N19",
+      "type": "uses",
+      "weight": 9.77
+    },
+    {
+      "source": "N63",
+      "target": "N53",
+      "type": "calls",
+      "weight": 1.09
+    },
+    {
+      "source": "N63",
+      "target": "N53",
+      "type": "imports",
+      "weight": 4.82
+    },
+    {
+      "source": "N63",
+      "target": "N53",
+      "type": "extends",
+      "weight": 6.95
+    },
+    {
+      "source": "N63",
+      "target": "N53",
+      "type": "uses",
+      "weight": 1.33
+    },
+    {
+      "source": "N64",
+      "target": "N4",
+      "type": "calls",
+      "weight": 9.09
+    },
+    {
+      "source": "N64",
+      "target": "N26",
+      "type": "calls",
+      "weight": 4.45
+    },
+    {
+      "source": "N64",
+      "target": "N30",
+      "type": "calls",
+      "weight": 8.16
+    },
+    {
+      "source": "N64",
+      "target": "N30",
+      "type": "imports",
+      "weight": 4.35
+    },
+    {
+      "source": "N64",
+      "target": "N30",
+      "type": "extends",
+      "weight": 7.74
+    },
+    {
+      "source": "N64",
+      "target": "N30",
+      "type": "uses",
+      "weight": 5.33
+    },
+    {
+      "source": "N65",
+      "target": "N0",
+      "type": "uses",
+      "weight": 4.19
+    },
+    {
+      "source": "N65",
+      "target": "N31",
+      "type": "calls",
+      "weight": 1.16
+    },
+    {
+      "source": "N65",
+      "target": "N31",
+      "type": "imports",
+      "weight": 2.55
+    },
+    {
+      "source": "N65",
+      "target": "N31",
+      "type": "extends",
+      "weight": 3.34
+    },
+    {
+      "source": "N65",
+      "target": "N31",
+      "type": "uses",
+      "weight": 8.72
+    },
+    {
+      "source": "N65",
+      "target": "N35",
+      "type": "extends",
+      "weight": 9.55
+    },
+    {
+      "source": "N66",
+      "target": "N10",
+      "type": "calls",
+      "weight": 4.79
+    },
+    {
+      "source": "N66",
+      "target": "N10",
+      "type": "imports",
+      "weight": 3.46
+    },
+    {
+      "source": "N66",
+      "target": "N10",
+      "type": "extends",
+      "weight": 4.02
+    },
+    {
+      "source": "N66",
+      "target": "N10",
+      "type": "uses",
+      "weight": 9.23
+    },
+    {
+      "source": "N66",
+      "target": "N15",
+      "type": "calls",
+      "weight": 8.47
+    },
+    {
+      "source": "N66",
+      "target": "N15",
+      "type": "imports",
+      "weight": 9.54
+    },
+    {
+      "source": "N66",
+      "target": "N15",
+      "type": "extends",
+      "weight": 4.62
+    },
+    {
+      "source": "N66",
+      "target": "N15",
+      "type": "uses",
+      "weight": 4.83
+    },
+    {
+      "source": "N66",
+      "target": "N24",
+      "type": "calls",
+      "weight": 2.86
+    },
+    {
+      "source": "N66",
+      "target": "N24",
+      "type": "imports",
+      "weight": 2.35
+    },
+    {
+      "source": "N66",
+      "target": "N24",
+      "type": "extends",
+      "weight": 7.57
+    },
+    {
+      "source": "N66",
+      "target": "N24",
+      "type": "uses",
+      "weight": 1.93
+    },
+    {
+      "source": "N67",
+      "target": "N5",
+      "type": "calls",
+      "weight": 7.51
+    },
+    {
+      "source": "N67",
+      "target": "N5",
+      "type": "imports",
+      "weight": 8.51
+    },
+    {
+      "source": "N67",
+      "target": "N5",
+      "type": "extends",
+      "weight": 1.8
+    },
+    {
+      "source": "N67",
+      "target": "N5",
+      "type": "uses",
+      "weight": 6.51
+    },
+    {
+      "source": "N67",
+      "target": "N9",
+      "type": "imports",
+      "weight": 5.81
+    },
+    {
+      "source": "N67",
+      "target": "N10",
+      "type": "calls",
+      "weight": 9.51
+    },
+    {
+      "source": "N67",
+      "target": "N10",
+      "type": "imports",
+      "weight": 9.73
+    },
+    {
+      "source": "N67",
+      "target": "N10",
+      "type": "extends",
+      "weight": 1.93
+    },
+    {
+      "source": "N67",
+      "target": "N10",
+      "type": "uses",
+      "weight": 5.98
+    },
+    {
+      "source": "N68",
+      "target": "N25",
+      "type": "calls",
+      "weight": 3.39
+    },
+    {
+      "source": "N68",
+      "target": "N25",
+      "type": "imports",
+      "weight": 3.51
+    },
+    {
+      "source": "N68",
+      "target": "N25",
+      "type": "extends",
+      "weight": 5.32
+    },
+    {
+      "source": "N68",
+      "target": "N25",
+      "type": "uses",
+      "weight": 8.14
+    },
+    {
+      "source": "N68",
+      "target": "N31",
+      "type": "imports",
+      "weight": 7.09
+    },
+    {
+      "source": "N68",
+      "target": "N38",
+      "type": "calls",
+      "weight": 4.51
+    },
+    {
+      "source": "N68",
+      "target": "N38",
+      "type": "imports",
+      "weight": 7.02
+    },
+    {
+      "source": "N68",
+      "target": "N38",
+      "type": "extends",
+      "weight": 3.65
+    },
+    {
+      "source": "N68",
+      "target": "N38",
+      "type": "uses",
+      "weight": 5.57
+    },
+    {
+      "source": "N69",
+      "target": "N2",
+      "type": "calls",
+      "weight": 2.34
+    },
+    {
+      "source": "N69",
+      "target": "N23",
+      "type": "imports",
+      "weight": 2.5
+    },
+    {
+      "source": "N69",
+      "target": "N54",
+      "type": "calls",
+      "weight": 7.69
+    },
+    {
+      "source": "N69",
+      "target": "N54",
+      "type": "imports",
+      "weight": 9.42
+    },
+    {
+      "source": "N69",
+      "target": "N54",
+      "type": "extends",
+      "weight": 5.83
+    },
+    {
+      "source": "N69",
+      "target": "N54",
+      "type": "uses",
+      "weight": 8.82
+    },
+    {
+      "source": "N70",
+      "target": "N6",
+      "type": "extends",
+      "weight": 8.75
+    },
+    {
+      "source": "N70",
+      "target": "N48",
+      "type": "calls",
+      "weight": 7.82
+    },
+    {
+      "source": "N70",
+      "target": "N48",
+      "type": "imports",
+      "weight": 7.56
+    },
+    {
+      "source": "N70",
+      "target": "N48",
+      "type": "extends",
+      "weight": 4.12
+    },
+    {
+      "source": "N70",
+      "target": "N48",
+      "type": "uses",
+      "weight": 8.97
+    },
+    {
+      "source": "N70",
+      "target": "N56",
+      "type": "calls",
+      "weight": 5.86
+    },
+    {
+      "source": "N71",
+      "target": "N5",
+      "type": "calls",
+      "weight": 3.06
+    },
+    {
+      "source": "N71",
+      "target": "N21",
+      "type": "calls",
+      "weight": 7.36
+    },
+    {
+      "source": "N71",
+      "target": "N21",
+      "type": "imports",
+      "weight": 4.7
+    },
+    {
+      "source": "N71",
+      "target": "N21",
+      "type": "extends",
+      "weight": 2.17
+    },
+    {
+      "source": "N71",
+      "target": "N21",
+      "type": "uses",
+      "weight": 2.76
+    },
+    {
+      "source": "N71",
+      "target": "N34",
+      "type": "calls",
+      "weight": 5.8
+    },
+    {
+      "source": "N72",
+      "target": "N2",
+      "type": "extends",
+      "weight": 3.52
+    },
+    {
+      "source": "N72",
+      "target": "N15",
+      "type": "extends",
+      "weight": 5.42
+    },
+    {
+      "source": "N72",
+      "target": "N45",
+      "type": "calls",
+      "weight": 6.39
+    },
+    {
+      "source": "N72",
+      "target": "N45",
+      "type": "imports",
+      "weight": 3.17
+    },
+    {
+      "source": "N72",
+      "target": "N45",
+      "type": "extends",
+      "weight": 2.59
+    },
+    {
+      "source": "N72",
+      "target": "N45",
+      "type": "uses",
+      "weight": 7.83
+    },
+    {
+      "source": "N73",
+      "target": "N34",
+      "type": "calls",
+      "weight": 2.34
+    },
+    {
+      "source": "N73",
+      "target": "N34",
+      "type": "imports",
+      "weight": 5.54
+    },
+    {
+      "source": "N73",
+      "target": "N34",
+      "type": "extends",
+      "weight": 5.76
+    },
+    {
+      "source": "N73",
+      "target": "N34",
+      "type": "uses",
+      "weight": 2.22
+    },
+    {
+      "source": "N73",
+      "target": "N49",
+      "type": "imports",
+      "weight": 3.84
+    },
+    {
+      "source": "N73",
+      "target": "N65",
+      "type": "calls",
+      "weight": 3.97
+    },
+    {
+      "source": "N73",
+      "target": "N65",
+      "type": "imports",
+      "weight": 2.15
+    },
+    {
+      "source": "N73",
+      "target": "N65",
+      "type": "extends",
+      "weight": 2.26
+    },
+    {
+      "source": "N73",
+      "target": "N65",
+      "type": "uses",
+      "weight": 3.31
+    },
+    {
+      "source": "N74",
+      "target": "N5",
+      "type": "calls",
+      "weight": 6.07
+    },
+    {
+      "source": "N74",
+      "target": "N11",
+      "type": "imports",
+      "weight": 6.07
+    },
+    {
+      "source": "N74",
+      "target": "N29",
+      "type": "extends",
+      "weight": 4.8
+    },
+    {
+      "source": "N75",
+      "target": "N1",
+      "type": "imports",
+      "weight": 1.76
+    },
+    {
+      "source": "N75",
+      "target": "N4",
+      "type": "calls",
+      "weight": 7.13
+    },
+    {
+      "source": "N75",
+      "target": "N4",
+      "type": "imports",
+      "weight": 9.86
+    },
+    {
+      "source": "N75",
+      "target": "N4",
+      "type": "extends",
+      "weight": 4.07
+    },
+    {
+      "source": "N75",
+      "target": "N4",
+      "type": "uses",
+      "weight": 6.41
+    },
+    {
+      "source": "N75",
+      "target": "N68",
+      "type": "calls",
+      "weight": 2.09
+    },
+    {
+      "source": "N76",
+      "target": "N2",
+      "type": "calls",
+      "weight": 7.93
+    },
+    {
+      "source": "N76",
+      "target": "N2",
+      "type": "imports",
+      "weight": 7.13
+    },
+    {
+      "source": "N76",
+      "target": "N2",
+      "type": "extends",
+      "weight": 1.37
+    },
+    {
+      "source": "N76",
+      "target": "N2",
+      "type": "uses",
+      "weight": 1.7
+    },
+    {
+      "source": "N76",
+      "target": "N12",
+      "type": "calls",
+      "weight": 3.7
+    },
+    {
+      "source": "N76",
+      "target": "N23",
+      "type": "calls",
+      "weight": 5.77
+    },
+    {
+      "source": "N76",
+      "target": "N23",
+      "type": "imports",
+      "weight": 4.26
+    },
+    {
+      "source": "N76",
+      "target": "N23",
+      "type": "extends",
+      "weight": 1.7
+    },
+    {
+      "source": "N76",
+      "target": "N23",
+      "type": "uses",
+      "weight": 9.33
+    },
+    {
+      "source": "N77",
+      "target": "N34",
+      "type": "calls",
+      "weight": 7.12
+    },
+    {
+      "source": "N77",
+      "target": "N56",
+      "type": "calls",
+      "weight": 5.64
+    },
+    {
+      "source": "N77",
+      "target": "N56",
+      "type": "imports",
+      "weight": 3.9
+    },
+    {
+      "source": "N77",
+      "target": "N56",
+      "type": "extends",
+      "weight": 9.54
+    },
+    {
+      "source": "N77",
+      "target": "N56",
+      "type": "uses",
+      "weight": 4.17
+    },
+    {
+      "source": "N77",
+      "target": "N63",
+      "type": "imports",
+      "weight": 6.46
+    },
+    {
+      "source": "N78",
+      "target": "N12",
+      "type": "calls",
+      "weight": 6.19
+    },
+    {
+      "source": "N78",
+      "target": "N12",
+      "type": "imports",
+      "weight": 7.53
+    },
+    {
+      "source": "N78",
+      "target": "N12",
+      "type": "extends",
+      "weight": 5.28
+    },
+    {
+      "source": "N78",
+      "target": "N12",
+      "type": "uses",
+      "weight": 4.77
+    },
+    {
+      "source": "N78",
+      "target": "N25",
+      "type": "extends",
+      "weight": 9.08
+    },
+    {
+      "source": "N78",
+      "target": "N34",
+      "type": "imports",
+      "weight": 1.49
+    },
+    {
+      "source": "N79",
+      "target": "N5",
+      "type": "calls",
+      "weight": 9.08
+    },
+    {
+      "source": "N79",
+      "target": "N5",
+      "type": "imports",
+      "weight": 3.47
+    },
+    {
+      "source": "N79",
+      "target": "N5",
+      "type": "extends",
+      "weight": 1.18
+    },
+    {
+      "source": "N79",
+      "target": "N5",
+      "type": "uses",
+      "weight": 5.85
+    },
+    {
+      "source": "N79",
+      "target": "N11",
+      "type": "extends",
+      "weight": 5.26
+    },
+    {
+      "source": "N79",
+      "target": "N45",
+      "type": "calls",
+      "weight": 1.93
+    },
+    {
+      "source": "N79",
+      "target": "N45",
+      "type": "imports",
+      "weight": 4.36
+    },
+    {
+      "source": "N79",
+      "target": "N45",
+      "type": "extends",
+      "weight": 6.89
+    },
+    {
+      "source": "N79",
+      "target": "N45",
+      "type": "uses",
+      "weight": 5.9
+    },
+    {
+      "source": "N80",
+      "target": "N48",
+      "type": "calls",
+      "weight": 6.57
+    },
+    {
+      "source": "N80",
+      "target": "N49",
+      "type": "calls",
+      "weight": 2.19
+    },
+    {
+      "source": "N80",
+      "target": "N49",
+      "type": "imports",
+      "weight": 1.67
+    },
+    {
+      "source": "N80",
+      "target": "N49",
+      "type": "extends",
+      "weight": 6.21
+    },
+    {
+      "source": "N80",
+      "target": "N49",
+      "type": "uses",
+      "weight": 7.09
+    },
+    {
+      "source": "N80",
+      "target": "N74",
+      "type": "uses",
+      "weight": 8.57
+    },
+    {
+      "source": "N81",
+      "target": "N24",
+      "type": "calls",
+      "weight": 3.63
+    },
+    {
+      "source": "N81",
+      "target": "N24",
+      "type": "imports",
+      "weight": 2.4
+    },
+    {
+      "source": "N81",
+      "target": "N24",
+      "type": "extends",
+      "weight": 8.16
+    },
+    {
+      "source": "N81",
+      "target": "N24",
+      "type": "uses",
+      "weight": 8.5
+    },
+    {
+      "source": "N81",
+      "target": "N67",
+      "type": "calls",
+      "weight": 9.79
+    },
+    {
+      "source": "N81",
+      "target": "N67",
+      "type": "imports",
+      "weight": 2.31
+    },
+    {
+      "source": "N81",
+      "target": "N67",
+      "type": "extends",
+      "weight": 3.66
+    },
+    {
+      "source": "N81",
+      "target": "N67",
+      "type": "uses",
+      "weight": 7.18
+    },
+    {
+      "source": "N81",
+      "target": "N74",
+      "type": "calls",
+      "weight": 5.84
+    },
+    {
+      "source": "N82",
+      "target": "N3",
+      "type": "uses",
+      "weight": 7.72
+    },
+    {
+      "source": "N82",
+      "target": "N34",
+      "type": "calls",
+      "weight": 5.14
+    },
+    {
+      "source": "N82",
+      "target": "N80",
+      "type": "uses",
+      "weight": 3.48
+    },
+    {
+      "source": "N83",
+      "target": "N13",
+      "type": "calls",
+      "weight": 1.89
+    },
+    {
+      "source": "N83",
+      "target": "N21",
+      "type": "calls",
+      "weight": 8.31
+    },
+    {
+      "source": "N83",
+      "target": "N34",
+      "type": "imports",
+      "weight": 5.77
+    },
+    {
+      "source": "N84",
+      "target": "N32",
+      "type": "calls",
+      "weight": 9.85
+    },
+    {
+      "source": "N84",
+      "target": "N32",
+      "type": "imports",
+      "weight": 9.18
+    },
+    {
+      "source": "N84",
+      "target": "N32",
+      "type": "extends",
+      "weight": 6.89
+    },
+    {
+      "source": "N84",
+      "target": "N32",
+      "type": "uses",
+      "weight": 8.22
+    },
+    {
+      "source": "N84",
+      "target": "N49",
+      "type": "imports",
+      "weight": 9.35
+    },
+    {
+      "source": "N84",
+      "target": "N67",
+      "type": "calls",
+      "weight": 6.06
+    },
+    {
+      "source": "N85",
+      "target": "N11",
+      "type": "calls",
+      "weight": 1.37
+    },
+    {
+      "source": "N85",
+      "target": "N11",
+      "type": "imports",
+      "weight": 7.34
+    },
+    {
+      "source": "N85",
+      "target": "N11",
+      "type": "extends",
+      "weight": 4.8
+    },
+    {
+      "source": "N85",
+      "target": "N11",
+      "type": "uses",
+      "weight": 7.55
+    },
+    {
+      "source": "N85",
+      "target": "N30",
+      "type": "calls",
+      "weight": 6.63
+    },
+    {
+      "source": "N85",
+      "target": "N30",
+      "type": "imports",
+      "weight": 9.09
+    },
+    {
+      "source": "N85",
+      "target": "N30",
+      "type": "extends",
+      "weight": 9.24
+    },
+    {
+      "source": "N85",
+      "target": "N30",
+      "type": "uses",
+      "weight": 6.55
+    },
+    {
+      "source": "N85",
+      "target": "N76",
+      "type": "calls",
+      "weight": 4.23
+    },
+    {
+      "source": "N85",
+      "target": "N76",
+      "type": "imports",
+      "weight": 7.79
+    },
+    {
+      "source": "N85",
+      "target": "N76",
+      "type": "extends",
+      "weight": 4.07
+    },
+    {
+      "source": "N85",
+      "target": "N76",
+      "type": "uses",
+      "weight": 8.18
+    },
+    {
+      "source": "N86",
+      "target": "N7",
+      "type": "calls",
+      "weight": 4.07
+    },
+    {
+      "source": "N86",
+      "target": "N29",
+      "type": "calls",
+      "weight": 5.62
+    },
+    {
+      "source": "N86",
+      "target": "N29",
+      "type": "imports",
+      "weight": 5.89
+    },
+    {
+      "source": "N86",
+      "target": "N29",
+      "type": "extends",
+      "weight": 6.63
+    },
+    {
+      "source": "N86",
+      "target": "N29",
+      "type": "uses",
+      "weight": 9.05
+    },
+    {
+      "source": "N86",
+      "target": "N54",
+      "type": "calls",
+      "weight": 9.78
+    },
+    {
+      "source": "N87",
+      "target": "N0",
+      "type": "calls",
+      "weight": 6.68
+    },
+    {
+      "source": "N87",
+      "target": "N0",
+      "type": "imports",
+      "weight": 9.58
+    },
+    {
+      "source": "N87",
+      "target": "N0",
+      "type": "extends",
+      "weight": 4.58
+    },
+    {
+      "source": "N87",
+      "target": "N0",
+      "type": "uses",
+      "weight": 3.05
+    },
+    {
+      "source": "N87",
+      "target": "N9",
+      "type": "calls",
+      "weight": 9.77
+    },
+    {
+      "source": "N87",
+      "target": "N9",
+      "type": "imports",
+      "weight": 3.96
+    },
+    {
+      "source": "N87",
+      "target": "N9",
+      "type": "extends",
+      "weight": 3.21
+    },
+    {
+      "source": "N87",
+      "target": "N9",
+      "type": "uses",
+      "weight": 7.09
+    },
+    {
+      "source": "N87",
+      "target": "N34",
+      "type": "extends",
+      "weight": 5.43
+    },
+    {
+      "source": "N88",
+      "target": "N35",
+      "type": "calls",
+      "weight": 2.08
+    },
+    {
+      "source": "N88",
+      "target": "N35",
+      "type": "imports",
+      "weight": 5.39
+    },
+    {
+      "source": "N88",
+      "target": "N35",
+      "type": "extends",
+      "weight": 3.4
+    },
+    {
+      "source": "N88",
+      "target": "N35",
+      "type": "uses",
+      "weight": 2.13
+    },
+    {
+      "source": "N88",
+      "target": "N56",
+      "type": "calls",
+      "weight": 4.73
+    },
+    {
+      "source": "N88",
+      "target": "N56",
+      "type": "imports",
+      "weight": 8.19
+    },
+    {
+      "source": "N88",
+      "target": "N56",
+      "type": "extends",
+      "weight": 6.87
+    },
+    {
+      "source": "N88",
+      "target": "N56",
+      "type": "uses",
+      "weight": 9.47
+    },
+    {
+      "source": "N88",
+      "target": "N76",
+      "type": "calls",
+      "weight": 4.39
+    },
+    {
+      "source": "N88",
+      "target": "N76",
+      "type": "imports",
+      "weight": 5.52
+    },
+    {
+      "source": "N88",
+      "target": "N76",
+      "type": "extends",
+      "weight": 8.33
+    },
+    {
+      "source": "N88",
+      "target": "N76",
+      "type": "uses",
+      "weight": 9.26
+    },
+    {
+      "source": "N89",
+      "target": "N17",
+      "type": "calls",
+      "weight": 4.57
+    },
+    {
+      "source": "N89",
+      "target": "N17",
+      "type": "imports",
+      "weight": 6.7
+    },
+    {
+      "source": "N89",
+      "target": "N17",
+      "type": "extends",
+      "weight": 7.62
+    },
+    {
+      "source": "N89",
+      "target": "N17",
+      "type": "uses",
+      "weight": 9.21
+    },
+    {
+      "source": "N89",
+      "target": "N20",
+      "type": "uses",
+      "weight": 9.92
+    },
+    {
+      "source": "N89",
+      "target": "N45",
+      "type": "imports",
+      "weight": 9.84
+    },
+    {
+      "source": "N90",
+      "target": "N29",
+      "type": "calls",
+      "weight": 7.98
+    },
+    {
+      "source": "N90",
+      "target": "N30",
+      "type": "imports",
+      "weight": 2.58
+    },
+    {
+      "source": "N90",
+      "target": "N60",
+      "type": "imports",
+      "weight": 4.85
+    },
+    {
+      "source": "N91",
+      "target": "N2",
+      "type": "calls",
+      "weight": 3.23
+    },
+    {
+      "source": "N91",
+      "target": "N34",
+      "type": "calls",
+      "weight": 6.1
+    },
+    {
+      "source": "N91",
+      "target": "N90",
+      "type": "calls",
+      "weight": 1.81
+    },
+    {
+      "source": "N91",
+      "target": "N90",
+      "type": "imports",
+      "weight": 1.85
+    },
+    {
+      "source": "N91",
+      "target": "N90",
+      "type": "extends",
+      "weight": 8.34
+    },
+    {
+      "source": "N91",
+      "target": "N90",
+      "type": "uses",
+      "weight": 1.4
+    },
+    {
+      "source": "N92",
+      "target": "N4",
+      "type": "calls",
+      "weight": 8.73
+    },
+    {
+      "source": "N92",
+      "target": "N4",
+      "type": "imports",
+      "weight": 5.2
+    },
+    {
+      "source": "N92",
+      "target": "N4",
+      "type": "extends",
+      "weight": 7.51
+    },
+    {
+      "source": "N92",
+      "target": "N4",
+      "type": "uses",
+      "weight": 2.5
+    },
+    {
+      "source": "N92",
+      "target": "N43",
+      "type": "calls",
+      "weight": 6.05
+    },
+    {
+      "source": "N92",
+      "target": "N43",
+      "type": "imports",
+      "weight": 8.44
+    },
+    {
+      "source": "N92",
+      "target": "N43",
+      "type": "extends",
+      "weight": 7.94
+    },
+    {
+      "source": "N92",
+      "target": "N43",
+      "type": "uses",
+      "weight": 6.73
+    },
+    {
+      "source": "N92",
+      "target": "N90",
+      "type": "uses",
+      "weight": 5.98
+    },
+    {
+      "source": "N93",
+      "target": "N30",
+      "type": "calls",
+      "weight": 3.51
+    },
+    {
+      "source": "N93",
+      "target": "N30",
+      "type": "imports",
+      "weight": 9.35
+    },
+    {
+      "source": "N93",
+      "target": "N30",
+      "type": "extends",
+      "weight": 3.34
+    },
+    {
+      "source": "N93",
+      "target": "N30",
+      "type": "uses",
+      "weight": 3.52
+    },
+    {
+      "source": "N93",
+      "target": "N68",
+      "type": "calls",
+      "weight": 7.49
+    },
+    {
+      "source": "N93",
+      "target": "N68",
+      "type": "imports",
+      "weight": 1.75
+    },
+    {
+      "source": "N93",
+      "target": "N68",
+      "type": "extends",
+      "weight": 4.24
+    },
+    {
+      "source": "N93",
+      "target": "N68",
+      "type": "uses",
+      "weight": 9.36
+    },
+    {
+      "source": "N93",
+      "target": "N69",
+      "type": "calls",
+      "weight": 3.27
+    },
+    {
+      "source": "N93",
+      "target": "N69",
+      "type": "imports",
+      "weight": 4.46
+    },
+    {
+      "source": "N93",
+      "target": "N69",
+      "type": "extends",
+      "weight": 6.09
+    },
+    {
+      "source": "N93",
+      "target": "N69",
+      "type": "uses",
+      "weight": 1.12
+    },
+    {
+      "source": "N94",
+      "target": "N4",
+      "type": "calls",
+      "weight": 8.22
+    },
+    {
+      "source": "N94",
+      "target": "N4",
+      "type": "imports",
+      "weight": 5.84
+    },
+    {
+      "source": "N94",
+      "target": "N4",
+      "type": "extends",
+      "weight": 2.79
+    },
+    {
+      "source": "N94",
+      "target": "N4",
+      "type": "uses",
+      "weight": 4.86
+    },
+    {
+      "source": "N94",
+      "target": "N28",
+      "type": "imports",
+      "weight": 5.99
+    },
+    {
+      "source": "N94",
+      "target": "N45",
+      "type": "calls",
+      "weight": 2.76
+    },
+    {
+      "source": "N94",
+      "target": "N45",
+      "type": "imports",
+      "weight": 6.63
+    },
+    {
+      "source": "N94",
+      "target": "N45",
+      "type": "extends",
+      "weight": 1.69
+    },
+    {
+      "source": "N94",
+      "target": "N45",
+      "type": "uses",
+      "weight": 8.08
+    },
+    {
+      "source": "N95",
+      "target": "N7",
+      "type": "calls",
+      "weight": 7.14
+    },
+    {
+      "source": "N95",
+      "target": "N7",
+      "type": "imports",
+      "weight": 6.32
+    },
+    {
+      "source": "N95",
+      "target": "N7",
+      "type": "extends",
+      "weight": 2.16
+    },
+    {
+      "source": "N95",
+      "target": "N7",
+      "type": "uses",
+      "weight": 5.85
+    },
+    {
+      "source": "N95",
+      "target": "N12",
+      "type": "calls",
+      "weight": 3.17
+    },
+    {
+      "source": "N95",
+      "target": "N12",
+      "type": "imports",
+      "weight": 4.44
+    },
+    {
+      "source": "N95",
+      "target": "N12",
+      "type": "extends",
+      "weight": 3.57
+    },
+    {
+      "source": "N95",
+      "target": "N12",
+      "type": "uses",
+      "weight": 6.96
+    },
+    {
+      "source": "N95",
+      "target": "N21",
+      "type": "extends",
+      "weight": 7.74
+    },
+    {
+      "source": "N96",
+      "target": "N32",
+      "type": "extends",
+      "weight": 5.43
+    },
+    {
+      "source": "N96",
+      "target": "N40",
+      "type": "calls",
+      "weight": 5.63
+    },
+    {
+      "source": "N96",
+      "target": "N40",
+      "type": "imports",
+      "weight": 3.69
+    },
+    {
+      "source": "N96",
+      "target": "N40",
+      "type": "extends",
+      "weight": 7.35
+    },
+    {
+      "source": "N96",
+      "target": "N40",
+      "type": "uses",
+      "weight": 1.2
+    },
+    {
+      "source": "N96",
+      "target": "N53",
+      "type": "calls",
+      "weight": 6.54
+    },
+    {
+      "source": "N97",
+      "target": "N2",
+      "type": "calls",
+      "weight": 8.03
+    },
+    {
+      "source": "N97",
+      "target": "N2",
+      "type": "imports",
+      "weight": 2.44
+    },
+    {
+      "source": "N97",
+      "target": "N2",
+      "type": "extends",
+      "weight": 2.19
+    },
+    {
+      "source": "N97",
+      "target": "N2",
+      "type": "uses",
+      "weight": 9.31
+    },
+    {
+      "source": "N97",
+      "target": "N33",
+      "type": "calls",
+      "weight": 8.69
+    },
+    {
+      "source": "N97",
+      "target": "N78",
+      "type": "imports",
+      "weight": 7.7
+    },
+    {
+      "source": "N98",
+      "target": "N70",
+      "type": "calls",
+      "weight": 9.15
+    },
+    {
+      "source": "N98",
+      "target": "N70",
+      "type": "imports",
+      "weight": 7.37
+    },
+    {
+      "source": "N98",
+      "target": "N70",
+      "type": "extends",
+      "weight": 8.37
+    },
+    {
+      "source": "N98",
+      "target": "N70",
+      "type": "uses",
+      "weight": 4.45
+    },
+    {
+      "source": "N98",
+      "target": "N76",
+      "type": "imports",
+      "weight": 8.33
+    },
+    {
+      "source": "N98",
+      "target": "N88",
+      "type": "calls",
+      "weight": 7.46
+    },
+    {
+      "source": "N99",
+      "target": "N24",
+      "type": "imports",
+      "weight": 3.41
+    },
+    {
+      "source": "N99",
+      "target": "N36",
+      "type": "imports",
+      "weight": 8.7
+    },
+    {
+      "source": "N99",
+      "target": "N98",
+      "type": "uses",
+      "weight": 4.59
+    },
+    {
+      "source": "N100",
+      "target": "N19",
+      "type": "calls",
+      "weight": 1.14
+    },
+    {
+      "source": "N100",
+      "target": "N19",
+      "type": "imports",
+      "weight": 7.78
+    },
+    {
+      "source": "N100",
+      "target": "N19",
+      "type": "extends",
+      "weight": 5.4
+    },
+    {
+      "source": "N100",
+      "target": "N19",
+      "type": "uses",
+      "weight": 4.55
+    },
+    {
+      "source": "N100",
+      "target": "N24",
+      "type": "extends",
+      "weight": 9.17
+    },
+    {
+      "source": "N100",
+      "target": "N29",
+      "type": "calls",
+      "weight": 7.1
+    },
+    {
+      "source": "N100",
+      "target": "N29",
+      "type": "imports",
+      "weight": 1.38
+    },
+    {
+      "source": "N100",
+      "target": "N29",
+      "type": "extends",
+      "weight": 4.8
+    },
+    {
+      "source": "N100",
+      "target": "N29",
+      "type": "uses",
+      "weight": 4.98
+    },
+    {
+      "source": "N101",
+      "target": "N23",
+      "type": "uses",
+      "weight": 5.7
+    },
+    {
+      "source": "N101",
+      "target": "N34",
+      "type": "calls",
+      "weight": 4.24
+    },
+    {
+      "source": "N101",
+      "target": "N34",
+      "type": "imports",
+      "weight": 8.9
+    },
+    {
+      "source": "N101",
+      "target": "N34",
+      "type": "extends",
+      "weight": 9.83
+    },
+    {
+      "source": "N101",
+      "target": "N34",
+      "type": "uses",
+      "weight": 7.99
+    },
+    {
+      "source": "N101",
+      "target": "N88",
+      "type": "calls",
+      "weight": 9.15
+    },
+    {
+      "source": "N101",
+      "target": "N88",
+      "type": "imports",
+      "weight": 5.13
+    },
+    {
+      "source": "N101",
+      "target": "N88",
+      "type": "extends",
+      "weight": 8.51
+    },
+    {
+      "source": "N101",
+      "target": "N88",
+      "type": "uses",
+      "weight": 2.59
+    },
+    {
+      "source": "N102",
+      "target": "N20",
+      "type": "calls",
+      "weight": 5.51
+    },
+    {
+      "source": "N102",
+      "target": "N20",
+      "type": "imports",
+      "weight": 9.92
+    },
+    {
+      "source": "N102",
+      "target": "N20",
+      "type": "extends",
+      "weight": 8.52
+    },
+    {
+      "source": "N102",
+      "target": "N20",
+      "type": "uses",
+      "weight": 4.57
+    },
+    {
+      "source": "N102",
+      "target": "N51",
+      "type": "extends",
+      "weight": 4.55
+    },
+    {
+      "source": "N102",
+      "target": "N82",
+      "type": "uses",
+      "weight": 9.65
+    },
+    {
+      "source": "N103",
+      "target": "N10",
+      "type": "calls",
+      "weight": 3.74
+    },
+    {
+      "source": "N103",
+      "target": "N10",
+      "type": "imports",
+      "weight": 7.74
+    },
+    {
+      "source": "N103",
+      "target": "N10",
+      "type": "extends",
+      "weight": 8.16
+    },
+    {
+      "source": "N103",
+      "target": "N10",
+      "type": "uses",
+      "weight": 6.37
+    },
+    {
+      "source": "N103",
+      "target": "N40",
+      "type": "extends",
+      "weight": 1.59
+    },
+    {
+      "source": "N103",
+      "target": "N83",
+      "type": "extends",
+      "weight": 4.74
+    },
+    {
+      "source": "N104",
+      "target": "N6",
+      "type": "calls",
+      "weight": 6.16
+    },
+    {
+      "source": "N104",
+      "target": "N24",
+      "type": "calls",
+      "weight": 9.12
+    },
+    {
+      "source": "N104",
+      "target": "N24",
+      "type": "imports",
+      "weight": 4.03
+    },
+    {
+      "source": "N104",
+      "target": "N24",
+      "type": "extends",
+      "weight": 4.32
+    },
+    {
+      "source": "N104",
+      "target": "N24",
+      "type": "uses",
+      "weight": 5.96
+    },
+    {
+      "source": "N104",
+      "target": "N91",
+      "type": "calls",
+      "weight": 5.36
+    },
+    {
+      "source": "N105",
+      "target": "N6",
+      "type": "calls",
+      "weight": 9.27
+    },
+    {
+      "source": "N105",
+      "target": "N6",
+      "type": "imports",
+      "weight": 5.9
+    },
+    {
+      "source": "N105",
+      "target": "N6",
+      "type": "extends",
+      "weight": 9.3
+    },
+    {
+      "source": "N105",
+      "target": "N6",
+      "type": "uses",
+      "weight": 9.19
+    },
+    {
+      "source": "N105",
+      "target": "N78",
+      "type": "calls",
+      "weight": 2.32
+    },
+    {
+      "source": "N105",
+      "target": "N78",
+      "type": "imports",
+      "weight": 6.22
+    },
+    {
+      "source": "N105",
+      "target": "N78",
+      "type": "extends",
+      "weight": 6.31
+    },
+    {
+      "source": "N105",
+      "target": "N78",
+      "type": "uses",
+      "weight": 4.64
+    },
+    {
+      "source": "N105",
+      "target": "N94",
+      "type": "uses",
+      "weight": 8.39
+    },
+    {
+      "source": "N106",
+      "target": "N0",
+      "type": "calls",
+      "weight": 1.57
+    },
+    {
+      "source": "N106",
+      "target": "N0",
+      "type": "imports",
+      "weight": 6.68
+    },
+    {
+      "source": "N106",
+      "target": "N0",
+      "type": "extends",
+      "weight": 8.38
+    },
+    {
+      "source": "N106",
+      "target": "N0",
+      "type": "uses",
+      "weight": 3.39
+    },
+    {
+      "source": "N106",
+      "target": "N19",
+      "type": "extends",
+      "weight": 6.16
+    },
+    {
+      "source": "N106",
+      "target": "N46",
+      "type": "calls",
+      "weight": 7.38
+    },
+    {
+      "source": "N107",
+      "target": "N6",
+      "type": "calls",
+      "weight": 5.96
+    },
+    {
+      "source": "N107",
+      "target": "N6",
+      "type": "imports",
+      "weight": 6.77
+    },
+    {
+      "source": "N107",
+      "target": "N6",
+      "type": "extends",
+      "weight": 3.11
+    },
+    {
+      "source": "N107",
+      "target": "N6",
+      "type": "uses",
+      "weight": 1.89
+    },
+    {
+      "source": "N107",
+      "target": "N41",
+      "type": "calls",
+      "weight": 7.64
+    },
+    {
+      "source": "N107",
+      "target": "N45",
+      "type": "calls",
+      "weight": 8.86
+    },
+    {
+      "source": "N107",
+      "target": "N45",
+      "type": "imports",
+      "weight": 9.78
+    },
+    {
+      "source": "N107",
+      "target": "N45",
+      "type": "extends",
+      "weight": 8.4
+    },
+    {
+      "source": "N107",
+      "target": "N45",
+      "type": "uses",
+      "weight": 1.68
+    },
+    {
+      "source": "N108",
+      "target": "N11",
+      "type": "imports",
+      "weight": 1.32
+    },
+    {
+      "source": "N108",
+      "target": "N15",
+      "type": "calls",
+      "weight": 1.26
+    },
+    {
+      "source": "N108",
+      "target": "N19",
+      "type": "calls",
+      "weight": 7.75
+    },
+    {
+      "source": "N108",
+      "target": "N19",
+      "type": "imports",
+      "weight": 8.98
+    },
+    {
+      "source": "N108",
+      "target": "N19",
+      "type": "extends",
+      "weight": 1.37
+    },
+    {
+      "source": "N108",
+      "target": "N19",
+      "type": "uses",
+      "weight": 6.3
+    },
+    {
+      "source": "N109",
+      "target": "N33",
+      "type": "imports",
+      "weight": 3.1
+    },
+    {
+      "source": "N109",
+      "target": "N74",
+      "type": "calls",
+      "weight": 7.49
+    },
+    {
+      "source": "N109",
+      "target": "N92",
+      "type": "calls",
+      "weight": 8.03
+    },
+    {
+      "source": "N109",
+      "target": "N92",
+      "type": "imports",
+      "weight": 4.25
+    },
+    {
+      "source": "N109",
+      "target": "N92",
+      "type": "extends",
+      "weight": 5.11
+    },
+    {
+      "source": "N109",
+      "target": "N92",
+      "type": "uses",
+      "weight": 9.34
+    },
+    {
+      "source": "N110",
+      "target": "N6",
+      "type": "calls",
+      "weight": 1.13
+    },
+    {
+      "source": "N110",
+      "target": "N34",
+      "type": "calls",
+      "weight": 2.48
+    },
+    {
+      "source": "N110",
+      "target": "N34",
+      "type": "imports",
+      "weight": 9.09
+    },
+    {
+      "source": "N110",
+      "target": "N34",
+      "type": "extends",
+      "weight": 1.36
+    },
+    {
+      "source": "N110",
+      "target": "N34",
+      "type": "uses",
+      "weight": 3.07
+    },
+    {
+      "source": "N110",
+      "target": "N61",
+      "type": "imports",
+      "weight": 1.32
+    },
+    {
+      "source": "N111",
+      "target": "N30",
+      "type": "calls",
+      "weight": 3.19
+    },
+    {
+      "source": "N111",
+      "target": "N30",
+      "type": "imports",
+      "weight": 5.55
+    },
+    {
+      "source": "N111",
+      "target": "N30",
+      "type": "extends",
+      "weight": 3.92
+    },
+    {
+      "source": "N111",
+      "target": "N30",
+      "type": "uses",
+      "weight": 9.5
+    },
+    {
+      "source": "N111",
+      "target": "N38",
+      "type": "calls",
+      "weight": 6.35
+    },
+    {
+      "source": "N111",
+      "target": "N38",
+      "type": "imports",
+      "weight": 2.69
+    },
+    {
+      "source": "N111",
+      "target": "N38",
+      "type": "extends",
+      "weight": 6.61
+    },
+    {
+      "source": "N111",
+      "target": "N38",
+      "type": "uses",
+      "weight": 9.6
+    },
+    {
+      "source": "N111",
+      "target": "N92",
+      "type": "uses",
+      "weight": 4.27
+    },
+    {
+      "source": "N112",
+      "target": "N0",
+      "type": "uses",
+      "weight": 8.45
+    },
+    {
+      "source": "N112",
+      "target": "N4",
+      "type": "extends",
+      "weight": 1.67
+    },
+    {
+      "source": "N112",
+      "target": "N30",
+      "type": "calls",
+      "weight": 7.31
+    },
+    {
+      "source": "N112",
+      "target": "N30",
+      "type": "imports",
+      "weight": 8.24
+    },
+    {
+      "source": "N112",
+      "target": "N30",
+      "type": "extends",
+      "weight": 9.57
+    },
+    {
+      "source": "N112",
+      "target": "N30",
+      "type": "uses",
+      "weight": 8.49
+    },
+    {
+      "source": "N113",
+      "target": "N32",
+      "type": "uses",
+      "weight": 6.43
+    },
+    {
+      "source": "N113",
+      "target": "N34",
+      "type": "calls",
+      "weight": 3.41
+    },
+    {
+      "source": "N113",
+      "target": "N34",
+      "type": "imports",
+      "weight": 8.37
+    },
+    {
+      "source": "N113",
+      "target": "N34",
+      "type": "extends",
+      "weight": 3.71
+    },
+    {
+      "source": "N113",
+      "target": "N34",
+      "type": "uses",
+      "weight": 7.88
+    },
+    {
+      "source": "N113",
+      "target": "N76",
+      "type": "calls",
+      "weight": 5.86
+    },
+    {
+      "source": "N113",
+      "target": "N76",
+      "type": "imports",
+      "weight": 3.3
+    },
+    {
+      "source": "N113",
+      "target": "N76",
+      "type": "extends",
+      "weight": 1.13
+    },
+    {
+      "source": "N113",
+      "target": "N76",
+      "type": "uses",
+      "weight": 7.82
+    },
+    {
+      "source": "N114",
+      "target": "N20",
+      "type": "imports",
+      "weight": 7.3
+    },
+    {
+      "source": "N114",
+      "target": "N63",
+      "type": "imports",
+      "weight": 4.46
+    },
+    {
+      "source": "N114",
+      "target": "N80",
+      "type": "calls",
+      "weight": 6.78
+    },
+    {
+      "source": "N114",
+      "target": "N80",
+      "type": "imports",
+      "weight": 4.21
+    },
+    {
+      "source": "N114",
+      "target": "N80",
+      "type": "extends",
+      "weight": 8.06
+    },
+    {
+      "source": "N114",
+      "target": "N80",
+      "type": "uses",
+      "weight": 1.07
+    },
+    {
+      "source": "N115",
+      "target": "N1",
+      "type": "calls",
+      "weight": 3.92
+    },
+    {
+      "source": "N115",
+      "target": "N1",
+      "type": "imports",
+      "weight": 3.78
+    },
+    {
+      "source": "N115",
+      "target": "N1",
+      "type": "extends",
+      "weight": 8.9
+    },
+    {
+      "source": "N115",
+      "target": "N1",
+      "type": "uses",
+      "weight": 8.42
+    },
+    {
+      "source": "N115",
+      "target": "N10",
+      "type": "calls",
+      "weight": 7.45
+    },
+    {
+      "source": "N115",
+      "target": "N10",
+      "type": "imports",
+      "weight": 3.96
+    },
+    {
+      "source": "N115",
+      "target": "N10",
+      "type": "extends",
+      "weight": 7.04
+    },
+    {
+      "source": "N115",
+      "target": "N10",
+      "type": "uses",
+      "weight": 8.39
+    },
+    {
+      "source": "N115",
+      "target": "N94",
+      "type": "calls",
+      "weight": 8.03
+    },
+    {
+      "source": "N115",
+      "target": "N94",
+      "type": "imports",
+      "weight": 3.65
+    },
+    {
+      "source": "N115",
+      "target": "N94",
+      "type": "extends",
+      "weight": 4.69
+    },
+    {
+      "source": "N115",
+      "target": "N94",
+      "type": "uses",
+      "weight": 4.07
+    },
+    {
+      "source": "N116",
+      "target": "N0",
+      "type": "extends",
+      "weight": 3.72
+    },
+    {
+      "source": "N116",
+      "target": "N5",
+      "type": "calls",
+      "weight": 9.34
+    },
+    {
+      "source": "N116",
+      "target": "N5",
+      "type": "imports",
+      "weight": 9.76
+    },
+    {
+      "source": "N116",
+      "target": "N5",
+      "type": "extends",
+      "weight": 8.3
+    },
+    {
+      "source": "N116",
+      "target": "N5",
+      "type": "uses",
+      "weight": 8.72
+    },
+    {
+      "source": "N116",
+      "target": "N7",
+      "type": "uses",
+      "weight": 9.44
+    },
+    {
+      "source": "N117",
+      "target": "N4",
+      "type": "calls",
+      "weight": 3.02
+    },
+    {
+      "source": "N117",
+      "target": "N4",
+      "type": "imports",
+      "weight": 7.42
+    },
+    {
+      "source": "N117",
+      "target": "N4",
+      "type": "extends",
+      "weight": 4.41
+    },
+    {
+      "source": "N117",
+      "target": "N4",
+      "type": "uses",
+      "weight": 6.6
+    },
+    {
+      "source": "N117",
+      "target": "N106",
+      "type": "extends",
+      "weight": 7.69
+    },
+    {
+      "source": "N117",
+      "target": "N107",
+      "type": "calls",
+      "weight": 7.41
+    },
+    {
+      "source": "N118",
+      "target": "N0",
+      "type": "calls",
+      "weight": 2.32
+    },
+    {
+      "source": "N118",
+      "target": "N0",
+      "type": "imports",
+      "weight": 9.93
+    },
+    {
+      "source": "N118",
+      "target": "N0",
+      "type": "extends",
+      "weight": 4.93
+    },
+    {
+      "source": "N118",
+      "target": "N0",
+      "type": "uses",
+      "weight": 4.08
+    },
+    {
+      "source": "N118",
+      "target": "N54",
+      "type": "uses",
+      "weight": 3.86
+    },
+    {
+      "source": "N118",
+      "target": "N78",
+      "type": "extends",
+      "weight": 8.29
+    },
+    {
+      "source": "N119",
+      "target": "N4",
+      "type": "calls",
+      "weight": 3.8
+    },
+    {
+      "source": "N119",
+      "target": "N4",
+      "type": "imports",
+      "weight": 1.78
+    },
+    {
+      "source": "N119",
+      "target": "N4",
+      "type": "extends",
+      "weight": 5.43
+    },
+    {
+      "source": "N119",
+      "target": "N4",
+      "type": "uses",
+      "weight": 5.51
+    },
+    {
+      "source": "N119",
+      "target": "N49",
+      "type": "extends",
+      "weight": 4.93
+    },
+    {
+      "source": "N119",
+      "target": "N115",
+      "type": "calls",
+      "weight": 1.92
+    },
+    {
+      "source": "N120",
+      "target": "N20",
+      "type": "calls",
+      "weight": 3.63
+    },
+    {
+      "source": "N120",
+      "target": "N20",
+      "type": "imports",
+      "weight": 1.43
+    },
+    {
+      "source": "N120",
+      "target": "N20",
+      "type": "extends",
+      "weight": 8.96
+    },
+    {
+      "source": "N120",
+      "target": "N20",
+      "type": "uses",
+      "weight": 2.96
+    },
+    {
+      "source": "N120",
+      "target": "N29",
+      "type": "uses",
+      "weight": 7.59
+    },
+    {
+      "source": "N120",
+      "target": "N90",
+      "type": "calls",
+      "weight": 1.5
+    },
+    {
+      "source": "N121",
+      "target": "N4",
+      "type": "calls",
+      "weight": 1.17
+    },
+    {
+      "source": "N121",
+      "target": "N4",
+      "type": "imports",
+      "weight": 1.08
+    },
+    {
+      "source": "N121",
+      "target": "N4",
+      "type": "extends",
+      "weight": 2.9
+    },
+    {
+      "source": "N121",
+      "target": "N4",
+      "type": "uses",
+      "weight": 2.8
+    },
+    {
+      "source": "N121",
+      "target": "N11",
+      "type": "calls",
+      "weight": 5.96
+    },
+    {
+      "source": "N121",
+      "target": "N11",
+      "type": "imports",
+      "weight": 3.26
+    },
+    {
+      "source": "N121",
+      "target": "N11",
+      "type": "extends",
+      "weight": 3.1
+    },
+    {
+      "source": "N121",
+      "target": "N11",
+      "type": "uses",
+      "weight": 2.9
+    },
+    {
+      "source": "N121",
+      "target": "N94",
+      "type": "imports",
+      "weight": 9.73
+    },
+    {
+      "source": "N122",
+      "target": "N8",
+      "type": "calls",
+      "weight": 4.66
+    },
+    {
+      "source": "N122",
+      "target": "N8",
+      "type": "imports",
+      "weight": 1.14
+    },
+    {
+      "source": "N122",
+      "target": "N8",
+      "type": "extends",
+      "weight": 2.67
+    },
+    {
+      "source": "N122",
+      "target": "N8",
+      "type": "uses",
+      "weight": 6.76
+    },
+    {
+      "source": "N122",
+      "target": "N11",
+      "type": "imports",
+      "weight": 3.02
+    },
+    {
+      "source": "N122",
+      "target": "N94",
+      "type": "calls",
+      "weight": 8.25
+    },
+    {
+      "source": "N122",
+      "target": "N94",
+      "type": "imports",
+      "weight": 1.53
+    },
+    {
+      "source": "N122",
+      "target": "N94",
+      "type": "extends",
+      "weight": 3.82
+    },
+    {
+      "source": "N122",
+      "target": "N94",
+      "type": "uses",
+      "weight": 7.54
+    },
+    {
+      "source": "N123",
+      "target": "N13",
+      "type": "calls",
+      "weight": 7.73
+    },
+    {
+      "source": "N123",
+      "target": "N13",
+      "type": "imports",
+      "weight": 9.66
+    },
+    {
+      "source": "N123",
+      "target": "N13",
+      "type": "extends",
+      "weight": 1.52
+    },
+    {
+      "source": "N123",
+      "target": "N13",
+      "type": "uses",
+      "weight": 1.8
+    },
+    {
+      "source": "N123",
+      "target": "N21",
+      "type": "calls",
+      "weight": 3.05
+    },
+    {
+      "source": "N123",
+      "target": "N21",
+      "type": "imports",
+      "weight": 2.67
+    },
+    {
+      "source": "N123",
+      "target": "N21",
+      "type": "extends",
+      "weight": 1.52
+    },
+    {
+      "source": "N123",
+      "target": "N21",
+      "type": "uses",
+      "weight": 1.49
+    },
+    {
+      "source": "N123",
+      "target": "N63",
+      "type": "calls",
+      "weight": 9.57
+    },
+    {
+      "source": "N124",
+      "target": "N34",
+      "type": "imports",
+      "weight": 7.5
+    },
+    {
+      "source": "N124",
+      "target": "N45",
+      "type": "imports",
+      "weight": 3.93
+    },
+    {
+      "source": "N124",
+      "target": "N51",
+      "type": "calls",
+      "weight": 7.88
+    },
+    {
+      "source": "N124",
+      "target": "N51",
+      "type": "imports",
+      "weight": 9.3
+    },
+    {
+      "source": "N124",
+      "target": "N51",
+      "type": "extends",
+      "weight": 8.81
+    },
+    {
+      "source": "N124",
+      "target": "N51",
+      "type": "uses",
+      "weight": 4.44
+    },
+    {
+      "source": "N125",
+      "target": "N0",
+      "type": "calls",
+      "weight": 3.2
+    },
+    {
+      "source": "N125",
+      "target": "N0",
+      "type": "imports",
+      "weight": 8.47
+    },
+    {
+      "source": "N125",
+      "target": "N0",
+      "type": "extends",
+      "weight": 8.9
+    },
+    {
+      "source": "N125",
+      "target": "N0",
+      "type": "uses",
+      "weight": 9.2
+    },
+    {
+      "source": "N125",
+      "target": "N8",
+      "type": "calls",
+      "weight": 3.16
+    },
+    {
+      "source": "N125",
+      "target": "N25",
+      "type": "uses",
+      "weight": 8.97
+    },
+    {
+      "source": "N126",
+      "target": "N2",
+      "type": "extends",
+      "weight": 4.68
+    },
+    {
+      "source": "N126",
+      "target": "N25",
+      "type": "calls",
+      "weight": 3.84
+    },
+    {
+      "source": "N126",
+      "target": "N25",
+      "type": "imports",
+      "weight": 9.62
+    },
+    {
+      "source": "N126",
+      "target": "N25",
+      "type": "extends",
+      "weight": 5.6
+    },
+    {
+      "source": "N126",
+      "target": "N25",
+      "type": "uses",
+      "weight": 4.33
+    },
+    {
+      "source": "N126",
+      "target": "N30",
+      "type": "calls",
+      "weight": 3.72
+    },
+    {
+      "source": "N126",
+      "target": "N30",
+      "type": "imports",
+      "weight": 2.14
+    },
+    {
+      "source": "N126",
+      "target": "N30",
+      "type": "extends",
+      "weight": 5.94
+    },
+    {
+      "source": "N126",
+      "target": "N30",
+      "type": "uses",
+      "weight": 7.54
+    },
+    {
+      "source": "N127",
+      "target": "N30",
+      "type": "imports",
+      "weight": 2.45
+    },
+    {
+      "source": "N127",
+      "target": "N80",
+      "type": "extends",
+      "weight": 3.12
+    },
+    {
+      "source": "N127",
+      "target": "N112",
+      "type": "imports",
+      "weight": 3.5
+    },
+    {
+      "source": "N128",
+      "target": "N5",
+      "type": "calls",
+      "weight": 4.18
+    },
+    {
+      "source": "N128",
+      "target": "N5",
+      "type": "imports",
+      "weight": 5.05
+    },
+    {
+      "source": "N128",
+      "target": "N5",
+      "type": "extends",
+      "weight": 1.97
+    },
+    {
+      "source": "N128",
+      "target": "N5",
+      "type": "uses",
+      "weight": 2.4
+    },
+    {
+      "source": "N128",
+      "target": "N75",
+      "type": "calls",
+      "weight": 7.17
+    },
+    {
+      "source": "N128",
+      "target": "N75",
+      "type": "imports",
+      "weight": 5.32
+    },
+    {
+      "source": "N128",
+      "target": "N75",
+      "type": "extends",
+      "weight": 1.31
+    },
+    {
+      "source": "N128",
+      "target": "N75",
+      "type": "uses",
+      "weight": 1.42
+    },
+    {
+      "source": "N128",
+      "target": "N83",
+      "type": "extends",
+      "weight": 7.62
+    },
+    {
+      "source": "N129",
+      "target": "N61",
+      "type": "extends",
+      "weight": 4.08
+    },
+    {
+      "source": "N129",
+      "target": "N64",
+      "type": "calls",
+      "weight": 9.54
+    },
+    {
+      "source": "N129",
+      "target": "N64",
+      "type": "imports",
+      "weight": 1.29
+    },
+    {
+      "source": "N129",
+      "target": "N64",
+      "type": "extends",
+      "weight": 3.44
+    },
+    {
+      "source": "N129",
+      "target": "N64",
+      "type": "uses",
+      "weight": 6.53
+    },
+    {
+      "source": "N129",
+      "target": "N76",
+      "type": "imports",
+      "weight": 1.56
+    },
+    {
+      "source": "N130",
+      "target": "N2",
+      "type": "calls",
+      "weight": 4.24
+    },
+    {
+      "source": "N130",
+      "target": "N2",
+      "type": "imports",
+      "weight": 1.45
+    },
+    {
+      "source": "N130",
+      "target": "N2",
+      "type": "extends",
+      "weight": 9.48
+    },
+    {
+      "source": "N130",
+      "target": "N2",
+      "type": "uses",
+      "weight": 7.28
+    },
+    {
+      "source": "N130",
+      "target": "N58",
+      "type": "calls",
+      "weight": 1.87
+    },
+    {
+      "source": "N130",
+      "target": "N58",
+      "type": "imports",
+      "weight": 2.22
+    },
+    {
+      "source": "N130",
+      "target": "N58",
+      "type": "extends",
+      "weight": 4.32
+    },
+    {
+      "source": "N130",
+      "target": "N58",
+      "type": "uses",
+      "weight": 9.01
+    },
+    {
+      "source": "N130",
+      "target": "N98",
+      "type": "calls",
+      "weight": 3.05
+    },
+    {
+      "source": "N130",
+      "target": "N98",
+      "type": "imports",
+      "weight": 3.8
+    },
+    {
+      "source": "N130",
+      "target": "N98",
+      "type": "extends",
+      "weight": 5.6
+    },
+    {
+      "source": "N130",
+      "target": "N98",
+      "type": "uses",
+      "weight": 9.11
+    },
+    {
+      "source": "N131",
+      "target": "N76",
+      "type": "uses",
+      "weight": 6.23
+    },
+    {
+      "source": "N131",
+      "target": "N94",
+      "type": "calls",
+      "weight": 5.61
+    },
+    {
+      "source": "N131",
+      "target": "N94",
+      "type": "imports",
+      "weight": 4.2
+    },
+    {
+      "source": "N131",
+      "target": "N94",
+      "type": "extends",
+      "weight": 4.9
+    },
+    {
+      "source": "N131",
+      "target": "N94",
+      "type": "uses",
+      "weight": 1.67
+    },
+    {
+      "source": "N131",
+      "target": "N104",
+      "type": "calls",
+      "weight": 7.87
+    },
+    {
+      "source": "N131",
+      "target": "N104",
+      "type": "imports",
+      "weight": 2.2
+    },
+    {
+      "source": "N131",
+      "target": "N104",
+      "type": "extends",
+      "weight": 2.87
+    },
+    {
+      "source": "N131",
+      "target": "N104",
+      "type": "uses",
+      "weight": 2.47
+    },
+    {
+      "source": "N132",
+      "target": "N4",
+      "type": "calls",
+      "weight": 6.49
+    },
+    {
+      "source": "N132",
+      "target": "N10",
+      "type": "imports",
+      "weight": 1.78
+    },
+    {
+      "source": "N132",
+      "target": "N33",
+      "type": "imports",
+      "weight": 6.41
+    },
+    {
+      "source": "N133",
+      "target": "N20",
+      "type": "calls",
+      "weight": 2.96
+    },
+    {
+      "source": "N133",
+      "target": "N30",
+      "type": "calls",
+      "weight": 9.11
+    },
+    {
+      "source": "N133",
+      "target": "N100",
+      "type": "uses",
+      "weight": 6.03
+    },
+    {
+      "source": "N134",
+      "target": "N10",
+      "type": "extends",
+      "weight": 6.45
+    },
+    {
+      "source": "N134",
+      "target": "N25",
+      "type": "calls",
+      "weight": 5.33
+    },
+    {
+      "source": "N134",
+      "target": "N30",
+      "type": "calls",
+      "weight": 1.64
+    },
+    {
+      "source": "N134",
+      "target": "N30",
+      "type": "imports",
+      "weight": 1.57
+    },
+    {
+      "source": "N134",
+      "target": "N30",
+      "type": "extends",
+      "weight": 6.93
+    },
+    {
+      "source": "N134",
+      "target": "N30",
+      "type": "uses",
+      "weight": 8.73
+    },
+    {
+      "source": "N135",
+      "target": "N2",
+      "type": "calls",
+      "weight": 3.36
+    },
+    {
+      "source": "N135",
+      "target": "N2",
+      "type": "imports",
+      "weight": 8.36
+    },
+    {
+      "source": "N135",
+      "target": "N2",
+      "type": "extends",
+      "weight": 8.82
+    },
+    {
+      "source": "N135",
+      "target": "N2",
+      "type": "uses",
+      "weight": 9.57
+    },
+    {
+      "source": "N135",
+      "target": "N20",
+      "type": "calls",
+      "weight": 1.11
+    },
+    {
+      "source": "N135",
+      "target": "N20",
+      "type": "imports",
+      "weight": 2.46
+    },
+    {
+      "source": "N135",
+      "target": "N20",
+      "type": "extends",
+      "weight": 3.62
+    },
+    {
+      "source": "N135",
+      "target": "N20",
+      "type": "uses",
+      "weight": 2.04
+    },
+    {
+      "source": "N135",
+      "target": "N33",
+      "type": "calls",
+      "weight": 6.52
+    },
+    {
+      "source": "N135",
+      "target": "N33",
+      "type": "imports",
+      "weight": 3.5
+    },
+    {
+      "source": "N135",
+      "target": "N33",
+      "type": "extends",
+      "weight": 7.91
+    },
+    {
+      "source": "N135",
+      "target": "N33",
+      "type": "uses",
+      "weight": 7.47
+    },
+    {
+      "source": "N136",
+      "target": "N24",
+      "type": "imports",
+      "weight": 3.9
+    },
+    {
+      "source": "N136",
+      "target": "N50",
+      "type": "calls",
+      "weight": 4.57
+    },
+    {
+      "source": "N136",
+      "target": "N50",
+      "type": "imports",
+      "weight": 5.7
+    },
+    {
+      "source": "N136",
+      "target": "N50",
+      "type": "extends",
+      "weight": 6.1
+    },
+    {
+      "source": "N136",
+      "target": "N50",
+      "type": "uses",
+      "weight": 8.87
+    },
+    {
+      "source": "N136",
+      "target": "N86",
+      "type": "calls",
+      "weight": 5.04
+    },
+    {
+      "source": "N136",
+      "target": "N86",
+      "type": "imports",
+      "weight": 8.49
+    },
+    {
+      "source": "N136",
+      "target": "N86",
+      "type": "extends",
+      "weight": 9.74
+    },
+    {
+      "source": "N136",
+      "target": "N86",
+      "type": "uses",
+      "weight": 3.19
+    },
+    {
+      "source": "N137",
+      "target": "N10",
+      "type": "calls",
+      "weight": 1.63
+    },
+    {
+      "source": "N137",
+      "target": "N10",
+      "type": "imports",
+      "weight": 5.67
+    },
+    {
+      "source": "N137",
+      "target": "N10",
+      "type": "extends",
+      "weight": 5.25
+    },
+    {
+      "source": "N137",
+      "target": "N10",
+      "type": "uses",
+      "weight": 5.36
+    },
+    {
+      "source": "N137",
+      "target": "N30",
+      "type": "calls",
+      "weight": 5.68
+    },
+    {
+      "source": "N137",
+      "target": "N30",
+      "type": "imports",
+      "weight": 2.53
+    },
+    {
+      "source": "N137",
+      "target": "N30",
+      "type": "extends",
+      "weight": 7.37
+    },
+    {
+      "source": "N137",
+      "target": "N30",
+      "type": "uses",
+      "weight": 4.58
+    },
+    {
+      "source": "N137",
+      "target": "N38",
+      "type": "calls",
+      "weight": 7.52
+    },
+    {
+      "source": "N137",
+      "target": "N38",
+      "type": "imports",
+      "weight": 8.48
+    },
+    {
+      "source": "N137",
+      "target": "N38",
+      "type": "extends",
+      "weight": 5.05
+    },
+    {
+      "source": "N137",
+      "target": "N38",
+      "type": "uses",
+      "weight": 6.34
+    },
+    {
+      "source": "N138",
+      "target": "N2",
+      "type": "calls",
+      "weight": 4.18
+    },
+    {
+      "source": "N138",
+      "target": "N2",
+      "type": "imports",
+      "weight": 3.14
+    },
+    {
+      "source": "N138",
+      "target": "N2",
+      "type": "extends",
+      "weight": 6.8
+    },
+    {
+      "source": "N138",
+      "target": "N2",
+      "type": "uses",
+      "weight": 5.92
+    },
+    {
+      "source": "N138",
+      "target": "N11",
+      "type": "uses",
+      "weight": 7.82
+    },
+    {
+      "source": "N138",
+      "target": "N66",
+      "type": "calls",
+      "weight": 2.45
+    },
+    {
+      "source": "N138",
+      "target": "N66",
+      "type": "imports",
+      "weight": 4.98
+    },
+    {
+      "source": "N138",
+      "target": "N66",
+      "type": "extends",
+      "weight": 8.5
+    },
+    {
+      "source": "N138",
+      "target": "N66",
+      "type": "uses",
+      "weight": 9.59
+    },
+    {
+      "source": "N139",
+      "target": "N23",
+      "type": "uses",
+      "weight": 1.08
+    },
+    {
+      "source": "N139",
+      "target": "N36",
+      "type": "calls",
+      "weight": 8.89
+    },
+    {
+      "source": "N139",
+      "target": "N36",
+      "type": "imports",
+      "weight": 1.53
+    },
+    {
+      "source": "N139",
+      "target": "N36",
+      "type": "extends",
+      "weight": 6.89
+    },
+    {
+      "source": "N139",
+      "target": "N36",
+      "type": "uses",
+      "weight": 5.59
+    },
+    {
+      "source": "N139",
+      "target": "N99",
+      "type": "uses",
+      "weight": 2.11
+    },
+    {
+      "source": "N140",
+      "target": "N2",
+      "type": "calls",
+      "weight": 2.62
+    },
+    {
+      "source": "N140",
+      "target": "N2",
+      "type": "imports",
+      "weight": 9.21
+    },
+    {
+      "source": "N140",
+      "target": "N2",
+      "type": "extends",
+      "weight": 6.55
+    },
+    {
+      "source": "N140",
+      "target": "N2",
+      "type": "uses",
+      "weight": 3.77
+    },
+    {
+      "source": "N140",
+      "target": "N24",
+      "type": "uses",
+      "weight": 5.21
+    },
+    {
+      "source": "N140",
+      "target": "N47",
+      "type": "extends",
+      "weight": 2.53
+    },
+    {
+      "source": "N141",
+      "target": "N55",
+      "type": "imports",
+      "weight": 3.54
+    },
+    {
+      "source": "N141",
+      "target": "N76",
+      "type": "calls",
+      "weight": 1.06
+    },
+    {
+      "source": "N141",
+      "target": "N76",
+      "type": "imports",
+      "weight": 9.83
+    },
+    {
+      "source": "N141",
+      "target": "N76",
+      "type": "extends",
+      "weight": 2.07
+    },
+    {
+      "source": "N141",
+      "target": "N76",
+      "type": "uses",
+      "weight": 4.42
+    },
+    {
+      "source": "N141",
+      "target": "N107",
+      "type": "imports",
+      "weight": 6.56
+    },
+    {
+      "source": "N142",
+      "target": "N77",
+      "type": "extends",
+      "weight": 8.52
+    },
+    {
+      "source": "N142",
+      "target": "N79",
+      "type": "calls",
+      "weight": 7.5
+    },
+    {
+      "source": "N142",
+      "target": "N79",
+      "type": "imports",
+      "weight": 1.88
+    },
+    {
+      "source": "N142",
+      "target": "N79",
+      "type": "extends",
+      "weight": 4.49
+    },
+    {
+      "source": "N142",
+      "target": "N79",
+      "type": "uses",
+      "weight": 4.99
+    },
+    {
+      "source": "N142",
+      "target": "N141",
+      "type": "calls",
+      "weight": 5.04
+    },
+    {
+      "source": "N142",
+      "target": "N141",
+      "type": "imports",
+      "weight": 8.68
+    },
+    {
+      "source": "N142",
+      "target": "N141",
+      "type": "extends",
+      "weight": 1.33
+    },
+    {
+      "source": "N142",
+      "target": "N141",
+      "type": "uses",
+      "weight": 2.75
+    },
+    {
+      "source": "N143",
+      "target": "N79",
+      "type": "calls",
+      "weight": 9.21
+    },
+    {
+      "source": "N143",
+      "target": "N79",
+      "type": "imports",
+      "weight": 7.98
+    },
+    {
+      "source": "N143",
+      "target": "N79",
+      "type": "extends",
+      "weight": 2.56
+    },
+    {
+      "source": "N143",
+      "target": "N79",
+      "type": "uses",
+      "weight": 6.38
+    },
+    {
+      "source": "N143",
+      "target": "N85",
+      "type": "calls",
+      "weight": 7.98
+    },
+    {
+      "source": "N143",
+      "target": "N85",
+      "type": "imports",
+      "weight": 6.01
+    },
+    {
+      "source": "N143",
+      "target": "N85",
+      "type": "extends",
+      "weight": 8.19
+    },
+    {
+      "source": "N143",
+      "target": "N85",
+      "type": "uses",
+      "weight": 1.58
+    },
+    {
+      "source": "N143",
+      "target": "N103",
+      "type": "imports",
+      "weight": 5.01
+    },
+    {
+      "source": "N144",
+      "target": "N25",
+      "type": "calls",
+      "weight": 4.49
+    },
+    {
+      "source": "N144",
+      "target": "N56",
+      "type": "extends",
+      "weight": 9.37
+    },
+    {
+      "source": "N144",
+      "target": "N77",
+      "type": "calls",
+      "weight": 5.57
+    },
+    {
+      "source": "N144",
+      "target": "N77",
+      "type": "imports",
+      "weight": 2.48
+    },
+    {
+      "source": "N144",
+      "target": "N77",
+      "type": "extends",
+      "weight": 5.87
+    },
+    {
+      "source": "N144",
+      "target": "N77",
+      "type": "uses",
+      "weight": 4.84
+    },
+    {
+      "source": "N145",
+      "target": "N34",
+      "type": "extends",
+      "weight": 2.31
+    },
+    {
+      "source": "N145",
+      "target": "N107",
+      "type": "imports",
+      "weight": 3.02
+    },
+    {
+      "source": "N145",
+      "target": "N128",
+      "type": "imports",
+      "weight": 8.98
+    },
+    {
+      "source": "N146",
+      "target": "N10",
+      "type": "uses",
+      "weight": 1.47
+    },
+    {
+      "source": "N146",
+      "target": "N27",
+      "type": "calls",
+      "weight": 4.37
+    },
+    {
+      "source": "N146",
+      "target": "N27",
+      "type": "imports",
+      "weight": 3.89
+    },
+    {
+      "source": "N146",
+      "target": "N27",
+      "type": "extends",
+      "weight": 3.52
+    },
+    {
+      "source": "N146",
+      "target": "N27",
+      "type": "uses",
+      "weight": 1.13
+    },
+    {
+      "source": "N146",
+      "target": "N32",
+      "type": "calls",
+      "weight": 5.01
+    },
+    {
+      "source": "N146",
+      "target": "N32",
+      "type": "imports",
+      "weight": 7.67
+    },
+    {
+      "source": "N146",
+      "target": "N32",
+      "type": "extends",
+      "weight": 3.73
+    },
+    {
+      "source": "N146",
+      "target": "N32",
+      "type": "uses",
+      "weight": 6.23
+    },
+    {
+      "source": "N147",
+      "target": "N51",
+      "type": "calls",
+      "weight": 5.4
+    },
+    {
+      "source": "N147",
+      "target": "N51",
+      "type": "imports",
+      "weight": 5.01
+    },
+    {
+      "source": "N147",
+      "target": "N51",
+      "type": "extends",
+      "weight": 5.13
+    },
+    {
+      "source": "N147",
+      "target": "N51",
+      "type": "uses",
+      "weight": 5.84
+    },
+    {
+      "source": "N147",
+      "target": "N55",
+      "type": "extends",
+      "weight": 9.95
+    },
+    {
+      "source": "N147",
+      "target": "N98",
+      "type": "calls",
+      "weight": 7.09
+    },
+    {
+      "source": "N147",
+      "target": "N98",
+      "type": "imports",
+      "weight": 9.41
+    },
+    {
+      "source": "N147",
+      "target": "N98",
+      "type": "extends",
+      "weight": 4.07
+    },
+    {
+      "source": "N147",
+      "target": "N98",
+      "type": "uses",
+      "weight": 6.23
+    },
+    {
+      "source": "N148",
+      "target": "N70",
+      "type": "calls",
+      "weight": 5.36
+    },
+    {
+      "source": "N148",
+      "target": "N70",
+      "type": "imports",
+      "weight": 4.55
+    },
+    {
+      "source": "N148",
+      "target": "N70",
+      "type": "extends",
+      "weight": 5.83
+    },
+    {
+      "source": "N148",
+      "target": "N70",
+      "type": "uses",
+      "weight": 2.96
+    },
+    {
+      "source": "N148",
+      "target": "N103",
+      "type": "calls",
+      "weight": 2.8
+    },
+    {
+      "source": "N148",
+      "target": "N103",
+      "type": "imports",
+      "weight": 6.35
+    },
+    {
+      "source": "N148",
+      "target": "N103",
+      "type": "extends",
+      "weight": 3.21
+    },
+    {
+      "source": "N148",
+      "target": "N103",
+      "type": "uses",
+      "weight": 8.03
+    },
+    {
+      "source": "N148",
+      "target": "N138",
+      "type": "calls",
+      "weight": 3.95
+    },
+    {
+      "source": "N149",
+      "target": "N7",
+      "type": "calls",
+      "weight": 6.36
+    },
+    {
+      "source": "N149",
+      "target": "N7",
+      "type": "imports",
+      "weight": 6.95
+    },
+    {
+      "source": "N149",
+      "target": "N7",
+      "type": "extends",
+      "weight": 4.68
+    },
+    {
+      "source": "N149",
+      "target": "N7",
+      "type": "uses",
+      "weight": 8.08
+    },
+    {
+      "source": "N149",
+      "target": "N61",
+      "type": "extends",
+      "weight": 9.16
+    },
+    {
+      "source": "N149",
+      "target": "N63",
+      "type": "calls",
+      "weight": 9.96
+    },
+    {
+      "source": "N149",
+      "target": "N63",
+      "type": "imports",
+      "weight": 4.46
+    },
+    {
+      "source": "N149",
+      "target": "N63",
+      "type": "extends",
+      "weight": 7.96
+    },
+    {
+      "source": "N149",
+      "target": "N63",
+      "type": "uses",
+      "weight": 1.08
+    }
+  ],
+  "metadata": {
+    "directed": true,
+    "weighted": true,
+    "multi_edge": true,
+    "hierarchy_depth": 0,
+    "seed": 1,
+    "tier": "large",
+    "num_nodes": 150
+  }
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "hierarchical-medium-n20-s0-3e753083__in_degree__9558867f",
+    "graph_id": "hierarchical-medium-n20-s0-3e753083",
+    "text": "What is the in-degree of node 'N19'?",
+    "category": "in_degree",
+    "difficulty": "trivial",
+    "answer_type": "int",
+    "ground_truth": 7,
+    "computation": "G.in_degree('N19')"
+  },
+  {
+    "id": "hierarchical-medium-n20-s0-3e753083__out_degree__81332876",
+    "graph_id": "hierarchical-medium-n20-s0-3e753083",
+    "text": "What is the out-degree of node 'N14'?",
+    "category": "out_degree",
+    "difficulty": "trivial",
+    "answer_type": "int",
+    "ground_truth": 3,
+    "computation": "G.out_degree('N14')"
+  },
+  {
+    "id": "hierarchical-medium-n20-s0-3e753083__list_nodes__23a7711a",
+    "graph_id": "hierarchical-medium-n20-s0-3e753083",
+    "text": "List all node labels in the graph.",
+    "category": "list_nodes",
+    "difficulty": "trivial",
+    "answer_type": "list",
+    "ground_truth": [
+      "N0",
+      "N1",
+      "N10",
+      "N11",
+      "N12",
+      "N13",
+      "N14",
+      "N15",
+      "N16",
+      "N17",
+      "N18",
+      "N19",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "N6",
+      "N7",
+      "N8",
+      "N9"
+    ],
+    "computation": "sorted(G.nodes())"
+  },
+  {
+    "id": "hierarchical-medium-n20-s0-3e753083__edge_exists__9e4d6e3c",
+    "graph_id": "hierarchical-medium-n20-s0-3e753083",
+    "text": "Is there an edge N2 -> N9?",
+    "category": "edge_exists",
+    "difficulty": "trivial",
+    "answer_type": "bool",
+    "ground_truth": true,
+    "computation": "G.has_edge('N2', 'N9')"
+  },
+  {
+    "id": "hierarchical-medium-n20-s0-3e753083__edge_count__cca5a5a1",
+    "graph_id": "hierarchical-medium-n20-s0-3e753083",
+    "text": "How many edges does the graph have?",
+    "category": "edge_count",
+    "difficulty": "trivial",
+    "answer_type": "int",
+    "ground_truth": 93,
+    "computation": "G.number_of_edges()"
+  },
+  {
+    "id": "hierarchical-medium-n20-s0-3e753083__list_children__fcbd04c3",
+    "graph_id": "hierarchical-medium-n20-s0-3e753083",
+    "text": "List the direct children (successors) of node 'N16'.",
+    "category": "list_children",
+    "difficulty": "trivial",
+    "answer_type": "list",
+    "ground_truth": [
+      "N12"
+    ],
+    "computation": "sorted(set(G.successors('N16')))"
+  },
+  {
+    "id": "hierarchical-medium-n20-s0-3e753083__node_exists__4f65d4d9",
+    "graph_id": "hierarchical-medium-n20-s0-3e753083",
+    "text": "Is there a node labelled 'X3407' in the graph?",
+    "category": "node_exists",
+    "difficulty": "trivial",
+    "answer_type": "bool",
+    "ground_truth": false,
+    "computation": "G.has_node('X3407')"
+  },
+  {
+    "id": "hierarchical-medium-n20-s0-3e753083__node_count__19488dec",
+    "graph_id": "hierarchical-medium-n20-s0-3e753083",
+    "text": "How many nodes does the graph have?",
+    "category": "node_count",
+    "difficulty": "trivial",
+    "answer_type": "int",
+    "ground_truth": 20,
+    "computation": "G.number_of_nodes()"
+  },
+  {
+    "id": "hierarchical-medium-n20-s0-3e753083__shortest_path__42af9fc3",
+    "graph_id": "hierarchical-medium-n20-s0-3e753083",
+    "text": "What is a shortest path (by hop count) from 'N4' to 'N6'? Give the node sequence.",
+    "category": "shortest_path",
+    "difficulty": "nontrivial",
+    "answer_type": "list",
+    "ground_truth": [
+      "N4",
+      "N17",
+      "N13",
+      "N1",
+      "N5",
+      "N6"
+    ],
+    "computation": "nx.shortest_path(G, 'N4', 'N6')"
+  },
+  {
+    "id": "hierarchical-medium-n20-s0-3e753083__is_cyclic__0ff18e02",
+    "graph_id": "hierarchical-medium-n20-s0-3e753083",
+    "text": "Does the graph contain a cycle?",
+    "category": "is_cyclic",
+    "difficulty": "nontrivial",
+    "answer_type": "bool",
+    "ground_truth": true,
+    "computation": "not nx.is_directed_acyclic_graph(G)"
+  },
+  {
+    "id": "hierarchical-medium-n20-s0-3e753083__can_reach__17e0aa3c",
+    "graph_id": "hierarchical-medium-n20-s0-3e753083",
+    "text": "Can node 'N0' be reached from node 'N7'?",
+    "category": "can_reach",
+    "difficulty": "nontrivial",
+    "answer_type": "bool",
+    "ground_truth": false,
+    "computation": "nx.has_path(G, 'N7', 'N0')"
+  },
+  {
+    "id": "hierarchical-medium-n20-s0-3e753083__num_components__b83e90ec",
+    "graph_id": "hierarchical-medium-n20-s0-3e753083",
+    "text": "How many weakly connected components does the graph have?",
+    "category": "num_components",
+    "difficulty": "nontrivial",
+    "answer_type": "int",
+    "ground_truth": 1,
+    "computation": "nx.number_weakly_connected_components(G)"
+  },
+  {
+    "id": "hierarchical-medium-n20-s0-3e753083__leaf_nodes__d71037d1",
+    "graph_id": "hierarchical-medium-n20-s0-3e753083",
+    "text": "List all leaf nodes (out-degree 0).",
+    "category": "leaf_nodes",
+    "difficulty": "nontrivial",
+    "answer_type": "list",
+    "ground_truth": [],
+    "computation": "sorted(n for n in G if G.out_degree(n) == 0)"
+  },
+  {
+    "id": "hierarchical-medium-n20-s0-3e753083__reachable_count__b5d32b16",
+    "graph_id": "hierarchical-medium-n20-s0-3e753083",
+    "text": "How many other nodes are reachable from 'N2'?",
+    "category": "reachable_count",
+    "difficulty": "nontrivial",
+    "answer_type": "int",
+    "ground_truth": 17,
+    "computation": "len(nx.descendants(G, 'N2'))"
+  },
+  {
+    "id": "hierarchical-medium-n20-s0-3e753083__num_paths__d3fbf47a",
+    "graph_id": "hierarchical-medium-n20-s0-3e753083",
+    "text": "How many distinct simple paths of length <= 6 hops connect 'N0' to 'N5'?",
+    "category": "num_paths",
+    "difficulty": "nontrivial",
+    "answer_type": "int",
+    "ground_truth": 58,
+    "computation": "len(list(nx.all_simple_paths(G, 'N0', 'N5', cutoff=6)))"
+  }
+]
