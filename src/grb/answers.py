@@ -15,6 +15,7 @@ normalization:
 from __future__ import annotations
 
 import re
+from collections import Counter
 from typing import Any
 
 # Tolerances for float comparison.
@@ -157,7 +158,11 @@ def compare_answers(parsed: Any, ground_truth: Any, answer_type: str) -> bool:
         if not isinstance(parsed, (list, tuple, set)):
             parsed = _split_list(str(parsed))
         gt_list = ground_truth if isinstance(ground_truth, (list, tuple, set)) else [ground_truth]
-        return {_norm_token(x) for x in parsed} == {_norm_token(x) for x in gt_list}
+        # Multiset (order-insensitive, duplicate-count-aware) comparison: set-style
+        # answers still match regardless of order, but duplicates are not dropped.
+        return Counter(_norm_token(x) for x in parsed) == Counter(
+            _norm_token(x) for x in gt_list
+        )
 
     if answer_type == "string":
         return _norm_token(parsed) == _norm_token(ground_truth)
@@ -169,3 +174,58 @@ def grade(text: str, ground_truth: Any, answer_type: str) -> tuple[Any, bool]:
     """Convenience: parse ``text`` then compare. Returns (parsed, correct)."""
     parsed = parse_response(text, answer_type)
     return parsed, compare_answers(parsed, ground_truth, answer_type)
+
+
+def is_valid_shortest_path(
+    answer: Any,
+    src: Any,
+    dst: Any,
+    nx_graph: Any,
+    target_len: int,
+) -> bool:
+    """Return True iff ``answer`` is a valid shortest path in ``nx_graph``.
+
+    Graph-aware grading for the ``shortest_path`` category: a path is correct iff
+    its endpoints match ``src``/``dst``, every consecutive pair is a real edge in
+    ``nx_graph``, and its hop length equals ``target_len`` (the ground-truth
+    shortest length). This accepts *any* valid shortest path (not just the one
+    NetworkX happened to return) and rejects scrambled node sets that are not
+    actually paths.
+
+    ``answer`` may be a list/tuple of node labels or a free-text string (it is
+    parsed with the same list parser used elsewhere). Node labels are compared
+    after :func:`_norm_token` normalization so casing/whitespace do not matter.
+    """
+    if answer is None:
+        return False
+    if not isinstance(answer, (list, tuple)):
+        answer = _split_list(str(answer))
+    path = [str(x) for x in answer]
+    if len(path) < 1:
+        return False
+
+    # Map normalized labels back to the actual node objects in the graph.
+    node_by_norm: dict[str, Any] = {}
+    for n in nx_graph.nodes():
+        node_by_norm.setdefault(_norm_token(str(n)), n)
+
+    resolved: list[Any] = []
+    for label in path:
+        key = _norm_token(label)
+        if key not in node_by_norm:
+            return False
+        resolved.append(node_by_norm[key])
+
+    # Endpoints must match the question's source/target.
+    if _norm_token(str(resolved[0])) != _norm_token(str(src)):
+        return False
+    if _norm_token(str(resolved[-1])) != _norm_token(str(dst)):
+        return False
+
+    # Every consecutive pair must be a real edge.
+    for u, v in zip(resolved, resolved[1:]):
+        if not nx_graph.has_edge(u, v):
+            return False
+
+    # Hop length must equal the ground-truth shortest length.
+    return (len(resolved) - 1) == int(target_len)

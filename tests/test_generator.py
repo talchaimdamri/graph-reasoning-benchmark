@@ -128,6 +128,63 @@ def test_non_multi_is_simple_graph():
     assert isinstance(g.to_networkx(), nx.Graph)
 
 
+def _max_parallel(g) -> int:
+    """Largest number of edges generated for any single ordered pair."""
+    pair_counts: dict[tuple[str, str], int] = {}
+    for e in g.edges:
+        key = (e.source, e.target)
+        pair_counts[key] = pair_counts.get(key, 0) + 1
+    return max(pair_counts.values()) if pair_counts else 0
+
+
+def test_multi_edge_emits_parallel_edges():
+    types = ["a", "b", "c"]
+    g = generate_graph(20, seed=11, directed=True, model="random",
+                       weighted=True, edge_prob=0.4, multi_edge_types=types)
+    # At least one ordered pair carries more than one (parallel) edge.
+    assert _max_parallel(g) > 1
+    nxg = g.to_networkx()
+    assert isinstance(nxg, nx.MultiDiGraph)
+    assert nxg.number_of_edges() == len(g.edges)
+
+
+@pytest.mark.parametrize("tier", ["medium", "large"])
+def test_tier_multi_edge_has_parallel_edges(tier):
+    g = make_tiered_graph(tier, seed=3)
+    assert g.metadata.multi_edge is True
+    assert _max_parallel(g) > 1, f"{tier} tier has no parallel edges"
+
+
+def test_parallel_edge_weight_sum_fires_on_real_data():
+    """templates.py _edge_weight / total_ownership 'sum across parallel edges'
+    must actually aggregate >1 weight for a multigraph pair."""
+    from grb.questions.templates import _edge_weight, _node_weight_by_type
+
+    g = generate_graph(20, seed=11, directed=True, model="random",
+                       weighted=True, edge_prob=0.4,
+                       multi_edge_types=["a", "b", "c"])
+    nxg = g.to_networkx()
+    # Find an ordered pair with parallel edges.
+    parallel_pair = None
+    for u, v in nxg.edges():
+        if len(nxg[u][v]) > 1:
+            parallel_pair = (u, v)
+            break
+    assert parallel_pair is not None, "expected a parallel-edge pair"
+    u, v = parallel_pair
+    indiv = [
+        float(d["weight"])
+        for d in nxg[u][v].values()
+        if d.get("weight") is not None
+    ]
+    assert len(indiv) > 1
+    # Edge weight sums across the parallel edges.
+    assert _edge_weight(nxg, u, v) == round(sum(indiv), 4)
+    # total_ownership aggregation also includes all parallel edges.
+    out_w = _node_weight_by_type(nxg, u, incoming=False, etype=None)
+    assert out_w >= round(sum(indiv), 4) - 1e-6
+
+
 # --------------------------------------------------------------------------- #
 # Hierarchical structure
 # --------------------------------------------------------------------------- #

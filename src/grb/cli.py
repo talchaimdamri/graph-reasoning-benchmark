@@ -218,6 +218,64 @@ def smoke(
 # --------------------------------------------------------------------------- #
 # run
 # --------------------------------------------------------------------------- #
+def _build_run_config(
+    graph_dir: str,
+    encoding_dir: str,
+    question_dir: str,
+    db_path: str,
+    run_id: Optional[str],
+    max_workers: int,
+    models: str,
+    formats: Optional[str],
+):
+    """Load inputs and assemble a BenchmarkConfig (or exit if anything missing)."""
+    from grb.pipeline import BenchmarkConfig
+
+    graphs = _load_graphs(graph_dir)
+    encodings = _load_encodings(encoding_dir)
+    qs = _load_questions(question_dir)
+    if not graphs or not encodings or not qs:
+        typer.echo("Missing graphs, encodings, or questions. Run generate/encode/questions first.")
+        raise typer.Exit(code=1)
+
+    return BenchmarkConfig(
+        graphs=graphs,
+        encodings=encodings,
+        questions=qs,
+        models=tuple(m.strip() for m in models.split(",")),
+        db_path=db_path,
+        run_id=run_id,
+        max_workers=max_workers,
+        formats=[f.strip() for f in formats.split(",")] if formats else None,
+    )
+
+
+@app.command()
+def estimate(
+    graph_dir: str = typer.Option(DEFAULT_GRAPH_DIR),
+    encoding_dir: str = typer.Option(DEFAULT_ENCODING_DIR),
+    question_dir: str = typer.Option(DEFAULT_QUESTION_DIR),
+    db_path: str = typer.Option(DEFAULT_DB),
+    run_id: Optional[str] = typer.Option(None, help="Resume/checkpoint id."),
+    max_workers: int = typer.Option(4),
+    models: str = typer.Option("opus,sonnet,haiku"),
+    formats: Optional[str] = typer.Option(None, help="Restrict to these formats."),
+) -> None:
+    """Estimate the benchmark grid size, total calls and approximate tokens.
+
+    Makes NO API calls; computes the (graphs x encodings x questions x models)
+    grid and projects input tokens from the real prompts plus an output
+    allowance per call.
+    """
+    from grb.pipeline import estimate_cost, format_estimate
+
+    config = _build_run_config(
+        graph_dir, encoding_dir, question_dir, db_path, run_id, max_workers,
+        models, formats,
+    )
+    typer.echo(format_estimate(estimate_cost(config)))
+
+
 @app.command()
 def run(
     graph_dir: str = typer.Option(DEFAULT_GRAPH_DIR),
@@ -228,27 +286,36 @@ def run(
     max_workers: int = typer.Option(4),
     models: str = typer.Option("opus,sonnet,haiku"),
     formats: Optional[str] = typer.Option(None, help="Restrict to these formats."),
+    estimate_only: bool = typer.Option(
+        False, "--estimate", help="Print the cost estimate and exit (no API calls)."
+    ),
+    yes: bool = typer.Option(
+        False, "--yes", help="Confirm execution of real API calls."
+    ),
 ) -> None:
-    """Run the full benchmark grid (with caching, concurrency and resume)."""
-    from grb.pipeline import BenchmarkConfig, run_benchmark
+    """Run the full benchmark grid (with caching, concurrency and resume).
 
-    graphs = _load_graphs(graph_dir)
-    encodings = _load_encodings(encoding_dir)
-    qs = _load_questions(question_dir)
-    if not graphs or not encodings or not qs:
-        typer.echo("Missing graphs, encodings, or questions. Run generate/encode/questions first.")
+    Always prints a cost estimate first. With ``--estimate`` it stops there.
+    Otherwise ``--yes`` is required to proceed with real API calls.
+    """
+    from grb.pipeline import estimate_cost, format_estimate, run_benchmark
+
+    config = _build_run_config(
+        graph_dir, encoding_dir, question_dir, db_path, run_id, max_workers,
+        models, formats,
+    )
+
+    typer.echo(format_estimate(estimate_cost(config)))
+
+    if estimate_only:
+        return
+    if not yes:
+        typer.echo(
+            "\nThis will make real API calls. Re-run with --yes to proceed "
+            "(or --estimate to only see the projection)."
+        )
         raise typer.Exit(code=1)
 
-    config = BenchmarkConfig(
-        graphs=graphs,
-        encodings=encodings,
-        questions=qs,
-        models=tuple(m.strip() for m in models.split(",")),
-        db_path=db_path,
-        run_id=run_id,
-        max_workers=max_workers,
-        formats=[f.strip() for f in formats.split(",")] if formats else None,
-    )
     summary = run_benchmark(config)
     typer.echo(
         f"run_id={summary['run_id']} "

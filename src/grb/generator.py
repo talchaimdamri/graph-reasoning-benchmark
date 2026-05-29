@@ -11,6 +11,7 @@ produce byte-identical :class:`~grb.models.BenchGraph` objects.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import random
 from pathlib import Path
@@ -36,6 +37,59 @@ def _round_weight(value: float) -> float:
     return round(value, 2)
 
 
+# Probability that a connected ordered pair gets the full set of parallel
+# edges (one per type) rather than a single typed edge, when multi_edge_types
+# is enabled. Sampled deterministically from the run's rng.
+_PARALLEL_PAIR_PROB = 0.5
+
+
+def _sample_weight(
+    rng: random.Random, weighted: bool, weight_range: tuple[float, float]
+) -> Optional[float]:
+    if not weighted:
+        return None
+    lo, hi = weight_range
+    return _round_weight(rng.uniform(lo, hi))
+
+
+def _make_edges(
+    rng: random.Random,
+    source: str,
+    target: str,
+    weighted: bool,
+    weight_range: tuple[float, float],
+    multi_edge_types: Optional[list[str]],
+) -> list[Edge]:
+    """Construct the edge(s) for one connected ordered pair.
+
+    Without ``multi_edge_types`` this yields a single untyped edge. With it, a
+    sampled subset of pairs (probability :data:`_PARALLEL_PAIR_PROB`) gets a
+    *parallel* edge per type — each with its own sampled weight — so a
+    MultiDiGraph actually contains parallel edges; the remaining pairs get a
+    single edge of one sampled type. All sampling is driven by ``rng`` for
+    seed-reproducibility.
+    """
+    if not multi_edge_types:
+        weight = _sample_weight(rng, weighted, weight_range)
+        return [Edge(source=source, target=target, type=None, weight=weight)]
+
+    if rng.random() < _PARALLEL_PAIR_PROB:
+        # Parallel edges: one per type, each with an independently sampled weight.
+        return [
+            Edge(
+                source=source,
+                target=target,
+                type=etype,
+                weight=_sample_weight(rng, weighted, weight_range),
+            )
+            for etype in multi_edge_types
+        ]
+    # Single typed edge for this pair.
+    etype = rng.choice(multi_edge_types)
+    weight = _sample_weight(rng, weighted, weight_range)
+    return [Edge(source=source, target=target, type=etype, weight=weight)]
+
+
 def _make_edge(
     rng: random.Random,
     source: str,
@@ -44,14 +98,13 @@ def _make_edge(
     weight_range: tuple[float, float],
     multi_edge_types: Optional[list[str]],
 ) -> Edge:
-    """Construct one Edge, sampling weight / type deterministically from ``rng``."""
-    weight = None
-    if weighted:
-        lo, hi = weight_range
-        weight = _round_weight(rng.uniform(lo, hi))
-    etype = None
-    if multi_edge_types:
-        etype = rng.choice(multi_edge_types)
+    """Construct one Edge, sampling weight / type deterministically from ``rng``.
+
+    Retained for the single-edge call sites; multi-edge emission uses
+    :func:`_make_edges`.
+    """
+    weight = _sample_weight(rng, weighted, weight_range)
+    etype = rng.choice(multi_edge_types) if multi_edge_types else None
     return Edge(source=source, target=target, type=etype, weight=weight)
 
 
@@ -99,8 +152,8 @@ def _gen_random(
             if not directed and j <= i:
                 continue
             if rng.random() < edge_prob:
-                edges.append(
-                    _make_edge(
+                edges.extend(
+                    _make_edges(
                         rng,
                         node_list[i],
                         node_list[j],
@@ -169,8 +222,8 @@ def _gen_hierarchical(
             if abs(level[i] - level[j]) > 1:
                 continue
             if rng.random() < cross_edge_prob:
-                edges.append(
-                    _make_edge(
+                edges.extend(
+                    _make_edges(
                         rng,
                         node_list[i],
                         node_list[j],
@@ -226,8 +279,8 @@ def _gen_scale_free(
             attempts += 1
             targets.add(rng.choice(repeated))
         for t in sorted(targets):
-            edges.append(
-                _make_edge(
+            edges.extend(
+                _make_edges(
                     rng,
                     node_list[new],
                     node_list[t],
@@ -323,7 +376,31 @@ def generate_graph(
         tier=tier,
         num_nodes=nodes,
     )
-    gid = graph_id or f"{model}-{tier}-n{nodes}-s{seed}"
+    if graph_id is not None:
+        gid = graph_id
+    else:
+        # Short stable hash of the full generation params so structurally
+        # different graphs (directed/weighted/edge_prob/multi_edge_types/
+        # hierarchy_depth/...) never collide on the same id.
+        param_blob = json.dumps(
+            {
+                "model": model,
+                "tier": tier,
+                "nodes": nodes,
+                "seed": seed,
+                "directed": directed,
+                "weighted": weighted,
+                "weight_range": list(weight_range),
+                "multi_edge_types": multi_edge_types,
+                "hierarchy_depth": hierarchy_depth,
+                "edge_prob": edge_prob,
+                "cross_edge_prob": cross_edge_prob,
+                "scale_free_m": scale_free_m,
+            },
+            sort_keys=True,
+        )
+        digest = hashlib.sha1(param_blob.encode("utf-8")).hexdigest()[:8]
+        gid = f"{model}-{tier}-n{nodes}-s{seed}-{digest}"
     return BenchGraph(id=gid, nodes=node_list, edges=edges, metadata=meta)
 
 
@@ -352,7 +429,9 @@ _TIER_SPEC: dict[str, dict] = {
         "multi_edge_types": ["calls", "imports", "extends"],
         "hierarchy_depth": 3,
         "edge_prob": 0.3,
-        "cross_edge_prob": 0.32,
+        # Lower than single-edge calibration: multi_edge_types now emits real
+        # parallel edges, so each connected pair contributes more tokens.
+        "cross_edge_prob": 0.18,
         "target_tokens": 2000,
     },
     "large": {
@@ -362,7 +441,8 @@ _TIER_SPEC: dict[str, dict] = {
         "weighted": True,
         "multi_edge_types": ["calls", "imports", "extends", "uses"],
         "hierarchy_depth": 0,
-        "scale_free_m": 7,
+        # Lower than single-edge calibration: parallel edges multiply edge count.
+        "scale_free_m": 3,
         "target_tokens": 20000,
     },
 }

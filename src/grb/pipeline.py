@@ -22,7 +22,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from typing import Any, Callable, Optional
 
-from grb.answers import grade
+from grb.answers import grade, is_valid_shortest_path, parse_response
 from grb.llm.headless import call_claude as _default_call_claude
 from grb.models import BenchGraph, Encoding, Question, Result
 from grb.prompts import (
@@ -88,10 +88,36 @@ class Cell:
     fmt: str
     question: Question
     model: str
+    graph: Optional[BenchGraph] = None
 
 
 def _result_id(run_id: str, graph_id: str, fmt: str, question_id: str, model: str) -> str:
     return f"{run_id}::{graph_id}::{fmt}::{question_id}::{model}"
+
+
+def _grade_answer(
+    text: str,
+    question: Question,
+    graph: Optional[BenchGraph],
+) -> tuple[Any, bool]:
+    """Grade ``text`` against ``question``.
+
+    For the ``shortest_path`` category (where the ground truth is an *ordered*
+    path) graphs are graded structurally when ``graph`` is available: any valid
+    shortest path is accepted and non-paths are rejected. All other categories
+    fall back to the generic type-aware :func:`grade`.
+    """
+    if question.category == "shortest_path" and graph is not None:
+        gt = question.ground_truth
+        if isinstance(gt, (list, tuple)) and len(gt) >= 1:
+            parsed = parse_response(text, question.answer_type)
+            src, dst = str(gt[0]), str(gt[-1])
+            target_len = len(gt) - 1
+            correct = is_valid_shortest_path(
+                parsed, src, dst, graph.to_networkx(), target_len
+            )
+            return parsed, correct
+    return grade(text, question.ground_truth, question.answer_type)
 
 
 def evaluate_single(
@@ -101,6 +127,7 @@ def evaluate_single(
     fmt: str,
     question: Question,
     model: str,
+    graph: Optional[BenchGraph] = None,
     call_fn: Callable[..., dict[str, Any]] = _default_call_claude,
     retries: int = 2,
     backoff_s: float = 2.0,
@@ -110,6 +137,10 @@ def evaluate_single(
 
     The ``visual`` format short-circuits to a skipped result with
     ``error='vision-unsupported-in-headless'`` and no model call.
+
+    When ``graph`` is supplied, ``shortest_path`` questions are graded
+    structurally (any valid shortest path is accepted) rather than by the
+    order-insensitive list comparison.
     """
     rid = _result_id(run_id, encoding.graph_id, fmt, question.id, model)
     base = dict(
@@ -166,7 +197,7 @@ def evaluate_single(
             error=error,
         )
 
-    parsed, correct = grade(text, question.ground_truth, question.answer_type)
+    parsed, correct = _grade_answer(text, question, graph)
     return Result(
         **base,
         model_answer=parsed if parsed is not None else text,
@@ -195,9 +226,105 @@ def _build_cells(config: BenchmarkConfig) -> list[Cell]:
                             fmt=fmt,
                             question=question,
                             model=model,
+                            graph=graph,
                         )
                     )
     return cells
+
+
+# Rough per-call output token allowance (answers are short; a modest budget
+# covers reasoning slippage without claiming to be exact).
+OUTPUT_TOKEN_ALLOWANCE = 64
+
+
+def estimate_cost(config: BenchmarkConfig) -> dict[str, Any]:
+    """Project the grid size, total calls and approximate input/output tokens.
+
+    No API calls are made. Input tokens are estimated by building the real
+    prompt for each non-visual cell and counting its tokens with the same
+    ``cl100k_base`` encoder used elsewhere; visual cells are counted as skipped.
+    Output tokens use a flat :data:`OUTPUT_TOKEN_ALLOWANCE` per call. Returns a
+    summary with a per-tier breakdown and totals.
+    """
+    from grb.encoder import count_tokens
+
+    cells = _build_cells(config)
+
+    tiers: dict[str, dict[str, int]] = {}
+
+    def _tier_of(cell: Cell) -> str:
+        if cell.graph is not None:
+            return cell.graph.metadata.tier
+        return "unknown"
+
+    totals = {"cells": 0, "calls": 0, "skipped": 0, "input_tokens": 0, "output_tokens": 0}
+
+    # Cache prompt token counts per (graph_id, fmt, question_id) since they do
+    # not depend on the model.
+    _prompt_cache: dict[tuple[str, str, str], int] = {}
+
+    for cell in cells:
+        tier = _tier_of(cell)
+        row = tiers.setdefault(
+            tier,
+            {"cells": 0, "calls": 0, "skipped": 0, "input_tokens": 0, "output_tokens": 0},
+        )
+        row["cells"] += 1
+        totals["cells"] += 1
+
+        if cell.fmt == VISUAL_FORMAT:
+            row["skipped"] += 1
+            totals["skipped"] += 1
+            continue
+
+        key = (cell.graph_id, cell.fmt, cell.question.id)
+        in_tokens = _prompt_cache.get(key)
+        if in_tokens is None:
+            try:
+                prompt = build_prompt(cell.encoding, cell.question, cell.fmt)
+                in_tokens = count_tokens(prompt)
+            except VisionUnsupported:
+                row["skipped"] += 1
+                totals["skipped"] += 1
+                _prompt_cache[key] = 0
+                continue
+            _prompt_cache[key] = in_tokens
+
+        row["calls"] += 1
+        row["input_tokens"] += in_tokens
+        row["output_tokens"] += OUTPUT_TOKEN_ALLOWANCE
+        totals["calls"] += 1
+        totals["input_tokens"] += in_tokens
+        totals["output_tokens"] += OUTPUT_TOKEN_ALLOWANCE
+
+    return {
+        "models": list(config.models),
+        "tiers": tiers,
+        "totals": totals,
+        "output_allowance_per_call": OUTPUT_TOKEN_ALLOWANCE,
+    }
+
+
+def format_estimate(est: dict[str, Any]) -> str:
+    """Render :func:`estimate_cost` output as a per-tier and total table."""
+    lines = [
+        f"Cost estimate (models: {', '.join(est['models'])}; "
+        f"output allowance {est['output_allowance_per_call']} tok/call):",
+        f"  {'tier':<10}{'cells':>8}{'calls':>8}{'skipped':>9}"
+        f"{'in_tokens':>12}{'out_tokens':>12}",
+    ]
+    for tier in sorted(est["tiers"]):
+        row = est["tiers"][tier]
+        lines.append(
+            f"  {tier:<10}{row['cells']:>8}{row['calls']:>8}{row['skipped']:>9}"
+            f"{row['input_tokens']:>12}{row['output_tokens']:>12}"
+        )
+    t = est["totals"]
+    lines.append(
+        f"  {'TOTAL':<10}{t['cells']:>8}{t['calls']:>8}{t['skipped']:>9}"
+        f"{t['input_tokens']:>12}{t['output_tokens']:>12}"
+    )
+    return "\n".join(lines)
 
 
 def _progress(done: int, total: int, quota: Quota, *, stream=sys.stderr) -> None:
@@ -262,6 +389,7 @@ def run_benchmark(
             fmt=cell.fmt,
             question=cell.question,
             model=cell.model,
+            graph=cell.graph,
             call_fn=call_fn,
             retries=config.retries,
             backoff_s=config.backoff_s,
