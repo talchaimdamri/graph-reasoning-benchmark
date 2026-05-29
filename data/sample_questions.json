@@ -1,0 +1,1230 @@
+{
+  "hierarchical-small-n16-s2": [
+    {
+      "id": "hierarchical-small-n16-s2__node_count__c0433cbd",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "How many nodes does the graph have?",
+      "category": "node_count",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 16,
+      "computation": "G.number_of_nodes()"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__node_exists__3d6c51e3",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "Is there a node labelled 'X8226' in the graph?",
+      "category": "node_exists",
+      "difficulty": "trivial",
+      "answer_type": "bool",
+      "ground_truth": false,
+      "computation": "G.has_node('X8226')"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__edge_count__00a61f93",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "How many edges does the graph have?",
+      "category": "edge_count",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 26,
+      "computation": "G.number_of_edges()"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__out_degree__1c593af5",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "What is the out-degree of node 'N10'?",
+      "category": "out_degree",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 3,
+      "computation": "G.out_degree('N10')"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__list_children__d11745ad",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "List the direct children (successors) of node 'N3'.",
+      "category": "list_children",
+      "difficulty": "trivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N12"
+      ],
+      "computation": "sorted(set(G.successors('N3')))"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__in_degree__731c9452",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "What is the in-degree of node 'N11'?",
+      "category": "in_degree",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 2,
+      "computation": "G.in_degree('N11')"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__max_degree_node__02f0ee99",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "Which node has the highest total degree? (break ties by smallest label)",
+      "category": "max_degree_node",
+      "difficulty": "trivial",
+      "answer_type": "string",
+      "ground_truth": "N4",
+      "computation": "argmax_n G.degree(n), tie-break smallest label"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__edge_exists__5071950e",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "Is there an edge N9 -> N4?",
+      "category": "edge_exists",
+      "difficulty": "trivial",
+      "answer_type": "bool",
+      "ground_truth": true,
+      "computation": "G.has_edge('N9', 'N4')"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__list_nodes__35d14880",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "List all node labels in the graph.",
+      "category": "list_nodes",
+      "difficulty": "trivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N0",
+        "N1",
+        "N10",
+        "N11",
+        "N12",
+        "N13",
+        "N14",
+        "N15",
+        "N2",
+        "N3",
+        "N4",
+        "N5",
+        "N6",
+        "N7",
+        "N8",
+        "N9"
+      ],
+      "computation": "sorted(G.nodes())"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__reachable_count__e060a724",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "How many other nodes are reachable from 'N12'?",
+      "category": "reachable_count",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 10,
+      "computation": "len(nx.descendants(G, 'N12'))"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__root_nodes__a51149bb",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "List all root nodes (in-degree 0).",
+      "category": "root_nodes",
+      "difficulty": "nontrivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N0"
+      ],
+      "computation": "sorted(n for n in G if G.in_degree(n) == 0)"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__num_components__b437bdb5",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "How many weakly connected components does the graph have?",
+      "category": "num_components",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 1,
+      "computation": "nx.number_weakly_connected_components(G)"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__shortest_path__1dcf884c",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "What is a shortest path (by hop count) from 'N9' to 'N7'? Give the node sequence.",
+      "category": "shortest_path",
+      "difficulty": "nontrivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N9",
+        "N4",
+        "N7"
+      ],
+      "computation": "nx.shortest_path(G, 'N9', 'N7')"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__num_paths__6b82e6c9",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "How many distinct simple paths of length <= 6 hops connect 'N2' to 'N7'?",
+      "category": "num_paths",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 3,
+      "computation": "len(list(nx.all_simple_paths(G, 'N2', 'N7', cutoff=6)))"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__is_cyclic__90624fe3",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "Does the graph contain a cycle?",
+      "category": "is_cyclic",
+      "difficulty": "nontrivial",
+      "answer_type": "bool",
+      "ground_truth": true,
+      "computation": "not nx.is_directed_acyclic_graph(G)"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__shortest_path_len__397a7623",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "What is the length (number of hops) of the shortest path from 'N0' to 'N3'?",
+      "category": "shortest_path_len",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 1,
+      "computation": "nx.shortest_path_length(G, 'N0', 'N3')"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__max_distance__d1711cbd",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "What is the greatest shortest-path distance (in hops) from 'N12' to any node it can reach?",
+      "category": "max_distance",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 7,
+      "computation": "max(nx.single_source_shortest_path_length(G, 'N12').values())"
+    },
+    {
+      "id": "hierarchical-small-n16-s2__can_reach__85f184e0",
+      "graph_id": "hierarchical-small-n16-s2",
+      "text": "Can node 'N5' be reached from node 'N1'?",
+      "category": "can_reach",
+      "difficulty": "nontrivial",
+      "answer_type": "bool",
+      "ground_truth": true,
+      "computation": "nx.has_path(G, 'N1', 'N5')"
+    }
+  ],
+  "random-small-n10-s1": [
+    {
+      "id": "random-small-n10-s1__node_count__c0433cbd",
+      "graph_id": "random-small-n10-s1",
+      "text": "How many nodes does the graph have?",
+      "category": "node_count",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 10,
+      "computation": "G.number_of_nodes()"
+    },
+    {
+      "id": "random-small-n10-s1__edge_weight__96263ae6",
+      "graph_id": "random-small-n10-s1",
+      "text": "What is the weight of edge N4 -- N5?",
+      "category": "edge_weight",
+      "difficulty": "trivial",
+      "answer_type": "float",
+      "ground_truth": 3.99,
+      "computation": "sum of weight on edge ('N4', 'N5')"
+    },
+    {
+      "id": "random-small-n10-s1__node_exists__9d3c7dec",
+      "graph_id": "random-small-n10-s1",
+      "text": "Is there a node labelled 'N0' in the graph?",
+      "category": "node_exists",
+      "difficulty": "trivial",
+      "answer_type": "bool",
+      "ground_truth": true,
+      "computation": "G.has_node('N0')"
+    },
+    {
+      "id": "random-small-n10-s1__edge_count__14aa4e71",
+      "graph_id": "random-small-n10-s1",
+      "text": "How many edges does the graph have?",
+      "category": "edge_count",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 15,
+      "computation": "G.number_of_edges()"
+    },
+    {
+      "id": "random-small-n10-s1__list_children__49889310",
+      "graph_id": "random-small-n10-s1",
+      "text": "List the neighbours of node 'N1'.",
+      "category": "list_children",
+      "difficulty": "trivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N0",
+        "N3",
+        "N5",
+        "N7"
+      ],
+      "computation": "sorted(set(G.neighbors('N1')))"
+    },
+    {
+      "id": "random-small-n10-s1__max_degree_node__d11745ad",
+      "graph_id": "random-small-n10-s1",
+      "text": "Which node has the highest total degree? (break ties by smallest label)",
+      "category": "max_degree_node",
+      "difficulty": "trivial",
+      "answer_type": "string",
+      "ground_truth": "N1",
+      "computation": "argmax_n G.degree(n), tie-break smallest label"
+    },
+    {
+      "id": "random-small-n10-s1__edge_exists__d0944996",
+      "graph_id": "random-small-n10-s1",
+      "text": "Is there an edge N0 -- N1?",
+      "category": "edge_exists",
+      "difficulty": "trivial",
+      "answer_type": "bool",
+      "ground_truth": true,
+      "computation": "G.has_edge('N0', 'N1')"
+    },
+    {
+      "id": "random-small-n10-s1__list_nodes__e4163207",
+      "graph_id": "random-small-n10-s1",
+      "text": "List all node labels in the graph.",
+      "category": "list_nodes",
+      "difficulty": "trivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N0",
+        "N1",
+        "N2",
+        "N3",
+        "N4",
+        "N5",
+        "N6",
+        "N7",
+        "N8",
+        "N9"
+      ],
+      "computation": "sorted(G.nodes())"
+    },
+    {
+      "id": "random-small-n10-s1__edge_weight__16f44881",
+      "graph_id": "random-small-n10-s1",
+      "text": "What is the weight of edge N1 -- N7?",
+      "category": "edge_weight",
+      "difficulty": "trivial",
+      "answer_type": "float",
+      "ground_truth": 1.23,
+      "computation": "sum of weight on edge ('N1', 'N7')"
+    },
+    {
+      "id": "random-small-n10-s1__reachable_count__7608d942",
+      "graph_id": "random-small-n10-s1",
+      "text": "How many other nodes are reachable from 'N5'?",
+      "category": "reachable_count",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 8,
+      "computation": "len(nx.node_connected_component(G, 'N5')) - 1"
+    },
+    {
+      "id": "random-small-n10-s1__shortest_path_len__6ce9da66",
+      "graph_id": "random-small-n10-s1",
+      "text": "What is the length (number of hops) of the shortest path from 'N7' to 'N1'?",
+      "category": "shortest_path_len",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 1,
+      "computation": "nx.shortest_path_length(G, 'N7', 'N1')"
+    },
+    {
+      "id": "random-small-n10-s1__shortest_path__65ed0de4",
+      "graph_id": "random-small-n10-s1",
+      "text": "What is a shortest path (by hop count) from 'N8' to 'N7'? Give the node sequence.",
+      "category": "shortest_path",
+      "difficulty": "nontrivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N8",
+        "N7"
+      ],
+      "computation": "nx.shortest_path(G, 'N8', 'N7')"
+    },
+    {
+      "id": "random-small-n10-s1__avg_weight__eab06e9b",
+      "graph_id": "random-small-n10-s1",
+      "text": "What is the average weight across all weighted edges? (rounded to 4 decimals)",
+      "category": "avg_weight",
+      "difficulty": "nontrivial",
+      "answer_type": "float",
+      "ground_truth": 4.78,
+      "computation": "mean(d['weight'] for *_ , d in G.edges(data=True))"
+    },
+    {
+      "id": "random-small-n10-s1__is_cyclic__864fa3f3",
+      "graph_id": "random-small-n10-s1",
+      "text": "Does the graph contain a cycle?",
+      "category": "is_cyclic",
+      "difficulty": "nontrivial",
+      "answer_type": "bool",
+      "ground_truth": true,
+      "computation": "try nx.find_cycle(G) -> True else False"
+    },
+    {
+      "id": "random-small-n10-s1__leaf_nodes__423674a6",
+      "graph_id": "random-small-n10-s1",
+      "text": "List all leaf nodes (degree 1).",
+      "category": "leaf_nodes",
+      "difficulty": "nontrivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N9"
+      ],
+      "computation": "sorted(n for n in G if G.degree(n) == 1)"
+    },
+    {
+      "id": "random-small-n10-s1__max_distance__90624fe3",
+      "graph_id": "random-small-n10-s1",
+      "text": "What is the greatest shortest-path distance (in hops) from 'N6' to any node it can reach?",
+      "category": "max_distance",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 0,
+      "computation": "max(nx.single_source_shortest_path_length(G, 'N6').values())"
+    },
+    {
+      "id": "random-small-n10-s1__num_paths__849acfb5",
+      "graph_id": "random-small-n10-s1",
+      "text": "How many distinct simple paths of length <= 6 hops connect 'N7' to 'N8'?",
+      "category": "num_paths",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 28,
+      "computation": "len(list(nx.all_simple_paths(G, 'N7', 'N8', cutoff=6)))"
+    },
+    {
+      "id": "random-small-n10-s1__total_ownership__93550840",
+      "graph_id": "random-small-n10-s1",
+      "text": "What is the total weight of incident edges at node 'N0'?",
+      "category": "total_ownership",
+      "difficulty": "nontrivial",
+      "answer_type": "float",
+      "ground_truth": 15.35,
+      "computation": "sum weight of incident edges at 'N0'"
+    }
+  ],
+  "scale_free-small-n40-s3": [
+    {
+      "id": "scale_free-small-n40-s3__node_count__c0433cbd",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "How many nodes does the graph have?",
+      "category": "node_count",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 40,
+      "computation": "G.number_of_nodes()"
+    },
+    {
+      "id": "scale_free-small-n40-s3__edge_weight__96263ae6",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "What is the weight of edge N35 -> N2?",
+      "category": "edge_weight",
+      "difficulty": "trivial",
+      "answer_type": "float",
+      "ground_truth": 2.8,
+      "computation": "sum of weight on edge ('N35', 'N2')"
+    },
+    {
+      "id": "scale_free-small-n40-s3__node_exists__9d3c7dec",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "Is there a node labelled 'N0' in the graph?",
+      "category": "node_exists",
+      "difficulty": "trivial",
+      "answer_type": "bool",
+      "ground_truth": true,
+      "computation": "G.has_node('N0')"
+    },
+    {
+      "id": "scale_free-small-n40-s3__edge_count__14aa4e71",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "How many edges does the graph have?",
+      "category": "edge_count",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 113,
+      "computation": "G.number_of_edges()"
+    },
+    {
+      "id": "scale_free-small-n40-s3__out_degree__49889310",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "What is the out-degree of node 'N15'?",
+      "category": "out_degree",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 3,
+      "computation": "G.out_degree('N15')"
+    },
+    {
+      "id": "scale_free-small-n40-s3__list_children__731c9452",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "List the direct children (successors) of node 'N14'.",
+      "category": "list_children",
+      "difficulty": "trivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N1",
+        "N11",
+        "N3"
+      ],
+      "computation": "sorted(set(G.successors('N14')))"
+    },
+    {
+      "id": "scale_free-small-n40-s3__in_degree__d0944996",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "What is the in-degree of node 'N0'?",
+      "category": "in_degree",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 3,
+      "computation": "G.in_degree('N0')"
+    },
+    {
+      "id": "scale_free-small-n40-s3__max_degree_node__e4163207",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "Which node has the highest total degree? (break ties by smallest label)",
+      "category": "max_degree_node",
+      "difficulty": "trivial",
+      "answer_type": "string",
+      "ground_truth": "N3",
+      "computation": "argmax_n G.degree(n), tie-break smallest label"
+    },
+    {
+      "id": "scale_free-small-n40-s3__edge_exists__65b00a2d",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "Is there an edge N27 -> N20?",
+      "category": "edge_exists",
+      "difficulty": "trivial",
+      "answer_type": "bool",
+      "ground_truth": false,
+      "computation": "G.has_edge('N27', 'N20')"
+    },
+    {
+      "id": "scale_free-small-n40-s3__controls_most__24114258",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "Which node has the greatest total outgoing edge weight? (break ties by smallest label)",
+      "category": "controls_most",
+      "difficulty": "nontrivial",
+      "answer_type": "string",
+      "ground_truth": "N10",
+      "computation": "argmax_n sum of outgoing edge weights at n"
+    },
+    {
+      "id": "scale_free-small-n40-s3__reachable_count__4f1a8a1d",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "How many other nodes are reachable from 'N6'?",
+      "category": "reachable_count",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 6,
+      "computation": "len(nx.descendants(G, 'N6'))"
+    },
+    {
+      "id": "scale_free-small-n40-s3__root_nodes__06555096",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "List all root nodes (in-degree 0).",
+      "category": "root_nodes",
+      "difficulty": "nontrivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N19",
+        "N20",
+        "N23",
+        "N25",
+        "N26",
+        "N29",
+        "N30",
+        "N31",
+        "N32",
+        "N33",
+        "N35",
+        "N36",
+        "N37",
+        "N38",
+        "N39"
+      ],
+      "computation": "sorted(n for n in G if G.in_degree(n) == 0)"
+    },
+    {
+      "id": "scale_free-small-n40-s3__is_cyclic__d9090b89",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "Does the graph contain a cycle?",
+      "category": "is_cyclic",
+      "difficulty": "nontrivial",
+      "answer_type": "bool",
+      "ground_truth": false,
+      "computation": "not nx.is_directed_acyclic_graph(G)"
+    },
+    {
+      "id": "scale_free-small-n40-s3__shortest_path__66160227",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "What is a shortest path (by hop count) from 'N33' to 'N13'? Give the node sequence.",
+      "category": "shortest_path",
+      "difficulty": "nontrivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N33",
+        "N28",
+        "N13"
+      ],
+      "computation": "nx.shortest_path(G, 'N33', 'N13')"
+    },
+    {
+      "id": "scale_free-small-n40-s3__num_paths__6dedc86a",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "How many distinct simple paths of length <= 6 hops connect 'N14' to 'N9'?",
+      "category": "num_paths",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 1,
+      "computation": "len(list(nx.all_simple_paths(G, 'N14', 'N9', cutoff=6)))"
+    },
+    {
+      "id": "scale_free-small-n40-s3__total_ownership__e261e34a",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "What is the total weight of incoming edges at node 'N36'?",
+      "category": "total_ownership",
+      "difficulty": "nontrivial",
+      "answer_type": "float",
+      "ground_truth": 0.0,
+      "computation": "sum weight of incoming edges at 'N36'"
+    },
+    {
+      "id": "scale_free-small-n40-s3__shortest_path_len__ccbfd2ec",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "What is the length (number of hops) of the shortest path from 'N26' to 'N5'?",
+      "category": "shortest_path_len",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 2,
+      "computation": "nx.shortest_path_length(G, 'N26', 'N5')"
+    },
+    {
+      "id": "scale_free-small-n40-s3__num_components__a598d0db",
+      "graph_id": "scale_free-small-n40-s3",
+      "text": "How many weakly connected components does the graph have?",
+      "category": "num_components",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 1,
+      "computation": "nx.number_weakly_connected_components(G)"
+    }
+  ],
+  "scale_free-large-n150-s0": [
+    {
+      "id": "scale_free-large-n150-s0__node_count__c0433cbd",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "How many nodes does the graph have?",
+      "category": "node_count",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 150,
+      "computation": "G.number_of_nodes()"
+    },
+    {
+      "id": "scale_free-large-n150-s0__edge_weight__96263ae6",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "What is the weight of edge N119 -> N5? (sum across parallel edges)",
+      "category": "edge_weight",
+      "difficulty": "trivial",
+      "answer_type": "float",
+      "ground_truth": 5.32,
+      "computation": "sum of weight on edge ('N119', 'N5')"
+    },
+    {
+      "id": "scale_free-large-n150-s0__node_exists__9d3c7dec",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "Is there a node labelled 'N0' in the graph?",
+      "category": "node_exists",
+      "difficulty": "trivial",
+      "answer_type": "bool",
+      "ground_truth": true,
+      "computation": "G.has_node('N0')"
+    },
+    {
+      "id": "scale_free-large-n150-s0__edge_count__14aa4e71",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "How many edges does the graph have?",
+      "category": "edge_count",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 1007,
+      "computation": "G.number_of_edges()"
+    },
+    {
+      "id": "scale_free-large-n150-s0__out_degree__49889310",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "What is the out-degree of node 'N123'?",
+      "category": "out_degree",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 7,
+      "computation": "G.out_degree('N123')"
+    },
+    {
+      "id": "scale_free-large-n150-s0__list_children__731c9452",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "List the direct children (successors) of node 'N120'.",
+      "category": "list_children",
+      "difficulty": "trivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N113",
+        "N12",
+        "N2",
+        "N28",
+        "N65",
+        "N9",
+        "N94"
+      ],
+      "computation": "sorted(set(G.successors('N120')))"
+    },
+    {
+      "id": "scale_free-large-n150-s0__in_degree__d0944996",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "What is the in-degree of node 'N10'?",
+      "category": "in_degree",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 17,
+      "computation": "G.in_degree('N10')"
+    },
+    {
+      "id": "scale_free-large-n150-s0__max_degree_node__e4163207",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "Which node has the highest total degree? (break ties by smallest label)",
+      "category": "max_degree_node",
+      "difficulty": "trivial",
+      "answer_type": "string",
+      "ground_truth": "N7",
+      "computation": "argmax_n G.degree(n), tie-break smallest label"
+    },
+    {
+      "id": "scale_free-large-n150-s0__edge_exists__65b00a2d",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "Is there an edge N36 -> N146?",
+      "category": "edge_exists",
+      "difficulty": "trivial",
+      "answer_type": "bool",
+      "ground_truth": false,
+      "computation": "G.has_edge('N36', 'N146')"
+    },
+    {
+      "id": "scale_free-large-n150-s0__controls_most__24114258",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "Which node has the greatest total outgoing edge weight? (break ties by smallest label)",
+      "category": "controls_most",
+      "difficulty": "nontrivial",
+      "answer_type": "string",
+      "ground_truth": "N70",
+      "computation": "argmax_n sum of outgoing edge weights at n"
+    },
+    {
+      "id": "scale_free-large-n150-s0__reachable_count__4f1a8a1d",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "How many other nodes are reachable from 'N97'?",
+      "category": "reachable_count",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 26,
+      "computation": "len(nx.descendants(G, 'N97'))"
+    },
+    {
+      "id": "scale_free-large-n150-s0__root_nodes__06555096",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "List all root nodes (in-degree 0).",
+      "category": "root_nodes",
+      "difficulty": "nontrivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N102",
+        "N103",
+        "N106",
+        "N107",
+        "N108",
+        "N109",
+        "N110",
+        "N116",
+        "N118",
+        "N119",
+        "N121",
+        "N122",
+        "N124",
+        "N125",
+        "N127",
+        "N129",
+        "N131",
+        "N132",
+        "N133",
+        "N135",
+        "N137",
+        "N138",
+        "N139",
+        "N141",
+        "N142",
+        "N143",
+        "N144",
+        "N145",
+        "N146",
+        "N147",
+        "N148",
+        "N149",
+        "N68",
+        "N71",
+        "N72",
+        "N76",
+        "N83"
+      ],
+      "computation": "sorted(n for n in G if G.in_degree(n) == 0)"
+    },
+    {
+      "id": "scale_free-large-n150-s0__is_cyclic__d9090b89",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "Does the graph contain a cycle?",
+      "category": "is_cyclic",
+      "difficulty": "nontrivial",
+      "answer_type": "bool",
+      "ground_truth": false,
+      "computation": "not nx.is_directed_acyclic_graph(G)"
+    },
+    {
+      "id": "scale_free-large-n150-s0__shortest_path__eab06e9b",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "What is a shortest path (by hop count) from 'N77' to 'N55'? Give the node sequence.",
+      "category": "shortest_path",
+      "difficulty": "nontrivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N77",
+        "N55"
+      ],
+      "computation": "nx.shortest_path(G, 'N77', 'N55')"
+    },
+    {
+      "id": "scale_free-large-n150-s0__num_paths__d82fb0f1",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "How many distinct simple paths of length <= 6 hops connect 'N85' to 'N23'?",
+      "category": "num_paths",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 10,
+      "computation": "len(list(nx.all_simple_paths(G, 'N85', 'N23', cutoff=6)))"
+    },
+    {
+      "id": "scale_free-large-n150-s0__total_ownership__8350a73f",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "What is the total weight of outgoing edges at node 'N60'?",
+      "category": "total_ownership",
+      "difficulty": "nontrivial",
+      "answer_type": "float",
+      "ground_truth": 30.82,
+      "computation": "sum weight of outgoing edges at 'N60'"
+    },
+    {
+      "id": "scale_free-large-n150-s0__shortest_path_len__c40d31b5",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "What is the length (number of hops) of the shortest path from 'N97' to 'N15'?",
+      "category": "shortest_path_len",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 2,
+      "computation": "nx.shortest_path_length(G, 'N97', 'N15')"
+    },
+    {
+      "id": "scale_free-large-n150-s0__num_components__2106119e",
+      "graph_id": "scale_free-large-n150-s0",
+      "text": "How many weakly connected components does the graph have?",
+      "category": "num_components",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 1,
+      "computation": "nx.number_weakly_connected_components(G)"
+    }
+  ],
+  "hierarchical-medium-n20-s0": [
+    {
+      "id": "hierarchical-medium-n20-s0__node_count__c0433cbd",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "How many nodes does the graph have?",
+      "category": "node_count",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 20,
+      "computation": "G.number_of_nodes()"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__edge_weight__70eb9a0a",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "What is the weight of edge N16 -> N9? (sum across parallel edges)",
+      "category": "edge_weight",
+      "difficulty": "trivial",
+      "answer_type": "float",
+      "ground_truth": 5.47,
+      "computation": "sum of weight on edge ('N16', 'N9')"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__node_exists__14aa4e71",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "Is there a node labelled 'N9' in the graph?",
+      "category": "node_exists",
+      "difficulty": "trivial",
+      "answer_type": "bool",
+      "ground_truth": true,
+      "computation": "G.has_node('N9')"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__edge_count__1c593af5",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "How many edges does the graph have?",
+      "category": "edge_count",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 90,
+      "computation": "G.number_of_edges()"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__out_degree__d11745ad",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "What is the out-degree of node 'N17'?",
+      "category": "out_degree",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 3,
+      "computation": "G.out_degree('N17')"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__list_children__731c9452",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "List the direct children (successors) of node 'N11'.",
+      "category": "list_children",
+      "difficulty": "trivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N12",
+        "N16",
+        "N6",
+        "N9"
+      ],
+      "computation": "sorted(set(G.successors('N11')))"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__in_degree__d0944996",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "What is the in-degree of node 'N0'?",
+      "category": "in_degree",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 0,
+      "computation": "G.in_degree('N0')"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__max_degree_node__e4163207",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "Which node has the highest total degree? (break ties by smallest label)",
+      "category": "max_degree_node",
+      "difficulty": "trivial",
+      "answer_type": "string",
+      "ground_truth": "N5",
+      "computation": "argmax_n G.degree(n), tie-break smallest label"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__edge_exists__65b00a2d",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "Is there an edge N18 -> N14?",
+      "category": "edge_exists",
+      "difficulty": "trivial",
+      "answer_type": "bool",
+      "ground_truth": false,
+      "computation": "G.has_edge('N18', 'N14')"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__controls_most__24114258",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "Which node has the greatest total outgoing edge weight? (break ties by smallest label)",
+      "category": "controls_most",
+      "difficulty": "nontrivial",
+      "answer_type": "string",
+      "ground_truth": "N5",
+      "computation": "argmax_n sum of outgoing edge weights at n"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__reachable_count__4f1a8a1d",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "How many other nodes are reachable from 'N8'?",
+      "category": "reachable_count",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 18,
+      "computation": "len(nx.descendants(G, 'N8'))"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__root_nodes__06555096",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "List all root nodes (in-degree 0).",
+      "category": "root_nodes",
+      "difficulty": "nontrivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N0"
+      ],
+      "computation": "sorted(n for n in G if G.in_degree(n) == 0)"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__is_cyclic__d9090b89",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "Does the graph contain a cycle?",
+      "category": "is_cyclic",
+      "difficulty": "nontrivial",
+      "answer_type": "bool",
+      "ground_truth": true,
+      "computation": "not nx.is_directed_acyclic_graph(G)"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__shortest_path__7608d942",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "What is a shortest path (by hop count) from 'N19' to 'N9'? Give the node sequence.",
+      "category": "shortest_path",
+      "difficulty": "nontrivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N19",
+        "N6",
+        "N9"
+      ],
+      "computation": "nx.shortest_path(G, 'N19', 'N9')"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__num_paths__66160227",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "How many distinct simple paths of length <= 6 hops connect 'N3' to 'N10'?",
+      "category": "num_paths",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 182,
+      "computation": "len(list(nx.all_simple_paths(G, 'N3', 'N10', cutoff=6)))"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__total_ownership__6ce9da66",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "What is the total weight of outgoing edges at node 'N8'?",
+      "category": "total_ownership",
+      "difficulty": "nontrivial",
+      "answer_type": "float",
+      "ground_truth": 7.32,
+      "computation": "sum weight of outgoing edges at 'N8'"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__shortest_path_len__65ed0de4",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "What is the length (number of hops) of the shortest path from 'N6' to 'N5'?",
+      "category": "shortest_path_len",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 2,
+      "computation": "nx.shortest_path_length(G, 'N6', 'N5')"
+    },
+    {
+      "id": "hierarchical-medium-n20-s0__num_components__eab06e9b",
+      "graph_id": "hierarchical-medium-n20-s0",
+      "text": "How many weakly connected components does the graph have?",
+      "category": "num_components",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 1,
+      "computation": "nx.number_weakly_connected_components(G)"
+    }
+  ],
+  "random-small-n8-s0": [
+    {
+      "id": "random-small-n8-s0__node_count__c0433cbd",
+      "graph_id": "random-small-n8-s0",
+      "text": "How many nodes does the graph have?",
+      "category": "node_count",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 8,
+      "computation": "G.number_of_nodes()"
+    },
+    {
+      "id": "random-small-n8-s0__edge_weight__96263ae6",
+      "graph_id": "random-small-n8-s0",
+      "text": "What is the weight of edge N6 -> N2?",
+      "category": "edge_weight",
+      "difficulty": "trivial",
+      "answer_type": "float",
+      "ground_truth": 3.61,
+      "computation": "sum of weight on edge ('N6', 'N2')"
+    },
+    {
+      "id": "random-small-n8-s0__node_exists__9d3c7dec",
+      "graph_id": "random-small-n8-s0",
+      "text": "Is there a node labelled 'N0' in the graph?",
+      "category": "node_exists",
+      "difficulty": "trivial",
+      "answer_type": "bool",
+      "ground_truth": true,
+      "computation": "G.has_node('N0')"
+    },
+    {
+      "id": "random-small-n8-s0__edge_count__14aa4e71",
+      "graph_id": "random-small-n8-s0",
+      "text": "How many edges does the graph have?",
+      "category": "edge_count",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 28,
+      "computation": "G.number_of_edges()"
+    },
+    {
+      "id": "random-small-n8-s0__out_degree__49889310",
+      "graph_id": "random-small-n8-s0",
+      "text": "What is the out-degree of node 'N1'?",
+      "category": "out_degree",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 2,
+      "computation": "G.out_degree('N1')"
+    },
+    {
+      "id": "random-small-n8-s0__list_children__731c9452",
+      "graph_id": "random-small-n8-s0",
+      "text": "List the direct children (successors) of node 'N1'.",
+      "category": "list_children",
+      "difficulty": "trivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N0",
+        "N4"
+      ],
+      "computation": "sorted(set(G.successors('N1')))"
+    },
+    {
+      "id": "random-small-n8-s0__in_degree__d0944996",
+      "graph_id": "random-small-n8-s0",
+      "text": "What is the in-degree of node 'N0'?",
+      "category": "in_degree",
+      "difficulty": "trivial",
+      "answer_type": "int",
+      "ground_truth": 5,
+      "computation": "G.in_degree('N0')"
+    },
+    {
+      "id": "random-small-n8-s0__max_degree_node__e4163207",
+      "graph_id": "random-small-n8-s0",
+      "text": "Which node has the highest total degree? (break ties by smallest label)",
+      "category": "max_degree_node",
+      "difficulty": "trivial",
+      "answer_type": "string",
+      "ground_truth": "N0",
+      "computation": "argmax_n G.degree(n), tie-break smallest label"
+    },
+    {
+      "id": "random-small-n8-s0__edge_exists__65b00a2d",
+      "graph_id": "random-small-n8-s0",
+      "text": "Is there an edge N5 -> N1?",
+      "category": "edge_exists",
+      "difficulty": "trivial",
+      "answer_type": "bool",
+      "ground_truth": false,
+      "computation": "G.has_edge('N5', 'N1')"
+    },
+    {
+      "id": "random-small-n8-s0__controls_most__24114258",
+      "graph_id": "random-small-n8-s0",
+      "text": "Which node has the greatest total outgoing edge weight? (break ties by smallest label)",
+      "category": "controls_most",
+      "difficulty": "nontrivial",
+      "answer_type": "string",
+      "ground_truth": "N3",
+      "computation": "argmax_n sum of outgoing edge weights at n"
+    },
+    {
+      "id": "random-small-n8-s0__reachable_count__06555096",
+      "graph_id": "random-small-n8-s0",
+      "text": "How many other nodes are reachable from 'N4'?",
+      "category": "reachable_count",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 7,
+      "computation": "len(nx.descendants(G, 'N4'))"
+    },
+    {
+      "id": "random-small-n8-s0__root_nodes__d9090b89",
+      "graph_id": "random-small-n8-s0",
+      "text": "List all root nodes (in-degree 0).",
+      "category": "root_nodes",
+      "difficulty": "nontrivial",
+      "answer_type": "list",
+      "ground_truth": [],
+      "computation": "sorted(n for n in G if G.in_degree(n) == 0)"
+    },
+    {
+      "id": "random-small-n8-s0__is_cyclic__b5fb12e0",
+      "graph_id": "random-small-n8-s0",
+      "text": "Does the graph contain a cycle?",
+      "category": "is_cyclic",
+      "difficulty": "nontrivial",
+      "answer_type": "bool",
+      "ground_truth": true,
+      "computation": "not nx.is_directed_acyclic_graph(G)"
+    },
+    {
+      "id": "random-small-n8-s0__shortest_path__7608d942",
+      "graph_id": "random-small-n8-s0",
+      "text": "What is a shortest path (by hop count) from 'N5' to 'N2'? Give the node sequence.",
+      "category": "shortest_path",
+      "difficulty": "nontrivial",
+      "answer_type": "list",
+      "ground_truth": [
+        "N5",
+        "N2"
+      ],
+      "computation": "nx.shortest_path(G, 'N5', 'N2')"
+    },
+    {
+      "id": "random-small-n8-s0__num_paths__66160227",
+      "graph_id": "random-small-n8-s0",
+      "text": "How many distinct simple paths of length <= 6 hops connect 'N6' to 'N0'?",
+      "category": "num_paths",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 32,
+      "computation": "len(list(nx.all_simple_paths(G, 'N6', 'N0', cutoff=6)))"
+    },
+    {
+      "id": "random-small-n8-s0__total_ownership__6ce9da66",
+      "graph_id": "random-small-n8-s0",
+      "text": "What is the total weight of outgoing edges at node 'N7'?",
+      "category": "total_ownership",
+      "difficulty": "nontrivial",
+      "answer_type": "float",
+      "ground_truth": 4.52,
+      "computation": "sum weight of outgoing edges at 'N7'"
+    },
+    {
+      "id": "random-small-n8-s0__shortest_path_len__eab06e9b",
+      "graph_id": "random-small-n8-s0",
+      "text": "What is the length (number of hops) of the shortest path from 'N7' to 'N3'?",
+      "category": "shortest_path_len",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 2,
+      "computation": "nx.shortest_path_length(G, 'N7', 'N3')"
+    },
+    {
+      "id": "random-small-n8-s0__num_components__864fa3f3",
+      "graph_id": "random-small-n8-s0",
+      "text": "How many weakly connected components does the graph have?",
+      "category": "num_components",
+      "difficulty": "nontrivial",
+      "answer_type": "int",
+      "ground_truth": 1,
+      "computation": "nx.number_weakly_connected_components(G)"
+    }
+  ]
+}
