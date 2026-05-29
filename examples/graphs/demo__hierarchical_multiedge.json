@@ -1,0 +1,188 @@
+{
+  "id": "hierarchical-small-n16-s2",
+  "nodes": [
+    "N0",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "N9",
+    "N10",
+    "N11",
+    "N12",
+    "N13",
+    "N14",
+    "N15"
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N1",
+      "type": "calls",
+      "weight": null
+    },
+    {
+      "source": "N0",
+      "target": "N2",
+      "type": "imports",
+      "weight": null
+    },
+    {
+      "source": "N0",
+      "target": "N3",
+      "type": "extends",
+      "weight": null
+    },
+    {
+      "source": "N2",
+      "target": "N4",
+      "type": "imports",
+      "weight": null
+    },
+    {
+      "source": "N4",
+      "target": "N5",
+      "type": "calls",
+      "weight": null
+    },
+    {
+      "source": "N4",
+      "target": "N6",
+      "type": "calls",
+      "weight": null
+    },
+    {
+      "source": "N4",
+      "target": "N7",
+      "type": "extends",
+      "weight": null
+    },
+    {
+      "source": "N1",
+      "target": "N8",
+      "type": "imports",
+      "weight": null
+    },
+    {
+      "source": "N8",
+      "target": "N9",
+      "type": "imports",
+      "weight": null
+    },
+    {
+      "source": "N8",
+      "target": "N10",
+      "type": "extends",
+      "weight": null
+    },
+    {
+      "source": "N2",
+      "target": "N11",
+      "type": "extends",
+      "weight": null
+    },
+    {
+      "source": "N3",
+      "target": "N12",
+      "type": "extends",
+      "weight": null
+    },
+    {
+      "source": "N4",
+      "target": "N13",
+      "type": "calls",
+      "weight": null
+    },
+    {
+      "source": "N0",
+      "target": "N14",
+      "type": "imports",
+      "weight": null
+    },
+    {
+      "source": "N12",
+      "target": "N15",
+      "type": "imports",
+      "weight": null
+    },
+    {
+      "source": "N8",
+      "target": "N12",
+      "type": "calls",
+      "weight": null
+    },
+    {
+      "source": "N9",
+      "target": "N4",
+      "type": "extends",
+      "weight": null
+    },
+    {
+      "source": "N10",
+      "target": "N6",
+      "type": "imports",
+      "weight": null
+    },
+    {
+      "source": "N10",
+      "target": "N11",
+      "type": "calls",
+      "weight": null
+    },
+    {
+      "source": "N10",
+      "target": "N13",
+      "type": "extends",
+      "weight": null
+    },
+    {
+      "source": "N11",
+      "target": "N7",
+      "type": "extends",
+      "weight": null
+    },
+    {
+      "source": "N11",
+      "target": "N8",
+      "type": "calls",
+      "weight": null
+    },
+    {
+      "source": "N11",
+      "target": "N10",
+      "type": "imports",
+      "weight": null
+    },
+    {
+      "source": "N12",
+      "target": "N6",
+      "type": "imports",
+      "weight": null
+    },
+    {
+      "source": "N14",
+      "target": "N4",
+      "type": "extends",
+      "weight": null
+    },
+    {
+      "source": "N15",
+      "target": "N10",
+      "type": "calls",
+      "weight": null
+    }
+  ],
+  "metadata": {
+    "directed": true,
+    "weighted": false,
+    "multi_edge": true,
+    "hierarchy_depth": 3,
+    "seed": 2,
+    "tier": "small",
+    "num_nodes": 16
+  }
+}

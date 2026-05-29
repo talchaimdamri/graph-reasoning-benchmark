@@ -1,0 +1,80 @@
+[
+  {
+    "name": "small__random",
+    "id": "random-small-n8-s0",
+    "tier": "small",
+    "model": "random",
+    "nodes": 8,
+    "edges": 28,
+    "json": "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/graphs/small__random.json",
+    "images": [
+      "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/images/small__random.png",
+      "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/images/small__random.svg"
+    ]
+  },
+  {
+    "name": "medium__hierarchical",
+    "id": "hierarchical-medium-n20-s0",
+    "tier": "medium",
+    "model": "hierarchical",
+    "nodes": 20,
+    "edges": 90,
+    "json": "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/graphs/medium__hierarchical.json",
+    "images": [
+      "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/images/medium__hierarchical.png",
+      "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/images/medium__hierarchical.svg"
+    ]
+  },
+  {
+    "name": "large__scale_free",
+    "id": "scale_free-large-n150-s0",
+    "tier": "large",
+    "model": "scale_free",
+    "nodes": 150,
+    "edges": 1007,
+    "json": "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/graphs/large__scale_free.json",
+    "images": [
+      "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/images/large__scale_free.png",
+      "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/images/large__scale_free.svg"
+    ]
+  },
+  {
+    "name": "demo__random_undirected_weighted",
+    "id": "random-small-n10-s1",
+    "tier": "small",
+    "model": "random_undirected_weighted",
+    "nodes": 10,
+    "edges": 15,
+    "json": "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/graphs/demo__random_undirected_weighted.json",
+    "images": [
+      "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/images/demo__random_undirected_weighted.png",
+      "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/images/demo__random_undirected_weighted.svg"
+    ]
+  },
+  {
+    "name": "demo__hierarchical_multiedge",
+    "id": "hierarchical-small-n16-s2",
+    "tier": "small",
+    "model": "hierarchical_multiedge",
+    "nodes": 16,
+    "edges": 26,
+    "json": "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/graphs/demo__hierarchical_multiedge.json",
+    "images": [
+      "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/images/demo__hierarchical_multiedge.png",
+      "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/images/demo__hierarchical_multiedge.svg"
+    ]
+  },
+  {
+    "name": "demo__scale_free_directed",
+    "id": "scale_free-small-n40-s3",
+    "tier": "small",
+    "model": "scale_free_directed",
+    "nodes": 40,
+    "edges": 113,
+    "json": "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/graphs/demo__scale_free_directed.json",
+    "images": [
+      "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/images/demo__scale_free_directed.png",
+      "/Users/talchaimdamri/projects/graph-reasoning-benchmark/examples/images/demo__scale_free_directed.svg"
+    ]
+  }
+]

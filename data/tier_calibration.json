@@ -1,0 +1,75 @@
+{
+  "encoding": "cl100k_base",
+  "description": "Token counts of describe_graph() output per tier.",
+  "tiers": {
+    "small": {
+      "nodes": 8,
+      "model": "random",
+      "target_tokens": 500,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "token_counts": [
+        449,
+        575,
+        463,
+        547,
+        449
+      ],
+      "mean_tokens": 496.6,
+      "min_tokens": 449,
+      "max_tokens": 575,
+      "mean_edges": 31.4
+    },
+    "medium": {
+      "nodes": 20,
+      "model": "hierarchical",
+      "target_tokens": 2000,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "token_counts": [
+        1893,
+        2073,
+        1893,
+        2193,
+        1973
+      ],
+      "mean_tokens": 2005.0,
+      "min_tokens": 1893,
+      "max_tokens": 2193,
+      "mean_edges": 95.6
+    },
+    "large": {
+      "nodes": 150,
+      "model": "scale_free",
+      "target_tokens": 20000,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "token_counts": [
+        20625,
+        20625,
+        20625,
+        20625,
+        20625
+      ],
+      "mean_tokens": 20625.0,
+      "min_tokens": 20625,
+      "max_tokens": 20625,
+      "mean_edges": 1007.0
+    }
+  }
+}

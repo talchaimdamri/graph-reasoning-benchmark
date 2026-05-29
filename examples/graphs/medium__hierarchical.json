@@ -1,0 +1,576 @@
+{
+  "id": "hierarchical-medium-n20-s0",
+  "nodes": [
+    "N0",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "N9",
+    "N10",
+    "N11",
+    "N12",
+    "N13",
+    "N14",
+    "N15",
+    "N16",
+    "N17",
+    "N18",
+    "N19"
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N1",
+      "type": "imports",
+      "weight": 7.82
+    },
+    {
+      "source": "N0",
+      "target": "N2",
+      "type": "extends",
+      "weight": 3.33
+    },
+    {
+      "source": "N1",
+      "target": "N3",
+      "type": "imports",
+      "weight": 4.64
+    },
+    {
+      "source": "N3",
+      "target": "N4",
+      "type": "calls",
+      "weight": 4.22
+    },
+    {
+      "source": "N1",
+      "target": "N5",
+      "type": "calls",
+      "weight": 3.54
+    },
+    {
+      "source": "N5",
+      "target": "N6",
+      "type": "extends",
+      "weight": 8.19
+    },
+    {
+      "source": "N5",
+      "target": "N7",
+      "type": "imports",
+      "weight": 9.12
+    },
+    {
+      "source": "N0",
+      "target": "N8",
+      "type": "extends",
+      "weight": 7.57
+    },
+    {
+      "source": "N2",
+      "target": "N9",
+      "type": "calls",
+      "weight": 5.25
+    },
+    {
+      "source": "N2",
+      "target": "N10",
+      "type": "extends",
+      "weight": 4.91
+    },
+    {
+      "source": "N3",
+      "target": "N11",
+      "type": "imports",
+      "weight": 9.7
+    },
+    {
+      "source": "N10",
+      "target": "N12",
+      "type": "imports",
+      "weight": 8.79
+    },
+    {
+      "source": "N0",
+      "target": "N13",
+      "type": "extends",
+      "weight": 8.25
+    },
+    {
+      "source": "N0",
+      "target": "N14",
+      "type": "imports",
+      "weight": 1.84
+    },
+    {
+      "source": "N0",
+      "target": "N15",
+      "type": "imports",
+      "weight": 6.51
+    },
+    {
+      "source": "N3",
+      "target": "N16",
+      "type": "extends",
+      "weight": 7.57
+    },
+    {
+      "source": "N1",
+      "target": "N17",
+      "type": "extends",
+      "weight": 2.72
+    },
+    {
+      "source": "N3",
+      "target": "N18",
+      "type": "calls",
+      "weight": 3.15
+    },
+    {
+      "source": "N13",
+      "target": "N19",
+      "type": "calls",
+      "weight": 5.03
+    },
+    {
+      "source": "N1",
+      "target": "N13",
+      "type": "calls",
+      "weight": 3.62
+    },
+    {
+      "source": "N2",
+      "target": "N17",
+      "type": "calls",
+      "weight": 2.7
+    },
+    {
+      "source": "N2",
+      "target": "N19",
+      "type": "imports",
+      "weight": 9.83
+    },
+    {
+      "source": "N3",
+      "target": "N5",
+      "type": "calls",
+      "weight": 7.82
+    },
+    {
+      "source": "N3",
+      "target": "N14",
+      "type": "calls",
+      "weight": 8.3
+    },
+    {
+      "source": "N4",
+      "target": "N12",
+      "type": "imports",
+      "weight": 6.52
+    },
+    {
+      "source": "N4",
+      "target": "N18",
+      "type": "imports",
+      "weight": 1.15
+    },
+    {
+      "source": "N4",
+      "target": "N19",
+      "type": "calls",
+      "weight": 2.98
+    },
+    {
+      "source": "N5",
+      "target": "N4",
+      "type": "extends",
+      "weight": 2.32
+    },
+    {
+      "source": "N5",
+      "target": "N8",
+      "type": "extends",
+      "weight": 8.35
+    },
+    {
+      "source": "N5",
+      "target": "N12",
+      "type": "extends",
+      "weight": 6.71
+    },
+    {
+      "source": "N5",
+      "target": "N14",
+      "type": "calls",
+      "weight": 1.82
+    },
+    {
+      "source": "N5",
+      "target": "N15",
+      "type": "calls",
+      "weight": 1.19
+    },
+    {
+      "source": "N5",
+      "target": "N19",
+      "type": "extends",
+      "weight": 7.11
+    },
+    {
+      "source": "N6",
+      "target": "N4",
+      "type": "calls",
+      "weight": 3.34
+    },
+    {
+      "source": "N6",
+      "target": "N7",
+      "type": "imports",
+      "weight": 3.71
+    },
+    {
+      "source": "N6",
+      "target": "N9",
+      "type": "calls",
+      "weight": 5.53
+    },
+    {
+      "source": "N6",
+      "target": "N16",
+      "type": "imports",
+      "weight": 9.14
+    },
+    {
+      "source": "N6",
+      "target": "N19",
+      "type": "calls",
+      "weight": 7.05
+    },
+    {
+      "source": "N7",
+      "target": "N4",
+      "type": "extends",
+      "weight": 2.46
+    },
+    {
+      "source": "N7",
+      "target": "N6",
+      "type": "imports",
+      "weight": 6.37
+    },
+    {
+      "source": "N7",
+      "target": "N10",
+      "type": "extends",
+      "weight": 7.13
+    },
+    {
+      "source": "N7",
+      "target": "N19",
+      "type": "imports",
+      "weight": 7.22
+    },
+    {
+      "source": "N8",
+      "target": "N3",
+      "type": "calls",
+      "weight": 3.53
+    },
+    {
+      "source": "N8",
+      "target": "N19",
+      "type": "extends",
+      "weight": 3.79
+    },
+    {
+      "source": "N9",
+      "target": "N4",
+      "type": "imports",
+      "weight": 2.73
+    },
+    {
+      "source": "N9",
+      "target": "N5",
+      "type": "imports",
+      "weight": 3.01
+    },
+    {
+      "source": "N9",
+      "target": "N15",
+      "type": "imports",
+      "weight": 5.01
+    },
+    {
+      "source": "N10",
+      "target": "N3",
+      "type": "imports",
+      "weight": 1.35
+    },
+    {
+      "source": "N10",
+      "target": "N4",
+      "type": "imports",
+      "weight": 5.2
+    },
+    {
+      "source": "N10",
+      "target": "N5",
+      "type": "extends",
+      "weight": 9.99
+    },
+    {
+      "source": "N10",
+      "target": "N8",
+      "type": "extends",
+      "weight": 1.13
+    },
+    {
+      "source": "N10",
+      "target": "N11",
+      "type": "calls",
+      "weight": 1.13
+    },
+    {
+      "source": "N10",
+      "target": "N16",
+      "type": "calls",
+      "weight": 6.48
+    },
+    {
+      "source": "N10",
+      "target": "N18",
+      "type": "calls",
+      "weight": 9.81
+    },
+    {
+      "source": "N11",
+      "target": "N6",
+      "type": "calls",
+      "weight": 9.22
+    },
+    {
+      "source": "N11",
+      "target": "N9",
+      "type": "extends",
+      "weight": 5.69
+    },
+    {
+      "source": "N11",
+      "target": "N12",
+      "type": "calls",
+      "weight": 2.39
+    },
+    {
+      "source": "N11",
+      "target": "N16",
+      "type": "imports",
+      "weight": 2.85
+    },
+    {
+      "source": "N12",
+      "target": "N4",
+      "type": "extends",
+      "weight": 7.74
+    },
+    {
+      "source": "N12",
+      "target": "N17",
+      "type": "imports",
+      "weight": 4.38
+    },
+    {
+      "source": "N12",
+      "target": "N18",
+      "type": "imports",
+      "weight": 2.36
+    },
+    {
+      "source": "N13",
+      "target": "N2",
+      "type": "calls",
+      "weight": 8.01
+    },
+    {
+      "source": "N13",
+      "target": "N3",
+      "type": "extends",
+      "weight": 2.47
+    },
+    {
+      "source": "N13",
+      "target": "N5",
+      "type": "extends",
+      "weight": 4.55
+    },
+    {
+      "source": "N13",
+      "target": "N8",
+      "type": "extends",
+      "weight": 2.03
+    },
+    {
+      "source": "N13",
+      "target": "N9",
+      "type": "calls",
+      "weight": 1.43
+    },
+    {
+      "source": "N13",
+      "target": "N15",
+      "type": "imports",
+      "weight": 8.52
+    },
+    {
+      "source": "N14",
+      "target": "N1",
+      "type": "imports",
+      "weight": 9.18
+    },
+    {
+      "source": "N14",
+      "target": "N8",
+      "type": "imports",
+      "weight": 2.04
+    },
+    {
+      "source": "N14",
+      "target": "N10",
+      "type": "calls",
+      "weight": 7.61
+    },
+    {
+      "source": "N15",
+      "target": "N2",
+      "type": "extends",
+      "weight": 1.76
+    },
+    {
+      "source": "N15",
+      "target": "N3",
+      "type": "calls",
+      "weight": 4.46
+    },
+    {
+      "source": "N16",
+      "target": "N5",
+      "type": "imports",
+      "weight": 7.99
+    },
+    {
+      "source": "N16",
+      "target": "N6",
+      "type": "extends",
+      "weight": 2.04
+    },
+    {
+      "source": "N16",
+      "target": "N7",
+      "type": "extends",
+      "weight": 5.73
+    },
+    {
+      "source": "N16",
+      "target": "N9",
+      "type": "imports",
+      "weight": 5.47
+    },
+    {
+      "source": "N16",
+      "target": "N10",
+      "type": "calls",
+      "weight": 1.38
+    },
+    {
+      "source": "N16",
+      "target": "N12",
+      "type": "imports",
+      "weight": 5.13
+    },
+    {
+      "source": "N16",
+      "target": "N18",
+      "type": "imports",
+      "weight": 9.9
+    },
+    {
+      "source": "N16",
+      "target": "N19",
+      "type": "extends",
+      "weight": 4.65
+    },
+    {
+      "source": "N17",
+      "target": "N12",
+      "type": "extends",
+      "weight": 7.35
+    },
+    {
+      "source": "N17",
+      "target": "N15",
+      "type": "imports",
+      "weight": 2.34
+    },
+    {
+      "source": "N17",
+      "target": "N18",
+      "type": "imports",
+      "weight": 4.41
+    },
+    {
+      "source": "N18",
+      "target": "N5",
+      "type": "calls",
+      "weight": 1.76
+    },
+    {
+      "source": "N18",
+      "target": "N6",
+      "type": "imports",
+      "weight": 2.17
+    },
+    {
+      "source": "N18",
+      "target": "N7",
+      "type": "imports",
+      "weight": 8.6
+    },
+    {
+      "source": "N19",
+      "target": "N1",
+      "type": "extends",
+      "weight": 1.82
+    },
+    {
+      "source": "N19",
+      "target": "N6",
+      "type": "extends",
+      "weight": 5.82
+    },
+    {
+      "source": "N19",
+      "target": "N12",
+      "type": "calls",
+      "weight": 8.78
+    },
+    {
+      "source": "N19",
+      "target": "N15",
+      "type": "extends",
+      "weight": 2.64
+    }
+  ],
+  "metadata": {
+    "directed": true,
+    "weighted": true,
+    "multi_edge": true,
+    "hierarchy_depth": 3,
+    "seed": 0,
+    "tier": "medium",
+    "num_nodes": 20
+  }
+}
