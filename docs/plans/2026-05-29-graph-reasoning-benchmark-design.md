@@ -92,7 +92,7 @@ graph-reasoning-benchmark/
 ├── src/grb/
 │   ├── __init__.py
 │   ├── models.py             # SHARED DATA MODEL (Pydantic v2)
-│   ├── cli.py                # Typer app (stub)
+│   ├── cli.py                # Typer app
 │   ├── encoders/__init__.py  # 7 encodings
 │   └── questions/__init__.py # template question generation + NetworkX truth
 ├── tests/                    # pytest

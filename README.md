@@ -173,18 +173,71 @@ For each (graph, encoding, question) tuple:
 - **Error Types**: Categorize failure modes
 
 **Models to Test:**
-- GPT-4, GPT-4 Turbo, GPT-3.5
-- Claude 3.5 Sonnet, Claude 3 Opus
-- Gemini 1.5 Pro
-- Open models: Llama 3, Mixtral
+
+Claude only — three tiers: **Opus**, **Sonnet**, **Haiku**. There is no
+cross-vendor comparison. Inference runs through the local **headless Claude
+CLI** (`claude -p --model <opus|sonnet|haiku> "<encoded prompt>"`), so **no API
+keys are required** — the harness reuses your existing `claude` login.
 
 ## Roadmap
 
-- [ ] **Phase 1**: Graph generation + visualization
-- [ ] **Phase 2**: Multi-format encoding
-- [ ] **Phase 3**: Question generation (agent + ground truth)
-- [ ] **Phase 4**: Benchmark execution framework
-- [ ] **Phase 5**: Results analysis + paper
+- [x] **Phase 0**: Package scaffold + shared Pydantic data model
+- [x] **Phase 1**: Graph generation + tier calibration + visualization
+- [x] **Phase 2**: Multi-format encoding (7 formats)
+- [x] **Phase 3**: Template-based question generation + NetworkX ground truth
+- [x] **Phase 4**: Benchmark execution framework (headless Claude CLI)
+- [x] **Phase 5**: Metrics analysis + Hebrew RTL dashboard
+
+## Installation
+
+```bash
+python -m venv .venv
+.venv/bin/pip install -e ".[dev]"
+.venv/bin/pytest
+```
+
+This installs the `grb` package (and the `grb` console script) plus the dev
+extras, then runs the test suite to confirm the install.
+
+## Quickstart
+
+The benchmark is a pipeline of `grb` subcommands. A typical end-to-end flow:
+
+```bash
+grb generate           # synthesize tiered graphs (small/medium/large) -> data/graphs/
+grb encode             # serialize each graph into the 7 formats -> data/encodings/
+grb questions          # generate templated questions + NetworkX ground truth -> data/questions/
+grb estimate           # project grid size, total calls and tokens (no API calls)
+grb run --yes          # execute the grid via headless Claude, write results to SQLite
+grb export             # mirror SQLite results to portable JSON under data/results/
+```
+
+`grb run` always prints the cost estimate first; pass `--estimate` to stop there
+without making any calls, and `--yes` to actually execute. Restrict the grid
+with `--models opus,sonnet,haiku` and `--formats edge_list,mermaid` as needed.
+
+> ⚠️ **`grb run` consumes real Claude quota.** Cost scales with the full grid:
+> **graphs × encodings × questions × models**. For reference, one observed run of
+> **48 cells used ~2.0M tokens**. Always run `grb run --estimate` first to see the
+> projection before committing real quota.
+
+## Disclosure: committed results are SYNTHETIC demo fixtures
+
+The checked-in `figures/` PNGs and `dashboard/public/results.json` are **not real
+model output**. They are **synthetic demo fixtures** produced by `grb.fixtures`
+with a fixed `seed=7`, so the dashboard and analysis layer render meaningful data
+without spending any quota. Treat their accuracy/token numbers as illustrative
+only.
+
+To regenerate the artifacts from **real** benchmark results:
+
+```bash
+grb run --yes                                   # produces a real SQLite results DB
+.venv/bin/python scripts/build_dashboard_data.py --db data/results/<run>.db
+```
+
+Running `scripts/build_dashboard_data.py` with **no** `--db` argument
+regenerates the synthetic fixtures (seed=7) instead.
 
 ## Contributing
 
